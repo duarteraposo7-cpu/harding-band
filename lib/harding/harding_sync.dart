@@ -80,15 +80,25 @@ String isoWithOffset(DateTime t) {
   return '$base$sign${two(off.inHours)}:${two(off.inMinutes.remainder(60))}';
 }
 
-/// Parses the link HARDING hands over. Only https, or http on localhost for
-/// development, and only keys in HARDING's format.
-HardingLink? parseHardingLink(Uri uri) {
+/// HARDING's own servers. A link to any other host is refused, so a web page
+/// that opens `hardingband://link?…` cannot send someone's numbers elsewhere.
+/// Override at build time with `--dart-define=HARDING_HOSTS=a.example,b.example`.
+const String _kHostsDefine = String.fromEnvironment('HARDING_HOSTS',
+    defaultValue: 'harding.pt,personal-os-two-gilt.vercel.app');
+final Set<String> kHardingHosts =
+    _kHostsDefine.split(',').map((h) => h.trim()).where((h) => h.isNotEmpty).toSet();
+
+/// Parses the link HARDING hands over: https on a HARDING host (plain http on
+/// localhost only in debug builds), and a key in HARDING's format.
+HardingLink? parseHardingLink(Uri uri, {Set<String>? hosts, bool allowLocal = kDebugMode}) {
   if (uri.scheme != 'hardingband' || uri.host != 'link') return null;
   final server = Uri.tryParse(uri.queryParameters['server'] ?? '');
   final key = uri.queryParameters['key'] ?? '';
   if (server == null || !server.hasAuthority) return null;
-  final local = server.host == 'localhost' || server.host == '127.0.0.1';
-  if (server.scheme != 'https' && !(server.scheme == 'http' && local)) return null;
+  final local = allowLocal && (server.host == 'localhost' || server.host == '127.0.0.1');
+  final ok = (server.scheme == 'https' && (hosts ?? kHardingHosts).contains(server.host)) ||
+      (local && (server.scheme == 'http' || server.scheme == 'https'));
+  if (!ok) return null;
   if (!RegExp(r'^hb_[A-Za-z0-9_-]{20,77}$').hasMatch(key)) return null;
   return HardingLink(Uri(scheme: server.scheme, host: server.host, port: server.hasPort ? server.port : null), key);
 }
@@ -124,15 +134,43 @@ class HardingSync {
     return HardingLink(server, k);
   }
 
-  /// Stores a link from HARDING and sends the latest numbers right away.
-  static Future<bool> link(Uri uri) async {
+  /// Asked before a link is stored: «send your band numbers to NAME's
+  /// HARDING account on HOST?». Set by HardingLinks once the app has a
+  /// navigator. Without it nothing is linked.
+  static Future<bool> Function(String host, String name, bool replacing)? confirm;
+
+  /// Whose account the key belongs to, or null when the server refuses it.
+  static Future<String?> accountName(HardingLink link, {http.Client? client}) async {
+    final c = client ?? http.Client();
+    try {
+      final res = await c.get(link.server.replace(path: '/api/band/sync'),
+          headers: {'Authorization': 'Bearer ${link.key}'}).timeout(const Duration(seconds: 15));
+      if (res.statusCode != 200) return null;
+      final body = jsonDecode(res.body);
+      return body is Map && body['ok'] == true && body['name'] is String ? body['name'] as String : null;
+    } catch (e) {
+      debugPrint('[harding] whoami: $e');
+      return null;
+    } finally {
+      if (client == null) c.close();
+    }
+  }
+
+  /// Stores a link from HARDING only after the server names the account and
+  /// the person confirms it. Nothing is sent before that.
+  static Future<bool> link(Uri uri, {http.Client? client}) async {
     final parsed = parseHardingLink(uri);
-    if (parsed == null) return false;
+    final ask = confirm;
+    if (parsed == null || ask == null) return false;
+    final name = await accountName(parsed, client: client);
+    if (name == null) return false;
+    final replacing = linkedServer.value != null;
+    if (!await ask(parsed.server.host, name, replacing)) return false;
     await _storage.write(key: _kServer, value: parsed.server.toString());
     await _storage.write(key: _kKey, value: parsed.key);
     linkedServer.value = parsed.server;
     final last = _last;
-    if (last != null) unawaited(send(last));
+    if (last != null) unawaited(send(last, client: client));
     return true;
   }
 
