@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/health/health_heart_rate_batch.dart';
+import 'package:harding_band/health/health_heart_rate_batch.dart';
 
 int _seconds(DateTime value) => value.millisecondsSinceEpoch ~/ 1000;
 
@@ -239,7 +239,7 @@ void main() {
 
     test('native empty request completes before Health Connect availability', () {
       final source = File(
-        'android/app/src/main/kotlin/wtf/openstrap/openstrap_edge/HealthConnectHeartRateWriter.kt',
+        'android/app/src/main/kotlin/pt/harding/band/HealthConnectHeartRateWriter.kt',
       ).readAsStringSync();
       final replace = source.substring(
         source.indexOf('private suspend fun replace'),

@@ -4,15 +4,15 @@
   "@whoopFirmwareWarningTitle": {
     "description": "Prominent WHOOP firmware warning shared by connection and pairing screens."
   },
-  "whoopFirmwareWarningAction": "If you use OpenStrap or another open-source app, or plan to switch to one later, do not connect your band to the official WHOOP app again. It can install firmware updates automatically. Uninstall or disable the WHOOP app to prevent it from updating your band.",
+  "whoopFirmwareWarningAction": "If you use this or another open-source app, or plan to switch to one later, do not connect your band to the official WHOOP app again. It can install firmware updates automatically. Uninstall or disable the WHOOP app to prevent it from updating your band.",
   "@whoopFirmwareWarningAction": {
     "description": "Prominent WHOOP firmware warning shared by connection and pairing screens."
   },
-  "whoopFirmwareWarningDetails": "Reports on WHOOP 5.0 / MG firmware 50.43.1.0 and 50.43.2.0 describe blocked data access. Bluetooth may still connect. OpenStrap cannot issue the WHOOP-signed membership token needed to unlock affected bands. We are working on a solution, but no fix is available yet.",
+  "whoopFirmwareWarningDetails": "Reports on WHOOP 5.0 / MG firmware 50.43.1.0 and 50.43.2.0 describe blocked data access. Bluetooth may still connect. This app cannot issue the WHOOP-signed membership token needed to unlock affected bands. We are working on a solution, but no fix is available yet.",
   "@whoopFirmwareWarningDetails": {
     "description": "Prominent WHOOP firmware warning shared by connection and pairing screens."
   },
-  "appTitle": "OpenStrap",
+  "appTitle": "HARDING Band",
   "@appTitle": {
     "description": "App name shown in the OS task switcher / MaterialApp title."
   },
@@ -48,7 +48,7 @@
   "@coachChatgptSignedOut": {
     "description": "Coach, ChatGPT sign-in: shown while signing in or out with ChatGPT."
   },
-  "coachChatgptSignOutUnconfirmed": "Signed out here, but ChatGPT did not confirm it. You can also disconnect OpenStrap in ChatGPT settings.",
+  "coachChatgptSignOutUnconfirmed": "Signed out here, but ChatGPT did not confirm it. You can also disconnect HARDING Band in ChatGPT settings.",
   "@coachChatgptSignOutUnconfirmed": {
     "description": "Coach, ChatGPT sign-in: shown while signing in or out with ChatGPT."
   },
@@ -76,7 +76,7 @@
   "@coachChatgptNotAllowedTitle": {
     "description": "Coach, ChatGPT sign-in: shown while signing in or out with ChatGPT."
   },
-  "coachChatgptBlurb": "Complete eligible AI requests in this app with usage included in your ChatGPT plan or credits balance. OpenStrap never charges for this.",
+  "coachChatgptBlurb": "Complete eligible AI requests in this app with usage included in your ChatGPT plan or credits balance. HARDING Band never charges for this.",
   "@coachChatgptBlurb": {
     "description": "Coach, ChatGPT sign-in: shown while signing in or out with ChatGPT."
   },
@@ -627,7 +627,7 @@
   "@dataImportFile": {
     "description": "Row title."
   },
-  "dataImportFileSub": "An OpenStrap backup, a journal CSV, a raw sensor export or a vendor CSV. Days the band already measured are never overwritten",
+  "dataImportFileSub": "A HARDING Band backup, a journal CSV, a raw sensor export or a vendor CSV. Days the band already measured are never overwritten",
   "@dataImportFileSub": {
     "description": "Row sub."
   },
@@ -1084,7 +1084,7 @@
   "@devicesInstallImageSub": {
     "description": "Row sub: the user takes the risk."
   },
-  "flashWarning": "Installing an image you supply yourself can permanently damage your strap, void its warranty and stop it working. It cannot be undone from this app. OpenStrap does not provide, review or endorse any image, and OpenStrap and its contributors accept no responsibility or liability for any loss or damage. You do this entirely at your own risk.",
+  "flashWarning": "Installing an image you supply yourself can permanently damage your strap, void its warranty and stop it working. It cannot be undone from this app. HARDING Band does not provide, review or endorse any image, and HARDING Band and its contributors accept no responsibility or liability for any loss or damage. You do this entirely at your own risk.",
   "@flashWarning": {
     "description": "Install-an-image screen (WHOOP 5): Warning"
   },
@@ -1674,7 +1674,7 @@
   "@welcomeBringMyHistoryFirst": {
     "description": "Button label: idle."
   },
-  "welcomeImportFooterNote": "A sensor export, an OpenStrap backup or a vendor CSV. Imported days count toward your usual range, and never overwrite a day the band measured.",
+  "welcomeImportFooterNote": "A sensor export, a HARDING Band backup or a vendor CSV. Imported days count toward your usual range, and never overwrite a day the band measured.",
   "@welcomeImportFooterNote": {
     "description": "Footer note about imports."
   },
@@ -4746,7 +4746,7 @@
   "@coachNotSetUp": {
     "description": "Coach screen: subtitle shown wherever the coach has no model configured yet"
   },
-  "coachNotSetUpBody": "Pick a model on your own computer, or any OpenAI-compatible provider with your own key. Nothing goes through OpenStrap either way.",
+  "coachNotSetUpBody": "Pick a model on your own computer, or any OpenAI-compatible provider with your own key. Nothing goes through HARDING Band either way.",
   "@coachNotSetUpBody": {
     "description": "Coach screen: body text explaining how to set up the coach and its privacy stance"
   },
@@ -9783,7 +9783,7 @@
       }
     }
   },
-  "workoutDeleteBodyOwn": "It disappears from OpenStrap. A copy in {storeName}, if there is one, stays where it is.",
+  "workoutDeleteBodyOwn": "It disappears from HARDING Band. A copy in {storeName}, if there is one, stays where it is.",
   "@workoutDeleteBodyOwn": {
     "description": "Confirm-delete dialog body for a session this band recorded",
     "placeholders": {
@@ -9792,7 +9792,7 @@
       }
     }
   },
-  "workoutDeleteBodyImported": "It disappears from OpenStrap and will not be re-imported. The original in {storeName} stays.",
+  "workoutDeleteBodyImported": "It disappears from HARDING Band and will not be re-imported. The original in {storeName} stays.",
   "@workoutDeleteBodyImported": {
     "description": "Confirm-delete dialog body for an imported session",
     "placeholders": {
@@ -11001,7 +11001,7 @@
   },
   "activityExercisePickerCommonFilter": "Common",
   "@activityExercisePickerCommonFilter": {
-    "description": "Filter showing Edge's short common-exercise list."
+    "description": "Filter showing the app's short common-exercise list."
   },
   "activityExercisePickerAllFilter": "All",
   "@activityExercisePickerAllFilter": {
@@ -11757,7 +11757,7 @@
   "@settingsResetPairingKeyWarning": {
     "description": "Warning after reset when a sensor pairing key could not be removed from secure storage"
   },
-  "settingsResetChatGptWarning": "App data deleted, but the ChatGPT sign-in may not be fully removed. Disconnect OpenStrap in ChatGPT settings to make sure its access is revoked. Deleting everything again only retries removing what is left on this device.",
+  "settingsResetChatGptWarning": "App data deleted, but the ChatGPT sign-in may not be fully removed. Disconnect HARDING Band in ChatGPT settings to make sure its access is revoked. Deleting everything again only retries removing what is left on this device.",
   "@settingsResetChatGptWarning": {
     "description": "Warning after reset when the ChatGPT sign-in may not have been revoked or removed from secure storage"
   },
@@ -12337,7 +12337,7 @@
   "@settingsBuzzFromShortcutSectionTitle": {
     "description": "Section heading explaining the inbound band-buzz endpoint"
   },
-  "settingsBuzzFromShortcutAndroidBody": "Send wtf.openstrap.openstrap_edge.BUZZ_STRAP with this token as the “token” string extra. Without it any app on the phone could buzz your band.",
+  "settingsBuzzFromShortcutAndroidBody": "Send pt.harding.band.BUZZ_STRAP with this token as the “token” string extra. Without it any app on the phone could buzz your band.",
   "@settingsBuzzFromShortcutAndroidBody": {
     "description": "Section body on Android explaining how to trigger the band buzz"
   },
@@ -12361,11 +12361,11 @@
   "@bandStatusBluetoothDeniedTitle": {
     "description": "BandStatus card title: app-level Bluetooth permission denied"
   },
-  "bandStatusBluetoothDeniedReason": "The phone isn’t letting OpenStrap use Bluetooth, so nothing can connect. Allow Bluetooth for OpenStrap in your phone’s settings.",
+  "bandStatusBluetoothDeniedReason": "The phone isn’t letting HARDING Band use Bluetooth, so nothing can connect. Allow Bluetooth for HARDING Band in your phone’s settings.",
   "@bandStatusBluetoothDeniedReason": {
     "description": "BandStatus card body: app-level Bluetooth permission denied"
   },
-  "bandStatusBluetoothDeniedFix": "Open Settings → OpenStrap and allow Bluetooth",
+  "bandStatusBluetoothDeniedFix": "Open Settings → HARDING Band and allow Bluetooth",
   "@bandStatusBluetoothDeniedFix": {
     "description": "BandStatus fix action: app-level Bluetooth permission denied"
   },
@@ -12642,7 +12642,7 @@
   "@nudgeDiscordTitle": {
     "description": "Title of the Home nudge card inviting the user to join Discord."
   },
-  "nudgeDiscordBody": "Other OpenStrap users hang out on Discord — bugs, ideas, and people running the same band as you.",
+  "nudgeDiscordBody": "Other HARDING Band users hang out on Discord — bugs, ideas, and people running the same band as you.",
   "@nudgeDiscordBody": {
     "description": "Body of the Home nudge card inviting the user to join Discord."
   },
@@ -12650,7 +12650,7 @@
   "@nudgeDiscordCta": {
     "description": "CTA button label of the Home nudge card inviting the user to join Discord."
   },
-  "nudgeDonateTitle": "Enjoying OpenStrap?",
+  "nudgeDonateTitle": "Enjoying HARDING Band?",
   "@nudgeDonateTitle": {
     "description": "Title of the Home nudge card inviting the user to sponsor the project."
   },
@@ -13759,7 +13759,7 @@
   "@supplementALowConfidenceOverlayA9fbabe": {
     "description": "Presentation-only text for existing interface, exports or notifications."
   },
-  "supplementAMinuteOfNotesTonightac2cf6": "A minute of notes tonight teaches OpenStrap what actually moves your recovery.",
+  "supplementAMinuteOfNotesTonightac2cf6": "A minute of notes tonight teaches HARDING Band what actually moves your recovery.",
   "@supplementAMinuteOfNotesTonightac2cf6": {
     "description": "Presentation-only text for existing interface, exports or notifications."
   },
@@ -14623,7 +14623,7 @@
   "@supplementG54fd17": {
     "description": "Presentation-only text for existing interface, exports or notifications."
   },
-  "supplementIOSCanOnlyShowThe2139b2": "iOS shows the pairing sheet only before the app has used Bluetooth. Close OpenStrap completely, then reopen it to see the sheet.",
+  "supplementIOSCanOnlyShowThe2139b2": "iOS shows the pairing sheet only before the app has used Bluetooth. Close HARDING Band completely, then reopen it to see the sheet.",
   "@supplementIOSCanOnlyShowThe2139b2": {
     "description": "Presentation-only text for existing interface, exports or notifications."
   },
@@ -15480,9 +15480,9 @@
   "@devicePickerBlurbMiscale2": {
     "description": "Device picker blurb under this device category."
   },
-  "iosUninstallUnpairsWarning": "On iOS, deleting OpenStrap also unpairs every band and sensor paired here from the phone, so other apps, including the maker's own, lose them too.",
+  "iosUninstallUnpairsWarning": "On iOS, deleting HARDING Band also unpairs every band and sensor paired here from the phone, so other apps, including the maker's own, lose them too.",
   "@iosUninstallUnpairsWarning": {
-    "description": "iOS only: AccessorySetupKit pairings are removed by iOS for all apps when OpenStrap is deleted."
+    "description": "iOS only: AccessorySetupKit pairings are removed by iOS for all apps when HARDING Band is deleted."
   },
   "logFoodEditTitle": "Edit this entry",
   "@logFoodEditTitle": {
@@ -17247,7 +17247,7 @@
   "@bandStatusFirmwareLockedTitle": {
     "description": "BandStatus card title: band firmware 50.43 withholds all data until a WHOOP membership token is on it"
   },
-  "bandStatusFirmwareLockedReason": "This band runs WHOOP firmware 50.43, which can connect and answer the app but send no recordings or live heart rate until a WHOOP-signed membership token is on it. That is one possible reason no data is arriving. OpenStrap cannot issue that token. Everything already saved here is safe.",
+  "bandStatusFirmwareLockedReason": "This band runs WHOOP firmware 50.43, which can connect and answer the app but send no recordings or live heart rate until a WHOOP-signed membership token is on it. That is one possible reason no data is arriving. HARDING Band cannot issue that token. Everything already saved here is safe.",
   "@bandStatusFirmwareLockedReason": {
     "description": "BandStatus card body: band firmware 50.43 withholds all data until a WHOOP membership token is on it"
   },

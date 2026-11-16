@@ -16,9 +16,9 @@
 
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:openstrap_edge/ble/live_cadence.dart'
+import 'package:harding_band/ble/live_cadence.dart'
     show kMinCadenceSpm, kMaxCadenceSpm;
-import 'package:openstrap_edge/compute/step_calibration_fit.dart';
+import 'package:harding_band/compute/step_calibration_fit.dart';
 
 void main() {
   test('calibration gait band equals the session gait band', () {

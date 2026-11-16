@@ -1,4 +1,4 @@
-package wtf.openstrap.openstrap_edge
+package pt.harding.band
 
 import java.time.Duration
 import java.time.Instant

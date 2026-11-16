@@ -3,7 +3,7 @@
 // sits in every later night's baseline and drags the median and SD with it.
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/compute/onehz_pipeline.dart';
+import 'package:harding_band/compute/onehz_pipeline.dart';
 
 void main() {
   Map<String, dynamic> scalars(List<int> temps, List<double> history) {

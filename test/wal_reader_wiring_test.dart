@@ -6,7 +6,7 @@ import 'dart:io';
 
 import 'package:flutter/widgets.dart' show AppLifecycleState;
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/app.dart' show screenReadsForeground;
+import 'package:harding_band/app.dart' show screenReadsForeground;
 
 import 'support/dart_source.dart';
 

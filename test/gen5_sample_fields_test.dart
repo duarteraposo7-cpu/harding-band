@@ -25,8 +25,8 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/models.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/models.dart';
 
 /// The v33 `decoded_onehz` / `decoded_rr` shape — rec_ts-keyed, WITHOUT any of
 /// the band-computed columns. This is what an existing install's (million-row)

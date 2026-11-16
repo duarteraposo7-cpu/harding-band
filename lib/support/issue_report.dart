@@ -28,7 +28,12 @@ import '../telemetry/telemetry_service.dart';
 import 'report_crypto.dart';
 
 /// The report service. One constant; the Worker answers under /v1.
-const String kReportBaseUrl = 'https://reports.openstrap.site';
+/// Empty in the HARDING Band fork: no report server exists, so sending is
+/// disabled and the Settings entry point is hidden (see [kReportingEnabled]).
+const String kReportBaseUrl = '';
+
+/// False while [kReportBaseUrl] is empty.
+const bool kReportingEnabled = kReportBaseUrl != '';
 
 /// Server limits (bytes of the sealed blob). UPLOAD limits only: a local
 /// share has no size cap. 95 MB stays under the 100 MB request body the
@@ -486,6 +491,9 @@ String reportMetaHeader(Map<String, Object?> serverMeta) =>
 /// [ReportSendError] on anything but 201.
 Future<SentReport> sendReport(Map<String, Object?> serverMeta, File blob,
     {http.Client? client}) async {
+  if (!kReportingEnabled) {
+    throw const ReportSendError(0, 'Reporting is disabled in this build');
+  }
   final c = client ?? http.Client();
   try {
     final req = http.StreamedRequest('POST', Uri.parse('$kReportBaseUrl/v1/reports'))
@@ -524,6 +532,9 @@ Future<SentReport> sendReport(Map<String, Object?> serverMeta, File blob,
 
 /// DELETE a report this phone sent. A 404 counts as gone (it expired).
 Future<void> deleteReport(SentReport r, {http.Client? client}) async {
+  if (!kReportingEnabled) {
+    throw const ReportSendError(0, 'Reporting is disabled in this build');
+  }
   final c = client ?? http.Client();
   try {
     final res = await c.delete(Uri.parse('$kReportBaseUrl/v1/reports/${r.id}'),

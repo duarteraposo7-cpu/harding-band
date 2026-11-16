@@ -3,7 +3,7 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:openstrap_edge/l10n/app_localizations.dart';
+import 'package:harding_band/l10n/app_localizations.dart';
 
 void main() {
   final ru = lookupAppLocalizations(const Locale('ru'));

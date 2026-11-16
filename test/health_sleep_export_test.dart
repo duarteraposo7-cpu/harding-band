@@ -4,8 +4,8 @@ import 'dart:io';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:health/health.dart';
-import 'package:openstrap_edge/health/health_export.dart';
-import 'package:openstrap_edge/health/health_sleep_session.dart';
+import 'package:harding_band/health/health_export.dart';
+import 'package:harding_band/health/health_sleep_session.dart';
 
 int _seconds(DateTime value) => value.millisecondsSinceEpoch ~/ 1000;
 

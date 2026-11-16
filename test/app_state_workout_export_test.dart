@@ -6,10 +6,10 @@
 // through the Health plugin's channel.
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/health/health_export.dart'
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/health/health_export.dart'
     show HealthExporter, healthActivityForType, kHealthSyncPref;
-import 'package:openstrap_edge/state/app_state.dart';
+import 'package:harding_band/state/app_state.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'support/app_state_workout_harness.dart';

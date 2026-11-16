@@ -3,11 +3,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:openstrap_edge/l10n/app_localizations.dart';
-import 'package:openstrap_edge/ui2/activity/catalogue.dart';
-import 'package:openstrap_edge/ui2/activity/share.dart'
+import 'package:harding_band/l10n/app_localizations.dart';
+import 'package:harding_band/ui2/activity/catalogue.dart';
+import 'package:harding_band/ui2/activity/share.dart'
     show localizedExportCaption;
-import 'package:openstrap_edge/ui2/activity/summary.dart';
+import 'package:harding_band/ui2/activity/summary.dart';
 
 void main() {
   testWidgets('both elevation units are translated', (tester) async {

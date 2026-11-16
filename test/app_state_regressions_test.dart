@@ -17,21 +17,21 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
 import 'package:openstrap_analytics/onehz.dart' as ana;
-import 'package:openstrap_edge/ble/ble_engine.dart';
-import 'package:openstrap_edge/compute/hr_max.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/local_repository.dart';
-import 'package:openstrap_edge/health/health_export.dart';
-import 'package:openstrap_edge/notify/notification_center.dart';
-import 'package:openstrap_edge/notify/notification_event.dart';
-import 'package:openstrap_edge/notify/notification_service.dart';
-import 'package:openstrap_edge/state/alarm_schedule.dart';
-import 'package:openstrap_edge/state/app_state.dart';
-import 'package:openstrap_edge/state/prefs.dart';
-import 'package:openstrap_edge/ui2/activity/catalogue.dart';
-import 'package:openstrap_edge/ui2/activity/live.dart';
-import 'package:openstrap_edge/sync/paired_device.dart';
-import 'package:openstrap_edge/sync/sync_policy.dart' show ClockRef;
+import 'package:harding_band/ble/ble_engine.dart';
+import 'package:harding_band/compute/hr_max.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/local_repository.dart';
+import 'package:harding_band/health/health_export.dart';
+import 'package:harding_band/notify/notification_center.dart';
+import 'package:harding_band/notify/notification_event.dart';
+import 'package:harding_band/notify/notification_service.dart';
+import 'package:harding_band/state/alarm_schedule.dart';
+import 'package:harding_band/state/app_state.dart';
+import 'package:harding_band/state/prefs.dart';
+import 'package:harding_band/ui2/activity/catalogue.dart';
+import 'package:harding_band/ui2/activity/live.dart';
+import 'package:harding_band/sync/paired_device.dart';
+import 'package:harding_band/sync/sync_policy.dart' show ClockRef;
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();

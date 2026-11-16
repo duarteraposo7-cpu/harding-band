@@ -9,11 +9,11 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:path/path.dart' as p;
 import 'package:path_provider_platform_interface/path_provider_platform_interface.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
-import 'package:openstrap_edge/state/triathlon_reconciler.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/day_label.dart';
-import 'package:openstrap_edge/data/triathlon_plan.dart';
-import 'package:openstrap_edge/data/triathlon_store.dart';
+import 'package:harding_band/state/triathlon_reconciler.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/day_label.dart';
+import 'package:harding_band/data/triathlon_plan.dart';
+import 'package:harding_band/data/triathlon_store.dart';
 
 /// path_provider has no plugin in a unit test; exportDaysDb needs a temp dir.
 class _FakePathProvider extends PathProviderPlatform {

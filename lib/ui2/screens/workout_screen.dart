@@ -757,10 +757,10 @@ class _WorkoutScreenState extends State<WorkoutScreen> with RevisionReload {
           'Delete this ${w.activity.displayName(context).toLowerCase()}?',
       body: w.importedFrom == null
           ? (loc?.workoutDeleteBodyOwn(storeName) ??
-              'It disappears from OpenStrap. A copy in $storeName, if there is '
+              'It disappears from HARDING Band. A copy in $storeName, if there is '
                   'one, stays where it is.')
           : (loc?.workoutDeleteBodyImported(storeName) ??
-              'It disappears from OpenStrap and will not be re-imported. '
+              'It disappears from HARDING Band and will not be re-imported. '
                   'The original in $storeName stays.'),
     );
     if (!ok || !mounted) return;

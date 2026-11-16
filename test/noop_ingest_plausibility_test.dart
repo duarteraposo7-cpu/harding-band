@@ -2,10 +2,10 @@
 // same night scores differently depending on where it came from.
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/compute/derivation_engine.dart';
-import 'package:openstrap_edge/compute/profile.dart';
-import 'package:openstrap_edge/compute/substrate.dart';
-import 'package:openstrap_edge/import/noop_ingest.dart';
+import 'package:harding_band/compute/derivation_engine.dart';
+import 'package:harding_band/compute/profile.dart';
+import 'package:harding_band/compute/substrate.dart';
+import 'package:harding_band/import/noop_ingest.dart';
 
 /// Captures the Substrate the ingest hands over instead of deriving it.
 class _CapturingEngine extends DerivationEngine {

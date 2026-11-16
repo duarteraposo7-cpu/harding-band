@@ -1,4 +1,4 @@
-package wtf.openstrap.openstrap_edge
+package pt.harding.band
 
 import android.content.Context
 import android.util.Log
@@ -158,7 +158,7 @@ object HealthConnectSleepWriter {
             startZoneOffset = zoneRules.getOffset(start),
             endTime = end,
             endZoneOffset = zoneRules.getOffset(end),
-            title = "OpenStrap sleep",
+            title = "HARDING Band sleep",
             stages = stages,
             metadata = Metadata(
                 recordingMethod = Metadata.RECORDING_METHOD_AUTOMATICALLY_RECORDED,

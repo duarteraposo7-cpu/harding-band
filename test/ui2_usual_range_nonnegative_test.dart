@@ -4,8 +4,8 @@
 // printed through axisHm as a positive duration: "Usual range 47m–25m".
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ui2/charts.dart';
-import 'package:openstrap_edge/ui2/trend.dart';
+import 'package:harding_band/ui2/charts.dart';
+import 'package:harding_band/ui2/trend.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();

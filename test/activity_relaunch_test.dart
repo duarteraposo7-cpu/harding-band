@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:openstrap_edge/platform/activity_relaunch.dart';
+import 'package:harding_band/platform/activity_relaunch.dart';
 
 void main() {
   final navKey = GlobalKey<NavigatorState>();

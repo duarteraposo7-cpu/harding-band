@@ -4,10 +4,10 @@
 import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/compute/derivation_engine.dart';
-import 'package:openstrap_edge/compute/profile.dart';
-import 'package:openstrap_edge/import/noop_ingest.dart';
-import 'package:openstrap_edge/sync/reset_gate.dart';
+import 'package:harding_band/compute/derivation_engine.dart';
+import 'package:harding_band/compute/profile.dart';
+import 'package:harding_band/import/noop_ingest.dart';
+import 'package:harding_band/sync/reset_gate.dart';
 
 void main() {
   test('an import started before a reset stops at its next sample', () async {

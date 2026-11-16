@@ -11,11 +11,11 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/io_client.dart';
 import 'package:http/testing.dart';
-import 'package:openstrap_edge/coach/coach_chatgpt.dart';
-import 'package:openstrap_edge/coach/coach_chatgpt_jwks.dart';
-import 'package:openstrap_edge/coach/coach_config.dart';
-import 'package:openstrap_edge/coach/coach_engine.dart';
-import 'package:openstrap_edge/sync/reset_gate.dart';
+import 'package:harding_band/coach/coach_chatgpt.dart';
+import 'package:harding_band/coach/coach_chatgpt_jwks.dart';
+import 'package:harding_band/coach/coach_config.dart';
+import 'package:harding_band/coach/coach_engine.dart';
+import 'package:harding_band/sync/reset_gate.dart';
 import 'package:pointycastle/export.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -222,7 +222,7 @@ void main() {
       });
       final q = first.queryParameters;
       expect(q['client_id'], 'dynamic_agent_client');
-      expect(q['agent_name_hint'], 'OpenStrap Edge');
+      expect(q['agent_name_hint'], 'HARDING Band');
       expect(q['ext_agent_host_id'], startsWith('urn:uuid:'));
       expect(q['scope']!.split(' '), containsAll(['offline_access', 'resource.invoke', kChatGptPlanScope]));
       expect(q['resource'], kChatGptApiBase);

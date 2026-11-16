@@ -10,12 +10,12 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:openstrap_edge/data/day_label.dart';
-import 'package:openstrap_edge/notify/notification_center.dart';
-import 'package:openstrap_edge/notify/notification_event.dart';
-import 'package:openstrap_edge/notify/notification_prefs.dart';
-import 'package:openstrap_edge/notify/tap_router.dart';
-import 'package:openstrap_edge/state/clock_format.dart';
+import 'package:harding_band/data/day_label.dart';
+import 'package:harding_band/notify/notification_center.dart';
+import 'package:harding_band/notify/notification_event.dart';
+import 'package:harding_band/notify/notification_prefs.dart';
+import 'package:harding_band/notify/tap_router.dart';
+import 'package:harding_band/state/clock_format.dart';
 
 NotificationEvent _ev(NotifCategory c, NotifPriority p, String route) =>
     NotificationEvent(

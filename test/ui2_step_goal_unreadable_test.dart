@@ -8,8 +8,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:lucide_icons_flutter/lucide_icons.dart';
-import 'package:openstrap_edge/ui2/screens/screens.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/ui2/screens/screens.dart';
+import 'package:harding_band/ui2/ui2.dart';
 
 Future<void> _pumpSteps(WidgetTester t) async {
   t.view.physicalSize = const Size(390 * 3, 900 * 3);

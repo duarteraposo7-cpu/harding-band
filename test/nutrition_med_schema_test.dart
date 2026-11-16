@@ -9,9 +9,9 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/med_store.dart';
-import 'package:openstrap_edge/data/nutrition_store.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/med_store.dart';
+import 'package:harding_band/data/nutrition_store.dart';
 
 /// Enough of the v34 shape for the ladder to have something real to walk.
 const _v34Ddl = [

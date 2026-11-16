@@ -3,7 +3,7 @@
 // time-sort that builds the Substrate must keep it rather than reshuffle it.
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/import/noop_ingest.dart';
+import 'package:harding_band/import/noop_ingest.dart';
 
 void main() {
   test('beats sharing a second keep their arrival order', () {

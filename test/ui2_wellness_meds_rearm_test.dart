@@ -9,11 +9,11 @@ import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/med_store.dart';
-import 'package:openstrap_edge/state/app_state.dart';
-import 'package:openstrap_edge/ui2/screens/screens.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/med_store.dart';
+import 'package:harding_band/state/app_state.dart';
+import 'package:harding_band/ui2/screens/screens.dart';
+import 'package:harding_band/ui2/ui2.dart';
 
 class _Spy extends AppState {
   _Spy() : super.forTesting();

@@ -4,10 +4,10 @@ library;
 import 'dart:convert';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/adapters/signals.dart';
-import 'package:openstrap_edge/compute/derivation_engine.dart';
-import 'package:openstrap_edge/data/coverage_resolver.dart';
-import 'package:openstrap_edge/data/db.dart';
+import 'package:harding_band/ble/adapters/signals.dart';
+import 'package:harding_band/compute/derivation_engine.dart';
+import 'package:harding_band/data/coverage_resolver.dart';
+import 'package:harding_band/data/db.dart';
 
 import 'support/ed2a_recalc_fixture.dart';
 

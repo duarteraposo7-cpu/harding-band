@@ -2,8 +2,8 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/data/csv_export.dart';
-import 'package:openstrap_edge/import/lab_csv_import.dart';
+import 'package:harding_band/data/csv_export.dart';
+import 'package:harding_band/import/lab_csv_import.dart';
 
 final _today = DateTime(2026, 8, 17);
 

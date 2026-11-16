@@ -6,9 +6,9 @@ import 'dart:io';
 
 import 'package:flutter_blue_plus/flutter_blue_plus.dart' show BluetoothDevice;
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/adapters/_registry.dart' show kBleHrs, kOura;
-import 'package:openstrap_edge/ble/band_identity.dart' show PairOutcome;
-import 'package:openstrap_edge/ui2/pairing/pair_dispatch.dart';
+import 'package:harding_band/ble/adapters/_registry.dart' show kBleHrs, kOura;
+import 'package:harding_band/ble/band_identity.dart' show PairOutcome;
+import 'package:harding_band/ui2/pairing/pair_dispatch.dart';
 
 void main() {
   final device = BluetoothDevice.fromId('AA:BB:CC:DD:EE:01');

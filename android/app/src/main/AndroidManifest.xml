@@ -109,7 +109,7 @@
     <uses-permission android:name="android.permission.health.READ_HEIGHT" />
     <!-- READ only, and there will never be a WRITE counterpart. These come
          from devices CLEARED to take them — a blood-pressure cuff, a CGM, a
-         thermometer — and the whole value is that OpenStrap did not measure
+         thermometer — and the whole value is that HARDING Band did not measure
          them. They are shown with the source app's name attached, they are
          never blended into anything of ours, and nothing derived takes one as
          an input. See lib/health/health_measurement_import.dart. -->
@@ -126,7 +126,7 @@
         android:required="false" />
 
     <application
-        android:label="Edge"
+        android:label="Band"
         android:name=".EdgeApplication"
         android:icon="@mipmap/launcher_icon"
         android:allowBackup="false"
@@ -183,6 +183,13 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <!-- HARDING Band: hardingband://link from HARDING. -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="hardingband" android:host="link"/>
             </intent-filter>
             <!-- Health Connect: permission-rationale entry point (required). -->
             <intent-filter>
@@ -245,7 +252,7 @@
             android:exported="true"
             android:enabled="true">
             <intent-filter>
-                <action android:name="wtf.openstrap.openstrap_edge.BUZZ_STRAP" />
+                <action android:name="pt.harding.band.BUZZ_STRAP" />
             </intent-filter>
         </receiver>
 
@@ -254,7 +261,7 @@
              "Notification access" in system settings. Class lives in the plugin. -->
         <service
             android:name="notification.listener.service.NotificationListener"
-            android:label="OpenStrap notification relay"
+            android:label="HARDING Band notification relay"
             android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
             android:exported="true">
             <intent-filter>

@@ -1,4 +1,4 @@
-package wtf.openstrap.openstrap_edge
+package pt.harding.band
 
 import android.content.Context
 import android.util.Log

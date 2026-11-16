@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/data/med_store.dart';
-import 'package:openstrap_edge/notify/notification_center.dart';
+import 'package:harding_band/data/med_store.dart';
+import 'package:harding_band/notify/notification_center.dart';
 
 void main() {
   test('medSlotInstant resolves correct wall-clock time across spring-forward DST', () {

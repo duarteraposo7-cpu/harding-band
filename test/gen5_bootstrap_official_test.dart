@@ -29,10 +29,10 @@ import 'package:fake_async/fake_async.dart';
 import 'package:flutter_blue_plus/flutter_blue_plus.dart'
     show ErrorPlatform, FlutterBluePlusException;
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/adapters/_registry.dart';
-import 'package:openstrap_edge/ble/ble_engine.dart';
-import 'package:openstrap_edge/ble/ble_state.dart';
-import 'package:openstrap_edge/sync/background_sync.dart';
+import 'package:harding_band/ble/adapters/_registry.dart';
+import 'package:harding_band/ble/ble_engine.dart';
+import 'package:harding_band/ble/ble_state.dart';
+import 'package:harding_band/sync/background_sync.dart';
 import 'package:openstrap_protocol/openstrap_protocol.dart';
 
 int _wallNow() => DateTime.now().millisecondsSinceEpoch ~/ 1000;

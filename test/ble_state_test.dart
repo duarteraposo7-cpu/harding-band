@@ -7,8 +7,8 @@ import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/ble_state.dart';
-import 'package:openstrap_edge/sync/sync_policy.dart' show BondRefusalGiveUp;
+import 'package:harding_band/ble/ble_state.dart';
+import 'package:harding_band/sync/sync_policy.dart' show BondRefusalGiveUp;
 
 void main() {
   group('ReconnectPolicy backoff schedule', () {

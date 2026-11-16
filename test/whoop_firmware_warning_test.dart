@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/l10n/app_localizations.dart';
-import 'package:openstrap_edge/ui2/onboarding/pairing.dart';
-import 'package:openstrap_edge/ui2/pairing/device_picker.dart';
-import 'package:openstrap_edge/ui2/pairing/whoop_firmware_warning.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/l10n/app_localizations.dart';
+import 'package:harding_band/ui2/onboarding/pairing.dart';
+import 'package:harding_band/ui2/pairing/device_picker.dart';
+import 'package:harding_band/ui2/pairing/whoop_firmware_warning.dart';
+import 'package:harding_band/ui2/ui2.dart';
 
 void main() {
   // The warning is the one message that keeps a band usable, so it may not

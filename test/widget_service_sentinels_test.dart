@@ -11,14 +11,14 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
-import 'package:openstrap_edge/compute/derivation_engine.dart'
+import 'package:harding_band/compute/derivation_engine.dart'
     show kAlgoVersion;
-import 'package:openstrap_edge/data/day_label.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/local_repository_impl.dart';
-import 'package:openstrap_edge/models/payloads.dart';
-import 'package:openstrap_edge/ui2/screens/home_screen.dart' show readinessBand;
-import 'package:openstrap_edge/widget/widget_service.dart';
+import 'package:harding_band/data/day_label.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/local_repository_impl.dart';
+import 'package:harding_band/models/payloads.dart';
+import 'package:harding_band/ui2/screens/home_screen.dart' show readinessBand;
+import 'package:harding_band/widget/widget_service.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();

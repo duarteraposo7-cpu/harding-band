@@ -8,14 +8,14 @@ import 'package:openstrap_analytics/onehz.dart'
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:openstrap_edge/state/app_state.dart';
-import 'package:openstrap_edge/state/prefs.dart';
-import 'package:openstrap_edge/ui2/onboarding/profile_setup.dart';
-import 'package:openstrap_edge/ui2/profile/profile.dart';
-import 'package:openstrap_edge/ui2/screens/home_screen.dart'
+import 'package:harding_band/state/app_state.dart';
+import 'package:harding_band/state/prefs.dart';
+import 'package:harding_band/ui2/onboarding/profile_setup.dart';
+import 'package:harding_band/ui2/profile/profile.dart';
+import 'package:harding_band/ui2/screens/home_screen.dart'
     show firstWeekCard;
-import 'package:openstrap_edge/ui2/screens/sleep_detail.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/ui2/screens/sleep_detail.dart';
+import 'package:harding_band/ui2/ui2.dart';
 
 Widget _app(Widget child) => MaterialApp(
       theme: buildTheme(Brightness.light),

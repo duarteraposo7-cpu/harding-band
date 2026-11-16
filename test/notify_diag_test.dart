@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/ble_state.dart';
+import 'package:harding_band/ble/ble_state.dart';
 
 void main() {
   test('rev3 hello firmware reads bytes 96..99', () {

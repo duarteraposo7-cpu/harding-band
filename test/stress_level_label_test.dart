@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:openstrap_edge/l10n/app_localizations.dart';
-import 'package:openstrap_edge/ui2/screens/wellness_screen.dart';
+import 'package:harding_band/l10n/app_localizations.dart';
+import 'package:harding_band/ui2/screens/wellness_screen.dart';
 
 void main() {
   test('stress level tokens map to the locale, not the analytics English', () {

@@ -3,8 +3,8 @@
 // the generator before the thermometer goes quiet.
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/adapters/adapter.dart';
-import 'package:openstrap_edge/ble/adapters/thermometer.dart';
+import 'package:harding_band/ble/adapters/adapter.dart';
+import 'package:harding_band/ble/adapters/thermometer.dart';
 import 'package:openstrap_protocol/openstrap_protocol.dart';
 
 /// 36.52 °C, flags 0x00 (Celsius, no stamp, no site).

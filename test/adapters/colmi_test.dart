@@ -9,11 +9,11 @@
 import 'dart:async';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/adapters/_registry.dart';
-import 'package:openstrap_edge/ble/adapters/adapter.dart';
-import 'package:openstrap_edge/ble/adapters/colmi.dart';
-import 'package:openstrap_edge/ble/adapters/signals.dart';
-import 'package:openstrap_edge/data/observation.dart';
+import 'package:harding_band/ble/adapters/_registry.dart';
+import 'package:harding_band/ble/adapters/adapter.dart';
+import 'package:harding_band/ble/adapters/colmi.dart';
+import 'package:harding_band/ble/adapters/signals.dart';
+import 'package:harding_band/data/observation.dart';
 import 'package:openstrap_protocol/openstrap_protocol.dart';
 
 final DateTime _now = DateTime(2026, 10, 4, 12, 0);

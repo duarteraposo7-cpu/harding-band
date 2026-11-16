@@ -3,7 +3,7 @@
 // printed as "Usual range 97–103%": a share of a whole cannot exceed it.
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ui2/trend.dart';
+import 'package:harding_band/ui2/trend.dart';
 
 void main() {
   // Mostly 97–100 %, a few rougher nights; the last value is "today".

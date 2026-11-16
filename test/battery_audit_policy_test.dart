@@ -8,9 +8,9 @@
 
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:openstrap_edge/ble/ble_state.dart';
-import 'package:openstrap_edge/sync/sync_policy.dart';
-import 'package:openstrap_edge/widget/widget_service.dart';
+import 'package:harding_band/ble/ble_state.dart';
+import 'package:harding_band/sync/sync_policy.dart';
+import 'package:harding_band/widget/widget_service.dart';
 
 DeriveDebouncer _deb() => const DeriveDebouncer();
 

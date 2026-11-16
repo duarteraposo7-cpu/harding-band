@@ -198,7 +198,7 @@ class _OpenStrapAppState extends State<OpenStrapApp> with WidgetsBindingObserver
       child: GuideDimScope(controller: _guideRunner.dim, child: MaterialApp(
       scrollBehavior: const GuideScrollBehavior(),
       navigatorKey: _navigatorKey,
-      title: 'OpenStrap',
+      title: 'HARDING Band',
       debugShowCheckedModeBanner: false,
       // The palette is the design system's, the CHOICE is still the user's.
       theme: buildTheme(Brightness.light),
@@ -404,7 +404,7 @@ class _InitFailed extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('OpenStrap could not start',
+                Text('HARDING Band could not start',
                     style: F.t2.copyWith(color: p.ink)),
                 const SizedBox(height: 8),
                 Text(

@@ -15,9 +15,9 @@ import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:openstrap_analytics/onehz.dart' as ana;
-import 'package:openstrap_edge/compute/findings.dart';
-import 'package:openstrap_edge/data/day_label.dart';
-import 'package:openstrap_edge/ui2/screens/home_screen.dart' show readinessBand;
+import 'package:harding_band/compute/findings.dart';
+import 'package:harding_band/data/day_label.dart';
+import 'package:harding_band/ui2/screens/home_screen.dart' show readinessBand;
 
 void main() {
   test('the illness sentence claims no signal the detector does not read', () {

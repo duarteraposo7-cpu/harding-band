@@ -10,14 +10,14 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:openstrap_edge/compute/derivation_engine.dart';
-import 'package:openstrap_edge/compute/profile.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/day_label.dart';
-import 'package:openstrap_edge/data/local_repository.dart';
-import 'package:openstrap_edge/notify/notification_center.dart';
-import 'package:openstrap_edge/notify/notification_event.dart';
-import 'package:openstrap_edge/state/app_state.dart';
+import 'package:harding_band/compute/derivation_engine.dart';
+import 'package:harding_band/compute/profile.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/day_label.dart';
+import 'package:harding_band/data/local_repository.dart';
+import 'package:harding_band/notify/notification_center.dart';
+import 'package:harding_band/notify/notification_event.dart';
+import 'package:harding_band/state/app_state.dart';
 
 /// Point LocalDb at an empty file called [name] and reset prefs.
 Future<void> deriveDbSetUp(String name) async {

@@ -1,4 +1,4 @@
-package wtf.openstrap.openstrap_edge
+package pt.harding.band
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -39,18 +39,18 @@ object NativeChannels {
     private const val BLE_NATIVE_CHANNEL = "openstrap/ble_native"
     private const val STORAGE_CHANNEL = "openstrap/storage"
     const val TASKER_CHANNEL = "openstrap/tasker"
-    const val ACTION_DOUBLE_TAP = "wtf.openstrap.openstrap_edge.DOUBLE_TAP"
+    const val ACTION_DOUBLE_TAP = "pt.harding.band.DOUBLE_TAP"
     private const val TASKER_TOKEN_KEY = "tasker_auth_token"
 
         /**
          * Outbound automation events broadcast as
-         * `wtf.openstrap.openstrap_edge.<EVENT>` so an automation app can
+         * `pt.harding.band.<EVENT>` so an automation app can
          * filter on the action directly. Runtime-registered receivers (which is
          * what Tasker's "Intent Received" profile installs) still receive
          * implicit broadcasts on Android 8+; the O background restriction
          * applies to manifest-declared receivers.
          */
-        const val EVENT_ACTION_PREFIX = "wtf.openstrap.openstrap_edge."
+        const val EVENT_ACTION_PREFIX = "pt.harding.band."
 
     private var torchOn = false
 
@@ -586,7 +586,7 @@ object NativeChannels {
 
     /** Send a broadcast intent so Tasker (or any automation app) can subscribe
      * to band double-taps. The intent action is
-     * `wtf.openstrap.openstrap_edge.DOUBLE_TAP`; Tasker listens via
+     * `pt.harding.band.DOUBLE_TAP`; Tasker listens via
      * Event → Intent Received.
      */
     private fun sendTaskerBroadcast(ctx: Context) {

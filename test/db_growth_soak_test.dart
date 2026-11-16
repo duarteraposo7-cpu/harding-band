@@ -41,13 +41,13 @@
 import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/compute/derivation_engine.dart';
-import 'package:openstrap_edge/compute/profile.dart';
-import 'package:openstrap_edge/data/day_label.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/local_repository_impl.dart';
-import 'package:openstrap_edge/data/models.dart' show ArchiveRecord;
-import 'package:openstrap_edge/ui2/screens/home_screen.dart' show HomeData;
+import 'package:harding_band/compute/derivation_engine.dart';
+import 'package:harding_band/compute/profile.dart';
+import 'package:harding_band/data/day_label.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/local_repository_impl.dart';
+import 'package:harding_band/data/models.dart' show ArchiveRecord;
+import 'package:harding_band/ui2/screens/home_screen.dart' show HomeData;
 import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 

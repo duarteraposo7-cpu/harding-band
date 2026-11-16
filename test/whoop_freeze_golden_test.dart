@@ -42,14 +42,14 @@ import 'dart:math' as math;
 
 import 'package:crypto/crypto.dart' show sha256;
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/compute/crossday_pipeline.dart';
-import 'package:openstrap_edge/compute/derivation_engine.dart';
-import 'package:openstrap_edge/compute/profile.dart';
-import 'package:openstrap_edge/data/activity_store.dart';
-import 'package:openstrap_edge/models/activity_suggestion.dart';
-import 'package:openstrap_edge/data/series_codec.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/models.dart' show RawRecord, Sample;
+import 'package:harding_band/compute/crossday_pipeline.dart';
+import 'package:harding_band/compute/derivation_engine.dart';
+import 'package:harding_band/compute/profile.dart';
+import 'package:harding_band/data/activity_store.dart';
+import 'package:harding_band/models/activity_suggestion.dart';
+import 'package:harding_band/data/series_codec.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/models.dart' show RawRecord, Sample;
 import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 

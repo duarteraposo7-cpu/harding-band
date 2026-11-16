@@ -18,10 +18,10 @@ import 'dart:io';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
-import 'package:openstrap_edge/compute/derivation_engine.dart';
-import 'package:openstrap_edge/compute/profile.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/import/noop_import.dart';
+import 'package:harding_band/compute/derivation_engine.dart';
+import 'package:harding_band/compute/profile.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/import/noop_import.dart';
 
 /// The CURRENT NOOP header — `band_sleep_state` at 15, event_* shifted to 16/17.
 const _header = 'unix_s,iso_utc,stream,hr_bpm,rr_ms,grav_x,grav_y,grav_z,'

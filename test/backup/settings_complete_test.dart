@@ -15,13 +15,13 @@ import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/ble/ble_engine.dart';
-import 'package:openstrap_edge/state/prefs.dart';
-import 'package:openstrap_edge/state/app_state.dart';
-import 'package:openstrap_edge/ui2/activity/live.dart';
-import 'package:openstrap_edge/ui2/activity/catalogue.dart';
-import 'package:openstrap_edge/state/alarm_schedule.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/ble/ble_engine.dart';
+import 'package:harding_band/state/prefs.dart';
+import 'package:harding_band/state/app_state.dart';
+import 'package:harding_band/ui2/activity/live.dart';
+import 'package:harding_band/ui2/activity/catalogue.dart';
+import 'package:harding_band/state/alarm_schedule.dart';
 import 'package:openstrap_protocol/openstrap_protocol.dart' as proto;
 
 import 'backup_support.dart';

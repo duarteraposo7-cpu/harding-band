@@ -5,8 +5,8 @@ import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/health/health_export.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/health/health_export.dart';
 
 /// A day held behind the legacy steps purge, or behind a delete still running,
 /// stays pending: no attempt is charged and nothing is written beside the

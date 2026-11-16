@@ -1,7 +1,7 @@
 // The archive window the data settings step through.
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/data/substrate_archive.dart';
+import 'package:harding_band/data/substrate_archive.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
 void main() {

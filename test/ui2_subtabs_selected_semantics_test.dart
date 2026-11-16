@@ -5,7 +5,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/ui2/ui2.dart';
 
 Widget _harness(Widget child) => MaterialApp(
       theme: buildTheme(Brightness.light),

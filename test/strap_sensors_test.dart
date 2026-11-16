@@ -5,19 +5,19 @@
 // itself.
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/adapters/_registry.dart';
-import 'package:openstrap_edge/ble/adapters/adapter.dart';
-import 'package:openstrap_edge/ble/adapters/host.dart';
-import 'package:openstrap_edge/ble/adapters/signals.dart';
-import 'package:openstrap_edge/compute/derivation_engine.dart';
-import 'package:openstrap_edge/compute/inputs/canonical.dart';
-import 'package:openstrap_edge/compute/inputs/ultrahuman_inputs.dart'
+import 'package:harding_band/ble/adapters/_registry.dart';
+import 'package:harding_band/ble/adapters/adapter.dart';
+import 'package:harding_band/ble/adapters/host.dart';
+import 'package:harding_band/ble/adapters/signals.dart';
+import 'package:harding_band/compute/derivation_engine.dart';
+import 'package:harding_band/compute/inputs/canonical.dart';
+import 'package:harding_band/compute/inputs/ultrahuman_inputs.dart'
     show kUltrahumanFamily;
-import 'package:openstrap_edge/compute/profile.dart';
-import 'package:openstrap_edge/compute/substrate.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/local_repository_impl.dart';
-import 'package:openstrap_edge/ui2/profile/wearable_numbers.dart'
+import 'package:harding_band/compute/profile.dart';
+import 'package:harding_band/compute/substrate.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/local_repository_impl.dart';
+import 'package:harding_band/ui2/profile/wearable_numbers.dart'
     show WearableDisplay;
 import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';

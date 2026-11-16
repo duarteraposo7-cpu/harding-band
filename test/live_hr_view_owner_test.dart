@@ -12,11 +12,11 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:openstrap_edge/ble/ble_engine.dart';
-import 'package:openstrap_edge/state/app_state.dart';
-import 'package:openstrap_edge/ui2/profile/devices.dart';
-import 'package:openstrap_edge/ui2/screens/metric_detail.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/ble/ble_engine.dart';
+import 'package:harding_band/state/app_state.dart';
+import 'package:harding_band/ui2/profile/devices.dart';
+import 'package:harding_band/ui2/screens/metric_detail.dart';
+import 'package:harding_band/ui2/ui2.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();

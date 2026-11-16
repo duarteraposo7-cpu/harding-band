@@ -9,16 +9,16 @@ import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/day_label.dart';
-import 'package:openstrap_edge/data/nutrition_store.dart';
-import 'package:openstrap_edge/state/app_state.dart';
-import 'package:openstrap_edge/state/clock_format.dart';
-import 'package:openstrap_edge/ui2/screens/journal_compose.dart'
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/day_label.dart';
+import 'package:harding_band/data/nutrition_store.dart';
+import 'package:harding_band/state/app_state.dart';
+import 'package:harding_band/state/clock_format.dart';
+import 'package:harding_band/ui2/screens/journal_compose.dart'
     show OsTextField;
-import 'package:openstrap_edge/ui2/screens/log_food.dart';
-import 'package:openstrap_edge/ui2/screens/nutrition_screen.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/ui2/screens/log_food.dart';
+import 'package:harding_band/ui2/screens/nutrition_screen.dart';
+import 'package:harding_band/ui2/ui2.dart';
 
 FoodEntry _e(String id, String label,
         {String? date, double? kcal, double? protein, int? at}) =>

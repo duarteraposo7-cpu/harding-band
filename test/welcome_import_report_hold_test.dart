@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:openstrap_edge/app.dart' show resolveRoute;
-import 'package:openstrap_edge/state/app_state.dart';
-import 'package:openstrap_edge/ui2/onboarding/welcome.dart';
+import 'package:harding_band/app.dart' show resolveRoute;
+import 'package:harding_band/state/app_state.dart';
+import 'package:harding_band/ui2/onboarding/welcome.dart';
 
 // The gate's welcome/pairing switch, on the real AppState.route and
 // resolveRoute. Finishing onboarding swaps WelcomeView out in the same frame,

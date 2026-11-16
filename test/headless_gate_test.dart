@@ -7,9 +7,9 @@
 import 'dart:async';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/sync/band_ownership.dart';
-import 'package:openstrap_edge/sync/headless_boot.dart';
-import 'package:openstrap_edge/sync/headless_gate.dart';
+import 'package:harding_band/sync/band_ownership.dart';
+import 'package:harding_band/sync/headless_boot.dart';
+import 'package:harding_band/sync/headless_gate.dart';
 
 void main() {
   setUp(() {

@@ -9,12 +9,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/semantics.dart' show SemanticsNode;
 import 'package:flutter_test/flutter_test.dart';
 import 'package:lucide_icons_flutter/lucide_icons.dart';
-import 'package:openstrap_edge/ble/adapters/_registry.dart';
-import 'package:openstrap_edge/ble/slot_comparison.dart';
-import 'package:openstrap_edge/ui2/pairing/category_filter_pills.dart';
-import 'package:openstrap_edge/ui2/ui2.dart' show S;
-import 'package:openstrap_edge/ui2/pairing/pair_text.dart';
-import 'package:openstrap_edge/ui2/pairing/slot_comparison_view.dart';
+import 'package:harding_band/ble/adapters/_registry.dart';
+import 'package:harding_band/ble/slot_comparison.dart';
+import 'package:harding_band/ui2/pairing/category_filter_pills.dart';
+import 'package:harding_band/ui2/ui2.dart' show S;
+import 'package:harding_band/ui2/pairing/pair_text.dart';
+import 'package:harding_band/ui2/pairing/slot_comparison_view.dart';
 
 import 'support/pair_ui_support.dart';
 

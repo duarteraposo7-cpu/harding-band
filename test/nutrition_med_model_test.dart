@@ -2,9 +2,9 @@
 // database — every one of them is a pure function on purpose.
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/data/day_label.dart';
-import 'package:openstrap_edge/data/med_store.dart';
-import 'package:openstrap_edge/data/nutrition_store.dart';
+import 'package:harding_band/data/day_label.dart';
+import 'package:harding_band/data/med_store.dart';
+import 'package:harding_band/data/nutrition_store.dart';
 
 FoodEntry _entry({
   required String date,

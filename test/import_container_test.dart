@@ -14,7 +14,7 @@ import 'dart:typed_data';
 
 import 'package:archive/archive.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/import/import_container.dart';
+import 'package:harding_band/import/import_container.dart';
 
 List<int> _zipOf(Map<String, String> members) {
   final a = Archive();

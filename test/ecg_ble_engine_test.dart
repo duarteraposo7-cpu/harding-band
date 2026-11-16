@@ -10,10 +10,10 @@ import 'dart:typed_data';
 
 import 'package:fake_async/fake_async.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/adapters/_registry.dart';
-import 'package:openstrap_edge/ble/ble_engine.dart';
-import 'package:openstrap_edge/ble/ble_state.dart';
-import 'package:openstrap_edge/data/models.dart';
+import 'package:harding_band/ble/adapters/_registry.dart';
+import 'package:harding_band/ble/ble_engine.dart';
+import 'package:harding_band/ble/ble_state.dart';
+import 'package:harding_band/data/models.dart';
 import 'package:openstrap_protocol/openstrap_protocol.dart';
 
 Uint8List _helloBody({int revision = 1, int optical = 0}) {

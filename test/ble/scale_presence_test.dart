@@ -3,7 +3,7 @@
 import 'dart:async';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/scale_presence.dart';
+import 'package:harding_band/ble/scale_presence.dart';
 
 const _ms = Duration(milliseconds: 10);
 

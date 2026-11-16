@@ -21,12 +21,12 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 import 'package:openstrap_protocol/openstrap_protocol.dart' as proto;
-import 'package:openstrap_edge/ble/adapters/signals.dart';
-import 'package:openstrap_edge/compute/derivation_engine.dart';
-import 'package:openstrap_edge/compute/derive_prepare.dart' show napBoundaryBufferSec;
-import 'package:openstrap_edge/compute/profile.dart';
-import 'package:openstrap_edge/data/coverage_resolver.dart';
-import 'package:openstrap_edge/data/db.dart';
+import 'package:harding_band/ble/adapters/signals.dart';
+import 'package:harding_band/compute/derivation_engine.dart';
+import 'package:harding_band/compute/derive_prepare.dart' show napBoundaryBufferSec;
+import 'package:harding_band/compute/profile.dart';
+import 'package:harding_band/data/coverage_resolver.dart';
+import 'package:harding_band/data/db.dart';
 
 const _primary = LocalDb.kPrimaryDeviceId; // ''
 const _ring = 'ring-TEST-0001';

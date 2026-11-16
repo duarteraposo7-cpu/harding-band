@@ -26,18 +26,18 @@
 import 'dart:async';
 
 import 'package:flutter_test/flutter_test.dart' show TestFailure;
-import 'package:openstrap_edge/ble/ble_engine.dart';
-import 'package:openstrap_edge/ble/ios_ble_restore.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/models.dart';
-import 'package:openstrap_edge/state/app_state.dart';
-import 'package:openstrap_edge/sync/band_ownership.dart';
-import 'package:openstrap_edge/sync/paired_device.dart';
-import 'package:openstrap_edge/sync/reset_gate.dart';
+import 'package:harding_band/ble/ble_engine.dart';
+import 'package:harding_band/ble/ios_ble_restore.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/models.dart';
+import 'package:harding_band/state/app_state.dart';
+import 'package:harding_band/sync/band_ownership.dart';
+import 'package:harding_band/sync/paired_device.dart';
+import 'package:harding_band/sync/reset_gate.dart';
 
 import 'app_state_derive_harness.dart' show deriveHook, until;
 
-export 'package:openstrap_edge/ble/ble_engine.dart' show SyncReport;
+export 'package:harding_band/ble/ble_engine.dart' show SyncReport;
 export 'app_state_derive_harness.dart' show deriveDbSetUp, deriveDbTearDown, until;
 
 /// A real wait for fire-and-forget work to land.

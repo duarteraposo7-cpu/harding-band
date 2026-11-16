@@ -10,9 +10,9 @@
 // must sanitize to null rather than steer the route.
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/step_calibration.dart';
-import 'package:openstrap_edge/sync/paired_device.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/step_calibration.dart';
+import 'package:harding_band/sync/paired_device.dart';
 import 'package:path/path.dart' as p;
 import 'package:shared_preferences/shared_preferences.dart';
 // ignore: depend_on_referenced_packages

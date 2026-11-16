@@ -24,7 +24,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:path/path.dart' as p;
 import 'package:path_provider_platform_interface/path_provider_platform_interface.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
-import 'package:openstrap_edge/data/db.dart';
+import 'package:harding_band/data/db.dart';
 
 /// The page size used by both paged readers in db.dart. The tests deliberately
 /// straddle it rather than assuming any particular value is "big enough".

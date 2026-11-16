@@ -3,7 +3,7 @@
 // three at once ~35 s after the writes. The hex below is verbatim from that
 // logcat; the confirmation must key on the epoch in the body, not the stamp.
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/ble_state.dart';
+import 'package:harding_band/ble/ble_state.dart';
 
 void main() {
   echoTests();

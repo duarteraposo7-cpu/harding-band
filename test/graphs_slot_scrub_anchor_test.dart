@@ -3,8 +3,8 @@
 // must keep labelling its data with the days the data is from.
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ui2/screens/slot_scrub.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/ui2/screens/slot_scrub.dart';
+import 'package:harding_band/ui2/ui2.dart';
 
 import 'support/scrub_surface_laws.dart';
 

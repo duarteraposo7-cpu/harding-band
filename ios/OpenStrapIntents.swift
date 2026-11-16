@@ -18,7 +18,7 @@ enum OpenStrapShared {
       // the build-configured default (ios/Config/Signing.defaults.xcconfig).
       // Three different fallbacks for one group meant that if Info.plist ever
       // went missing, Siri and the widget would read different suites.
-      ?? "group.com.example.openstrap"
+      ?? "group.pt.harding.band"
   }
 
   static func defaults() -> UserDefaults? { UserDefaults(suiteName: appGroup) }
@@ -59,7 +59,7 @@ enum OpenStrapShared {
     if m == 0 { return h == 1 ? "1 hour" : "\(h) hours" }
     return "\(h) \(h == 1 ? "hour" : "hours") \(m) minutes"
   }
-  static var noData: String { "I don't have today's numbers yet. Open OpenStrap and sync your band." }
+  static var noData: String { "I don't have today's numbers yet. Open HARDING Band and sync your band." }
 
   /// What to say when the phone has today's snapshot but is holding one number
   /// back, or nil when the number is simply missing and [noData] is right.
@@ -113,7 +113,7 @@ enum OpenStrapShared {
       return v
     }
     var out: [String: Any] = [
-      "source": "OpenStrap",
+      "source": "HARDING Band",
       "has_data": fresh,
       "readiness": int("readiness"),
       "hrv_ms": int("hrv"),
@@ -154,7 +154,7 @@ enum OpenStrapShared {
 @available(iOS 16.0, *)
 struct RecoveryIntent: AppIntent {
   static var title: LocalizedStringResource = "Check Readiness"
-  static var description = IntentDescription("Ask OpenStrap for today's readiness.")
+  static var description = IntentDescription("Ask HARDING Band for today's readiness.")
   static var openAppWhenRun = false
 
   func perform() async throws -> some IntentResult & ProvidesDialog {
@@ -174,7 +174,7 @@ struct RecoveryIntent: AppIntent {
 @available(iOS 16.0, *)
 struct StrainIntent: AppIntent {
   static var title: LocalizedStringResource = "Check Strain"
-  static var description = IntentDescription("Ask OpenStrap for today's strain.")
+  static var description = IntentDescription("Ask HARDING Band for today's strain.")
   static var openAppWhenRun = false
 
   func perform() async throws -> some IntentResult & ProvidesDialog {
@@ -190,7 +190,7 @@ struct StrainIntent: AppIntent {
 @available(iOS 16.0, *)
 struct SleepIntent: AppIntent {
   static var title: LocalizedStringResource = "Check Sleep"
-  static var description = IntentDescription("Ask OpenStrap how you slept.")
+  static var description = IntentDescription("Ask HARDING Band how you slept.")
   static var openAppWhenRun = false
 
   func perform() async throws -> some IntentResult & ProvidesDialog {
@@ -208,7 +208,7 @@ struct SleepIntent: AppIntent {
 struct GetNumbersIntent: AppIntent {
   static var title: LocalizedStringResource = "Get Today's Numbers"
   static var description = IntentDescription(
-    "Readiness, HRV, resting heart rate, sleep and strain from OpenStrap's latest sync, as JSON for your own Shortcuts. A number that isn't there is null.")
+    "Readiness, HRV, resting heart rate, sleep and strain from HARDING Band's latest sync, as JSON for your own Shortcuts. A number that isn't there is null.")
   static var openAppWhenRun = false
 
   func perform() async throws -> some IntentResult & ReturnsValue<String> {
@@ -222,7 +222,7 @@ struct GetNumbersIntent: AppIntent {
 struct SyncDataIntent: AppIntent {
   static var title: LocalizedStringResource = "Sync Data"
   static var description = IntentDescription(
-    "Sync your paired band into Edge without opening the app. Large backlogs may need more than one run.")
+    "Sync your paired band into HARDING Band without opening the app. Large backlogs may need more than one run.")
   static var openAppWhenRun = false
   static var authenticationPolicy: IntentAuthenticationPolicy = .alwaysAllowed
 
@@ -251,9 +251,9 @@ struct SyncDataIntent: AppIntent {
 
 @available(iOS 16.0, *)
 struct OpenEdgeAndSyncIntent: AppIntent {
-  static var title: LocalizedStringResource = "Open Edge and Sync"
+  static var title: LocalizedStringResource = "Open HARDING Band and Sync"
   static var description = IntentDescription(
-    "Open Edge and sync your paired band. Use this interactive action for catch-up that needs the app in front.")
+    "Open HARDING Band and sync your paired band. Use this interactive action for catch-up that needs the app in front.")
   static var openAppWhenRun = true
 
   @MainActor
@@ -271,7 +271,7 @@ struct OpenEdgeAndSyncIntent: AppIntent {
 struct BuzzBandIntent: AppIntent {
   static var title: LocalizedStringResource = "Buzz Band"
   static var description = IntentDescription(
-    "Buzz your band once over Edge's existing connection. Nothing happens if Edge isn't connected to the band at that moment.")
+    "Buzz your band once over HARDING Band's existing connection. Nothing happens if HARDING Band isn't connected to the band at that moment.")
   static var openAppWhenRun = false
   static var authenticationPolicy: IntentAuthenticationPolicy = .alwaysAllowed
 
@@ -287,7 +287,7 @@ struct BuzzBandIntent: AppIntent {
 struct StartBreathingIntent: AppIntent {
   static var title: LocalizedStringResource = "Start Breathing Session"
   static var description = IntentDescription(
-    "Start a guided resonance-breathing session in OpenStrap.")
+    "Start a guided resonance-breathing session in HARDING Band.")
   static var openAppWhenRun = true
 
   func perform() async throws -> some IntentResult & ProvidesDialog {
@@ -309,7 +309,7 @@ struct StartBreathingIntent: AppIntent {
 struct EnableTomorrowAlarmIntent: AppIntent {
   static var title: LocalizedStringResource = "Enable Tomorrow's Alarm"
   static var description = IntentDescription(
-    "Turn on tomorrow's alarm at whatever time you already set for that weekday in OpenStrap.")
+    "Turn on tomorrow's alarm at whatever time you already set for that weekday in HARDING Band.")
   static var openAppWhenRun = true
 
   func perform() async throws -> some IntentResult & ProvidesDialog {

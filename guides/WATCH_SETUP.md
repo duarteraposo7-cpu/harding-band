@@ -12,12 +12,12 @@ This takes ~10 minutes.
 ## Architecture (already coded)
 
 ```
- Flutter app  ──WidgetService.push()──►  App Group (group.wtf.openstrap)   [phone]
+ Flutter app  ──WidgetService.push()──►  App Group (group.pt.harding.band)   [phone]
         │                                        │
         └── invokeMethod('syncWatch') ───► WatchBridge.swift  (WCSession) ─┐
                                                                             │  WCSession
  Watch App  ◄── WatchStore.swift  ◄─────────────────────────────────────  ┘
-        │  writes group.wtf.openstrap                        [watch]
+        │  writes group.pt.harding.band                        [watch]
         ├── WatchGlanceView (SwiftUI glance)
         └── WidgetCenter.reloadAllTimelines()
                      │
@@ -39,7 +39,7 @@ Files written:
 2. **File ▸ New ▸ Target… ▸ watchOS ▸ App**. Name it `OpenStrapWatch`.
    - Interface: **SwiftUI**, Language: **Swift**.
    - "Watch App for iOS App" → **Companion to Runner** (bundle id becomes
-     `wtf.openstrap.watchkitapp`). Uncheck "Include Notification Scene".
+     `pt.harding.band.watchkitapp`). Uncheck "Include Notification Scene".
 3. Delete the auto-generated `ContentView.swift` / `…App.swift` Xcode made for the
    watch target (we ship our own).
 4. Add our files to the **Watch App** target (drag into the group, tick the
@@ -61,11 +61,11 @@ Files written:
 ## Step 3 — App Groups (the plumbing)
 
 - **Watch App** and **Watch Widget** targets: Signing & Capabilities ▸ **+ App
-  Groups** ▸ add `group.wtf.openstrap`. (This is the *watch-side* group so
+  Groups** ▸ add `group.pt.harding.band`. (This is the *watch-side* group so
   the watch app and its complication share the received snapshot. It is NOT the
   phone's group — devices don't share containers.)
-- **Runner** already has `group.wtf.openstrap` — nothing to change there.
-- Register `group.wtf.openstrap` on your Apple Developer account (Xcode's
+- **Runner** already has `group.pt.harding.band` — nothing to change there.
+- Register `group.pt.harding.band` on your Apple Developer account (Xcode's
   automatic signing will offer to do it).
 
 ## Step 4 — Siri App Intents

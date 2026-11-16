@@ -8,10 +8,10 @@
 import 'dart:async';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/adapters/_registry.dart';
-import 'package:openstrap_edge/ble/adapters/adapter.dart';
-import 'package:openstrap_edge/ble/adapters/oura.dart' show ouraAuthResponse;
-import 'package:openstrap_edge/ble/oura_link.dart';
+import 'package:harding_band/ble/adapters/_registry.dart';
+import 'package:harding_band/ble/adapters/adapter.dart';
+import 'package:harding_band/ble/adapters/oura.dart' show ouraAuthResponse;
+import 'package:harding_band/ble/oura_link.dart';
 
 /// A ring holding [held] (null = factory reset), answering the three requests
 /// the handshake makes the way the protocol documents them.

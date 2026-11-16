@@ -3,8 +3,8 @@
 // fails the epoch must not be saved under the previous owner, where it would
 // read back as the previous band's arm and as nothing for the band that took it.
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/state/alarm_schedule.dart';
-import 'package:openstrap_edge/ui2/pairing/device_picker.dart' show refreshAfterPair;
+import 'package:harding_band/state/alarm_schedule.dart';
+import 'package:harding_band/ui2/pairing/device_picker.dart' show refreshAfterPair;
 import 'package:shared_preferences/shared_preferences.dart';
 // ignore: depend_on_referenced_packages
 import 'package:shared_preferences_platform_interface/shared_preferences_platform_interface.dart';

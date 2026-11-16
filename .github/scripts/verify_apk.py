@@ -23,7 +23,7 @@ VARIANT_ABIS = {
     "x86_64": {"x86_64"},
 }
 PORTABLE_MAX_BYTES = 150_000_000
-APPLICATION_ID = "wtf.openstrap.openstrap_edge"
+APPLICATION_ID = "pt.harding.band"
 
 
 def resolve_aapt2(aapt2):

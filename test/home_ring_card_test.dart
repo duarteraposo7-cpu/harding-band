@@ -42,13 +42,13 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:lucide_icons_flutter/lucide_icons.dart';
 
-import 'package:openstrap_edge/data/local_repository.dart';
-import 'package:openstrap_edge/l10n/app_localizations.dart';
-import 'package:openstrap_edge/models/metric.dart';
-import 'package:openstrap_edge/state/clock_format.dart' show formatClockOf;
-import 'package:openstrap_edge/state/locale_controller.dart';
-import 'package:openstrap_edge/ui2/screens/screens.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/data/local_repository.dart';
+import 'package:harding_band/l10n/app_localizations.dart';
+import 'package:harding_band/models/metric.dart';
+import 'package:harding_band/state/clock_format.dart' show formatClockOf;
+import 'package:harding_band/state/locale_controller.dart';
+import 'package:harding_band/ui2/screens/screens.dart';
+import 'package:harding_band/ui2/ui2.dart';
 
 Metric _m(num v) => Metric(value: v, confidence: .8, tier: MetricTier.high);
 

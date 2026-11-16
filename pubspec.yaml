@@ -1,4 +1,4 @@
-name: openstrap_edge
+name: harding_band
 description: "A local-first health app for your wearables. No subscription, no fees, private by default. Not affiliated with any device maker."
 publish_to: 'none'
 # NOTE: bumping this also requires manually bumping MARKETING_VERSION/
@@ -663,6 +663,7 @@ dependencies:
   package_info_plus: ^8.1.0
   ota_update: ^7.1.0
   url_launcher: ^6.3.0
+  app_links: ^6.4.0
   notification_listener_service: ^1.0.0
   flutter_secure_storage: ^10.3.1
   gpt_markdown: ^1.1.7
@@ -733,7 +734,7 @@ flutter_launcher_icons:
   remove_alpha_ios: true
   # The icon's own plate, so the ring the mask leaves around the artwork is the
   # same colour as the artwork's edge rather than the old cream.
-  adaptive_icon_background: "#020D1C"
+  adaptive_icon_background: "#000000"
   adaptive_icon_foreground: "assets/launcher/icon_adaptive.png"
 
 flutter:

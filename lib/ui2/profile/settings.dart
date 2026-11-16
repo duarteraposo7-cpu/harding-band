@@ -34,6 +34,7 @@ import '../../platform/app_icon.dart';
 import '../../state/app_state.dart';
 import '../../state/clock_format.dart';
 import '../../state/prefs.dart';
+import '../../support/issue_report.dart' show kReportingEnabled;
 import '../../state/units_controller.dart';
 import '../../telemetry/health_uploader.dart';
 import '../../theme/theme_controller.dart';
@@ -43,6 +44,7 @@ import 'band_notifications.dart';
 import 'data.dart';
 import 'gallery.dart';
 import 'gestures.dart';
+import '../../harding/harding_sync.dart';
 import 'profile.dart';
 import 'report_issue.dart';
 import 'wearable_numbers.dart' show WearableDisplay, wearableSettingsGroup;
@@ -556,7 +558,7 @@ Future<void> _confirmReset(BuildContext c, AppState app) async {
     messenger.showSnackBar(SnackBar(
       content: Text(l?.settingsResetChatGptWarning ??
           'App data deleted, but the ChatGPT sign-in may not be fully removed. '
-              'Disconnect OpenStrap in ChatGPT settings to make sure its access is revoked. '
+              'Disconnect HARDING Band in ChatGPT settings to make sure its access is revoked. '
               'Deleting everything again only retries removing what is left on this device.'),
     ));
   }
@@ -881,7 +883,8 @@ class MoreSettingsView extends StatelessWidget {
                           'Nothing is sent until you say so',
                       value: telemetry ? on : off,
                       onTap: onToggleTelemetry),
-                  SetRow(LucideIcons.messageSquareWarning, C.orange,
+                  if (kReportingEnabled)
+                    SetRow(LucideIcons.messageSquareWarning, C.orange,
                       l?.settingsReportIssueRowTitle ?? 'Report an issue',
                       sub: l?.settingsReportIssueRowSub ??
                           'Sends what you choose to the maintainers, encrypted',
@@ -938,6 +941,20 @@ class MoreSettingsView extends StatelessWidget {
                 // How a non-WHOOP wearable's numbers are drawn. Developer
                 // only while every wearable is (rule R6).
                 if (devMode) wearableSettingsGroup(c),
+                // HARDING Band: where the day's numbers go.
+                settingsGroup(c, 'HARDING', [
+                  ValueListenableBuilder<Uri?>(
+                    valueListenable: HardingSync.linkedServer,
+                    builder: (context, server, _) => server == null
+                        ? SetRow(LucideIcons.link, C.n500, 'Not linked',
+                            sub: 'HARDING → Account → Band',
+                            chevron: false)
+                        : SetRow(LucideIcons.link, C.n500, server.host,
+                            value: 'Unlink',
+                            chevron: false,
+                            onTap: () => HardingSync.unlink()),
+                  ),
+                ]),
                 settingsGroup(c, l?.settingsGroupAbout ?? 'About', [
                   if (version.isNotEmpty)
                     SetRow(LucideIcons.info, C.n500,
@@ -954,6 +971,13 @@ class MoreSettingsView extends StatelessWidget {
                       onTap: () => launchUrl(
                           Uri.parse(
                               'https://openstrap.github.io/edge/notice.html'),
+                          mode: LaunchMode.externalApplication)),
+                  // Attribution required by the AGPL-3.0 fork notice.
+                  SetRow(LucideIcons.info, C.n500,
+                      'Based on OpenStrap Edge (AGPL-3.0)',
+                      sub: 'https://github.com/OpenStrap/edge',
+                      onTap: () => launchUrl(
+                          Uri.parse('https://github.com/OpenStrap/edge'),
                           mode: LaunchMode.externalApplication)),
                 ]),
                 if (devMode)
@@ -1978,7 +2002,7 @@ class _AutomationSettingsState extends State<AutomationSettings> {
                           if (android) ...[
                             const SizedBox(height: S.x3),
                             SelectableText(
-                              'wtf.openstrap.openstrap_edge.SYNC_COMPLETE',
+                              'pt.harding.band.SYNC_COMPLETE',
                               style: F.cap.copyWith(color: p.ink),
                             ),
                             const SizedBox(height: S.x1),
@@ -2013,7 +2037,7 @@ class _AutomationSettingsState extends State<AutomationSettings> {
                             android
                                 ? (l?.settingsBuzzFromShortcutAndroidBody ??
                                     'Send '
-                                        'wtf.openstrap.openstrap_edge.BUZZ_STRAP '
+                                        'pt.harding.band.BUZZ_STRAP '
                                         'with this token as the “token” string '
                                         'extra. Without it any app on the phone '
                                         'could buzz your band.')

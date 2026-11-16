@@ -5,15 +5,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
-import 'package:openstrap_edge/compute/nap_edits.dart';
-import 'package:openstrap_edge/data/activity_store.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/day_label.dart';
-import 'package:openstrap_edge/data/local_repository_impl.dart';
-import 'package:openstrap_edge/l10n/app_localizations.dart';
-import 'package:openstrap_edge/models/activity_suggestion.dart';
-import 'package:openstrap_edge/ui2/screens/detected_activities.dart';
-import 'package:openstrap_edge/ui2/theme.dart';
+import 'package:harding_band/compute/nap_edits.dart';
+import 'package:harding_band/data/activity_store.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/day_label.dart';
+import 'package:harding_band/data/local_repository_impl.dart';
+import 'package:harding_band/l10n/app_localizations.dart';
+import 'package:harding_band/models/activity_suggestion.dart';
+import 'package:harding_band/ui2/screens/detected_activities.dart';
+import 'package:harding_band/ui2/theme.dart';
 
 void main() {
   late ActivityStore store;

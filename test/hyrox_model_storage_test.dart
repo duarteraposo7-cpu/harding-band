@@ -9,11 +9,11 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:path/path.dart' as p;
 import 'package:path_provider_platform_interface/path_provider_platform_interface.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
-import 'package:openstrap_edge/state/hyrox_reconciler.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/day_label.dart';
-import 'package:openstrap_edge/data/hyrox_plan.dart';
-import 'package:openstrap_edge/data/hyrox_store.dart';
+import 'package:harding_band/state/hyrox_reconciler.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/day_label.dart';
+import 'package:harding_band/data/hyrox_plan.dart';
+import 'package:harding_band/data/hyrox_store.dart';
 
 // exportDaysDb resolves the temp dir through path_provider, which needs a
 // platform channel — fake it, same pattern as db_paged_import_export_test.

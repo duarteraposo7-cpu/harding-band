@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ui2/profile/devices.dart' show RenameBandDialog;
+import 'package:harding_band/ui2/profile/devices.dart' show RenameBandDialog;
 
 // showDialog completes at pop time, before the exit transition finishes. The
 // rename sheet used to dispose its controller and error notifier right after

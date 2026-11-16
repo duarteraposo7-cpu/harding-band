@@ -19,8 +19,8 @@ import 'dart:io';
 
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/accessory_setup.dart';
-import 'package:openstrap_edge/ble/adapters/_registry.dart';
+import 'package:harding_band/ble/accessory_setup.dart';
+import 'package:harding_band/ble/adapters/_registry.dart';
 
 import '../tool/gen_ios_ask_plist.dart';
 

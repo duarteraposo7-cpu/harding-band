@@ -16,12 +16,12 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
-import 'package:openstrap_edge/compute/derivation_engine.dart';
-import 'package:openstrap_edge/compute/hr_max.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/local_repository_impl.dart';
-import 'package:openstrap_edge/data/models.dart';
-import 'package:openstrap_edge/state/app_state.dart' show LiveWorkoutState;
+import 'package:harding_band/compute/derivation_engine.dart';
+import 'package:harding_band/compute/hr_max.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/local_repository_impl.dart';
+import 'package:harding_band/data/models.dart';
+import 'package:harding_band/state/app_state.dart' show LiveWorkoutState;
 
 RawRecord _raw(int ts, int counter) => RawRecord(
       counter: counter,

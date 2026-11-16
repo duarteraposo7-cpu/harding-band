@@ -2,13 +2,13 @@
 import 'dart:async';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/compute/derivation_engine.dart';
-import 'package:openstrap_edge/compute/profile.dart';
-import 'package:openstrap_edge/compute/substrate.dart';
-import 'package:openstrap_edge/data/day_label.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/import/noop_ingest.dart';
-import 'package:openstrap_edge/sync/reset_gate.dart';
+import 'package:harding_band/compute/derivation_engine.dart';
+import 'package:harding_band/compute/profile.dart';
+import 'package:harding_band/compute/substrate.dart';
+import 'package:harding_band/data/day_label.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/import/noop_ingest.dart';
+import 'package:harding_band/sync/reset_gate.dart';
 
 import 'support/app_state_derive_harness.dart';
 

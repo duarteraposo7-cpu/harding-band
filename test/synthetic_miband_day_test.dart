@@ -11,17 +11,17 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/adapters/miband234.dart';
-import 'package:openstrap_edge/ble/hrs_link.dart';
-import 'package:openstrap_edge/ble/miband_link.dart';
-import 'package:openstrap_edge/compute/derivation_engine.dart';
-import 'package:openstrap_edge/compute/inputs/canonical.dart';
-import 'package:openstrap_edge/compute/inputs/miband_inputs.dart';
-import 'package:openstrap_edge/compute/profile.dart';
-import 'package:openstrap_edge/compute/vendor_sleep.dart' show VendorEpoch;
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/l10n/app_localizations.dart';
-import 'package:openstrap_edge/ui2/profile/wearable_numbers.dart';
+import 'package:harding_band/ble/adapters/miband234.dart';
+import 'package:harding_band/ble/hrs_link.dart';
+import 'package:harding_band/ble/miband_link.dart';
+import 'package:harding_band/compute/derivation_engine.dart';
+import 'package:harding_band/compute/inputs/canonical.dart';
+import 'package:harding_band/compute/inputs/miband_inputs.dart';
+import 'package:harding_band/compute/profile.dart';
+import 'package:harding_band/compute/vendor_sleep.dart' show VendorEpoch;
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/l10n/app_localizations.dart';
+import 'package:harding_band/ui2/profile/wearable_numbers.dart';
 import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 

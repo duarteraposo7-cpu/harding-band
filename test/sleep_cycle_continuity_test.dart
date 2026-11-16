@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/compute/onehz_pipeline.dart';
-import 'package:openstrap_edge/compute/sleep_pipeline_hmm.dart';
-import 'package:openstrap_edge/state/app_state.dart';
+import 'package:harding_band/compute/onehz_pipeline.dart';
+import 'package:harding_band/compute/sleep_pipeline_hmm.dart';
+import 'package:harding_band/state/app_state.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 // ignore: depend_on_referenced_packages
 import 'package:shared_preferences_platform_interface/shared_preferences_platform_interface.dart';

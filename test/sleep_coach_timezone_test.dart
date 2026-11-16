@@ -20,9 +20,9 @@
 //   TZ=Europe/Amsterdam flutter test test/sleep_coach_timezone_test.dart
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/compute/crossday_pipeline.dart';
-import 'package:openstrap_edge/compute/derivation_engine.dart';
-import 'package:openstrap_edge/compute/onehz_pipeline.dart'
+import 'package:harding_band/compute/crossday_pipeline.dart';
+import 'package:harding_band/compute/derivation_engine.dart';
+import 'package:harding_band/compute/onehz_pipeline.dart'
     show kSleepClockAnchorSec, sleepClockOffsetSec;
 
 /// Epoch seconds for wall-clock [h]:[m] on [y]-[mo]-[d] in a zone at

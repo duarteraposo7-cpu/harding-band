@@ -4,7 +4,7 @@
 
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/gps/screen_wake.dart';
+import 'package:harding_band/gps/screen_wake.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();

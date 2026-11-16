@@ -17,15 +17,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:lucide_icons_flutter/lucide_icons.dart';
 import 'package:openstrap_analytics/onehz.dart' as ana;
-import 'package:openstrap_edge/coach/coach_config.dart';
-import 'package:openstrap_edge/compute/derivation_engine.dart';
-import 'package:openstrap_edge/data/day_label.dart';
-import 'package:openstrap_edge/data/local_repository.dart';
-import 'package:openstrap_edge/data/local_repository_impl.dart';
-import 'package:openstrap_edge/models/metric.dart';
-import 'package:openstrap_edge/ui2/profile/profile.dart' show ProfileAvatar;
-import 'package:openstrap_edge/ui2/screens/screens.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/coach/coach_config.dart';
+import 'package:harding_band/compute/derivation_engine.dart';
+import 'package:harding_band/data/day_label.dart';
+import 'package:harding_band/data/local_repository.dart';
+import 'package:harding_band/data/local_repository_impl.dart';
+import 'package:harding_band/models/metric.dart';
+import 'package:harding_band/ui2/profile/profile.dart' show ProfileAvatar;
+import 'package:harding_band/ui2/screens/screens.dart';
+import 'package:harding_band/ui2/ui2.dart';
 import 'package:provider/provider.dart';
 
 /// A [CoachConfig] that just answers the one question Home asks it, without a

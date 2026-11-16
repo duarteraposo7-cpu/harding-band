@@ -14,7 +14,7 @@
 import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/ble_engine.dart';
+import 'package:harding_band/ble/ble_engine.dart';
 import 'package:openstrap_protocol/openstrap_protocol.dart';
 
 String _readRepoFile(String posixPath) {

@@ -3,8 +3,8 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:path/path.dart' as p;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/health/health_export.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/health/health_export.dart';
 
 /// Three finalized days, the oldest of which keeps failing to write. The two
 /// newer days export fine but stay above the cursor while it retries; they

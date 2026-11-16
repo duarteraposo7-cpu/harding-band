@@ -3,11 +3,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:lucide_icons_flutter/lucide_icons.dart';
-import 'package:openstrap_edge/ble/adapters/_registry.dart';
-import 'package:openstrap_edge/ble/slot_comparison.dart';
-import 'package:openstrap_edge/ui2/pairing/device_slot_card.dart';
-import 'package:openstrap_edge/ui2/profile/devices.dart';
-import 'package:openstrap_edge/ui2/profile/wearable_numbers.dart' show DeviceUseSwitch;
+import 'package:harding_band/ble/adapters/_registry.dart';
+import 'package:harding_band/ble/slot_comparison.dart';
+import 'package:harding_band/ui2/pairing/device_slot_card.dart';
+import 'package:harding_band/ui2/profile/devices.dart';
+import 'package:harding_band/ui2/profile/wearable_numbers.dart' show DeviceUseSwitch;
 
 import 'support/pair_ui_support.dart';
 

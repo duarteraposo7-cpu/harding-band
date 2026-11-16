@@ -5,9 +5,9 @@
 // event through the engine, like the other gesture tests.
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/ble_engine.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/gestures/device_action.dart';
+import 'package:harding_band/ble/ble_engine.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/gestures/device_action.dart';
 
 import 'support/app_state_gesture_harness.dart';
 

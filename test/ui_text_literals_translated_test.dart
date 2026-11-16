@@ -13,9 +13,9 @@ import 'dart:io';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:openstrap_edge/l10n/app_localizations.dart';
-import 'package:openstrap_edge/l10n/display_text.dart';
-import 'package:openstrap_edge/l10n/presentation_text.dart';
+import 'package:harding_band/l10n/app_localizations.dart';
+import 'package:harding_band/l10n/display_text.dart';
+import 'package:harding_band/l10n/presentation_text.dart';
 
 final _call = RegExp(
   r"""\b(uiText|localizedText|presentationText)\(\s*[\w.?!]+(?:\([^()]*\))?[\w.?!]*\s*,\s*((?:'(?:[^'\\]|\\.)*'\s*|"(?:[^"\\]|\\.)*"\s*)+)\)""",

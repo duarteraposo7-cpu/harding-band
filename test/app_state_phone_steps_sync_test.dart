@@ -2,11 +2,11 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/day_label.dart';
-import 'package:openstrap_edge/health/phone_pedometer.dart';
-import 'package:openstrap_edge/state/app_state.dart';
-import 'package:openstrap_edge/sync/reset_gate.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/day_label.dart';
+import 'package:harding_band/health/phone_pedometer.dart';
+import 'package:harding_band/state/app_state.dart';
+import 'package:harding_band/sync/reset_gate.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'support/app_state_sync_harness.dart';

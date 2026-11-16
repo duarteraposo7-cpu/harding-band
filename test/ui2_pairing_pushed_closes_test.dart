@@ -8,9 +8,9 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:openstrap_edge/state/app_state.dart';
-import 'package:openstrap_edge/ui2/onboarding/pairing.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/state/app_state.dart';
+import 'package:harding_band/ui2/onboarding/pairing.dart';
+import 'package:harding_band/ui2/ui2.dart';
 
 class _PairsAtOnce extends AppState {
   _PairsAtOnce() : super.forTesting();

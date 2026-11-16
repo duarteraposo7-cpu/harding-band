@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/l10n/app_localizations.dart';
-import 'package:openstrap_edge/ui2/guides/guide.dart';
-import 'package:openstrap_edge/ui2/guides/guide_step_card.dart';
+import 'package:harding_band/l10n/app_localizations.dart';
+import 'package:harding_band/ui2/guides/guide.dart';
+import 'package:harding_band/ui2/guides/guide_step_card.dart';
 
 import '../support/guide_text.dart';
 import '../support/skeleton_fixture.dart';

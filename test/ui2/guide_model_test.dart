@@ -1,7 +1,7 @@
 // Guide model: variant selection by band generation. A guide with no variant
 // for the user's band must SAY so (GuideNoVariant), not render an empty guide.
 import 'package:flutter/widgets.dart'; import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ui2/guides/guide.dart'; import 'package:openstrap_edge/ui2/guides/guide_target.dart';
+import 'package:harding_band/ui2/guides/guide.dart'; import 'package:harding_band/ui2/guides/guide_target.dart';
 import '../support/guide_text.dart';
 GuideStep _step(String id) => GuideStep( id: id, target: GuideTarget.key(ValueKey(id)), anchor: GuideTarget.key(ValueKey('anchor-$id')),
       action: GuideAction.tap, caption: fnText((_) => id), );

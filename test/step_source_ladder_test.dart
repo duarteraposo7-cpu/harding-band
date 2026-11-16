@@ -14,13 +14,13 @@
 // span source covered the day.
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/compute/derivation_engine.dart';
-import 'package:openstrap_edge/compute/profile.dart';
-import 'package:openstrap_edge/compute/substrate.dart';
-import 'package:openstrap_edge/data/live_coverage_policy.dart';
-import 'package:openstrap_edge/data/step_calibration.dart';
-import 'package:openstrap_edge/models/metric.dart';
-import 'package:openstrap_edge/ui2/screens/home_screen.dart' show stepSensorLabel;
+import 'package:harding_band/compute/derivation_engine.dart';
+import 'package:harding_band/compute/profile.dart';
+import 'package:harding_band/compute/substrate.dart';
+import 'package:harding_band/data/live_coverage_policy.dart';
+import 'package:harding_band/data/step_calibration.dart';
+import 'package:harding_band/models/metric.dart';
+import 'package:harding_band/ui2/screens/home_screen.dart' show stepSensorLabel;
 
 const _t0 = 1_786_000_000; // arbitrary local midnight
 

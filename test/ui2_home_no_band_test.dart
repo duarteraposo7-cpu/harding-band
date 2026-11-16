@@ -7,11 +7,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:provider/provider.dart';
 
-import 'package:openstrap_edge/state/app_state.dart';
-import 'package:openstrap_edge/sync/paired_device.dart' show PairedDevice;
-import 'package:openstrap_edge/ui2/profile/devices.dart' show RePair;
-import 'package:openstrap_edge/ui2/screens/screens.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/state/app_state.dart';
+import 'package:harding_band/sync/paired_device.dart' show PairedDevice;
+import 'package:harding_band/ui2/profile/devices.dart' show RePair;
+import 'package:harding_band/ui2/screens/screens.dart';
+import 'package:harding_band/ui2/ui2.dart';
 
 Widget _host(AppState? app) {
   final probe = Builder(

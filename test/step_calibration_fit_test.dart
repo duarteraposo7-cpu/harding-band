@@ -12,7 +12,7 @@
 
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:openstrap_edge/compute/step_calibration_fit.dart';
+import 'package:harding_band/compute/step_calibration_fit.dart';
 
 StepCalibrationRun _gait(
   StepCategory category,

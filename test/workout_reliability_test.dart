@@ -8,10 +8,10 @@
 
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/compute/derive_scheduler.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/gps/screen_wake.dart';
-import 'package:openstrap_edge/state/units_controller.dart';
+import 'package:harding_band/compute/derive_scheduler.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/gps/screen_wake.dart';
+import 'package:harding_band/state/units_controller.dart';
 import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 

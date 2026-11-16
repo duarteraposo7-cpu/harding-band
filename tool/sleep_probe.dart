@@ -9,7 +9,7 @@
 // so we can see whether van Hees fragmentation or the HR-dip trim is what shoves
 // onset to 02:41. Run: dart run tool/sleep_probe.dart [/tmp/r24_0626_hex.txt]
 import 'dart:io';
-import 'package:openstrap_edge/compute/substrate.dart';
+import 'package:harding_band/compute/substrate.dart';
 import 'package:openstrap_analytics/onehz.dart' as ana;
 
 String _t(num ms) {

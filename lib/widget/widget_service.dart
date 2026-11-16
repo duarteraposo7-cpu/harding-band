@@ -1,3 +1,4 @@
+import 'dart:async';
 // Widget bridge — writes a small snapshot of today's metrics into the shared App
 // Group so the iOS WidgetKit extension (and Android widget) can render them with
 // no network. Called whenever the app loads /today or finishes a sync. The widget
@@ -6,6 +7,7 @@
 // The App Group id MUST match the one set in Xcode (Runner + widget targets) and
 // in the Swift suite name. See guides/IOS_INSTALLATION.md.
 
+import '../harding/harding_sync.dart';
 import 'package:flutter/foundation.dart';
 import 'package:home_widget/home_widget.dart';
 import 'package:flutter/services.dart';
@@ -22,7 +24,7 @@ class WidgetService {
   /// Fallback App Group id. iOS builds read the configured value from Info.plist.
   static const String fallbackAppGroupId = String.fromEnvironment(
     'APP_GROUP_IDENTIFIER',
-    defaultValue: 'group.com.example.openstrap',
+    defaultValue: 'group.pt.harding.band',
   );
   static String appGroupId = fallbackAppGroupId;
 
@@ -345,6 +347,20 @@ class WidgetService {
         await HomeWidget.saveWidgetData<double>('ring_${r.key}_frac', r.frac);
       }
       await setI('updated_at', DateTime.now().millisecondsSinceEpoch ~/ 1000);
+      // HARDING Band: the same snapshot to the person's HARDING account.
+      unawaited(HardingSync.send(HardingNumbers(
+        hasData: hasData,
+        readiness: readinessInt,
+        readinessBand: bandLabel,
+        hrv: hrvV,
+        hrvBaseline: hrvBase,
+        restingHr: rhrV,
+        sleepMin: sleepMin,
+        sleepNeedMin: needMin,
+        sleepEfficiency: effMin,
+        strain: strainV,
+        at: DateTime.now(),
+      )));
 
       await _reloadSnapshotWidgets();
       await _syncWatch();

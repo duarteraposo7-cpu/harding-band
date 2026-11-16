@@ -1,8 +1,8 @@
 import 'dart:ui' show Locale;
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/notify/notification_service.dart';
-import 'package:openstrap_edge/state/locale_controller.dart';
+import 'package:harding_band/notify/notification_service.dart';
+import 'package:harding_band/state/locale_controller.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {

@@ -12,7 +12,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:openstrap_protocol/openstrap_protocol.dart' as proto;
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:openstrap_edge/sync/background_sync.dart';
+import 'package:harding_band/sync/background_sync.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();

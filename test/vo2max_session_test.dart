@@ -9,10 +9,10 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/local_repository_impl.dart';
-import 'package:openstrap_edge/data/models.dart';
-import 'package:openstrap_edge/gps/route_models.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/local_repository_impl.dart';
+import 'package:harding_band/data/models.dart';
+import 'package:harding_band/gps/route_models.dart';
 
 RawRecord _raw(int ts, int counter) => RawRecord(
       counter: counter,

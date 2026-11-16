@@ -10,12 +10,12 @@ struct ShortcutSyncFailure: LocalizedError {
     switch code {
     case "bluetoothUnavailable": return "Bluetooth is unavailable."
     case "bandUnreachable": return "The paired band could not be reached."
-    case "permissionDenied": return "Allow Edge to use Bluetooth in Settings."
-    case "notPaired": return "Open Edge and pair your band first."
-    case "setupRequired": return "Finish accessory setup in Edge before syncing."
-    case "timedOut": return "Edge did not finish the sync before its execution deadline."
+    case "permissionDenied": return "Allow HARDING Band to use Bluetooth in Settings."
+    case "notPaired": return "Open HARDING Band and pair your band first."
+    case "setupRequired": return "Finish accessory setup in HARDING Band before syncing."
+    case "timedOut": return "HARDING Band did not finish the sync before its execution deadline."
     case "cancelled": return "Sync was cancelled."
-    default: return "Edge could not complete the sync. Open Edge to check the connection and storage."
+    default: return "HARDING Band could not complete the sync. Open HARDING Band to check the connection and storage."
     }
   }
 }
@@ -40,7 +40,7 @@ struct ShortcutSyncReply {
   var message: String {
     switch status {
     case "complete": return "Band data synchronized."
-    case "partial": return "Sync is incomplete. Saved data is retained; run Sync Data again or open Edge to catch up."
+    case "partial": return "Sync is incomplete. Saved data is retained; run Sync Data again or open HARDING Band to catch up."
     default: return "A sync request is already active; no second sync was started."
     }
   }
@@ -52,9 +52,9 @@ enum ShortcutBuzzReply: String {
   var message: String {
     switch self {
     case .buzzed: return "Band buzzed."
-    case .notConnected: return "Not buzzed: Edge isn't connected to your band right now."
-    case .failed: return "Not buzzed: Edge could not send the buzz."
-    case .timedOut: return "Not buzzed: Edge did not answer in time."
+    case .notConnected: return "Not buzzed: HARDING Band isn't connected to your band right now."
+    case .failed: return "Not buzzed: HARDING Band could not send the buzz."
+    case .timedOut: return "Not buzzed: HARDING Band did not answer in time."
     }
   }
 }

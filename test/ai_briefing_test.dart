@@ -5,13 +5,13 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:openstrap_edge/ai/briefing.dart';
-import 'package:openstrap_edge/ai/briefing_engine.dart';
-import 'package:openstrap_edge/ai/nightly_sweep.dart';
-import 'package:openstrap_edge/coach/coach_config.dart';
-import 'package:openstrap_edge/data/day_label.dart';
-import 'package:openstrap_edge/data/local_repository.dart';
-import 'package:openstrap_edge/state/prefs.dart';
+import 'package:harding_band/ai/briefing.dart';
+import 'package:harding_band/ai/briefing_engine.dart';
+import 'package:harding_band/ai/nightly_sweep.dart';
+import 'package:harding_band/coach/coach_config.dart';
+import 'package:harding_band/data/day_label.dart';
+import 'package:harding_band/data/local_repository.dart';
+import 'package:harding_band/state/prefs.dart';
 
 /// A repository stub returning canned Today/sleep/session shapes.
 class _FakeRepo extends LocalRepository {

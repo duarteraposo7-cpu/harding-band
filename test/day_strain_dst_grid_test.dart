@@ -9,8 +9,8 @@
 
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:openstrap_edge/data/day_label.dart';
-import 'package:openstrap_edge/ui2/activity/day_strain.dart';
+import 'package:harding_band/data/day_label.dart';
+import 'package:harding_band/ui2/activity/day_strain.dart';
 
 DateTime? _firstDayOfLength(int seconds) {
   for (var d = DateTime(2026, 1, 1);

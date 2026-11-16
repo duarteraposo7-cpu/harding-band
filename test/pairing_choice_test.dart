@@ -1,6 +1,6 @@
 // WHY: the scan must never substitute a nearby band for the tapped one.
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/ble_state.dart';
+import 'package:harding_band/ble/ble_state.dart';
 
 void main() {
   test('choice binds both id and generation, with independent wildcards', () {

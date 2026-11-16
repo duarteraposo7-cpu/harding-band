@@ -14,11 +14,11 @@ import 'dart:typed_data';
 
 import 'package:fake_async/fake_async.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/ble_engine.dart';
-import 'package:openstrap_edge/ble/ble_state.dart';
-import 'package:openstrap_edge/state/app_state.dart';
+import 'package:harding_band/ble/ble_engine.dart';
+import 'package:harding_band/ble/ble_state.dart';
+import 'package:harding_band/state/app_state.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:openstrap_edge/state/alarm_schedule.dart'
+import 'package:harding_band/state/alarm_schedule.dart'
     show
         alarmGraceTimerDelay,
         alarmLatchAlertAtMs,
@@ -28,7 +28,7 @@ import 'package:openstrap_edge/state/alarm_schedule.dart'
         AlarmScheduleEntry,
         armNextScheduledOccurrence,
         nextAlarmOccurrence;
-import 'package:openstrap_edge/sync/sync_policy.dart' show ClockRef;
+import 'package:harding_band/sync/sync_policy.dart' show ClockRef;
 import 'package:openstrap_protocol/openstrap_protocol.dart' as proto;
 
 /// A gen5 link with no radio behind it, plus the seq of every command written.

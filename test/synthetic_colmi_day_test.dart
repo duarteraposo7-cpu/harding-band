@@ -9,13 +9,13 @@
 import 'dart:convert';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/colmi_link.dart';
-import 'package:openstrap_edge/compute/derivation_engine.dart';
-import 'package:openstrap_edge/compute/inputs/canonical.dart';
-import 'package:openstrap_edge/compute/inputs/colmi_inputs.dart';
-import 'package:openstrap_edge/compute/profile.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/local_repository_impl.dart';
+import 'package:harding_band/ble/colmi_link.dart';
+import 'package:harding_band/compute/derivation_engine.dart';
+import 'package:harding_band/compute/inputs/canonical.dart';
+import 'package:harding_band/compute/inputs/colmi_inputs.dart';
+import 'package:harding_band/compute/profile.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/local_repository_impl.dart';
 import 'package:openstrap_protocol/openstrap_protocol.dart'
     show colmiBigDataRequest, kColmiBigTemperature;
 import 'package:path/path.dart' as p;

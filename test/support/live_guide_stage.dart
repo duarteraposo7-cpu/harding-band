@@ -13,11 +13,11 @@
 //
 // Not a test file (no _test suffix).
 import 'package:flutter/material.dart'; import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/l10n/app_localizations.dart'; import 'package:openstrap_edge/ui2/guides/guide.dart';
-import 'package:openstrap_edge/ui2/guides/guide_dim.dart'; import 'package:openstrap_edge/ui2/guides/guide_run.dart';
-import 'package:openstrap_edge/ui2/guides/guide_routes.dart'; import 'package:openstrap_edge/ui2/guides/guide_target.dart';
-import 'package:openstrap_edge/ui2/guides/live_guide_overlay.dart'; import 'package:openstrap_edge/ui2/ui2.dart';
-import 'package:openstrap_edge/ui2/skeleton/unit_paint.dart' show GuideScrollBehavior; import 'guide_text.dart';
+import 'package:harding_band/l10n/app_localizations.dart'; import 'package:harding_band/ui2/guides/guide.dart';
+import 'package:harding_band/ui2/guides/guide_dim.dart'; import 'package:harding_band/ui2/guides/guide_run.dart';
+import 'package:harding_band/ui2/guides/guide_routes.dart'; import 'package:harding_band/ui2/guides/guide_target.dart';
+import 'package:harding_band/ui2/guides/live_guide_overlay.dart'; import 'package:harding_band/ui2/ui2.dart';
+import 'package:harding_band/ui2/skeleton/unit_paint.dart' show GuideScrollBehavior; import 'guide_text.dart';
 const stageOpenDetails = ValueKey('stage-open-details'); const stageOtherAction = ValueKey('stage-other-action');
 const stageAskFirst = ValueKey('stage-ask-first'); const stageFinish = ValueKey('stage-finish');
 const stageGoElsewhere = ValueKey('stage-go-elsewhere'); const stageHomeTitle = ValueKey('stage-home-title');

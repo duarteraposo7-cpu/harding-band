@@ -5,23 +5,23 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:openstrap_edge/ble/adapters/_registry.dart';
-import 'package:openstrap_edge/data/journal_fields.dart';
-import 'package:openstrap_edge/ecg/ecg_models.dart';
-import 'package:openstrap_edge/l10n/app_localizations.dart';
-import 'package:openstrap_edge/l10n/app_localizations_en.dart';
-import 'package:openstrap_edge/l10n/app_localizations_ru.dart';
-import 'package:openstrap_edge/l10n/date_text.dart';
-import 'package:openstrap_edge/l10n/display_text.dart';
-import 'package:openstrap_edge/l10n/presentation_text.dart';
-import 'package:openstrap_edge/ui2/activity/catalogue.dart';
-import 'package:openstrap_edge/ui2/pairing/device_picker.dart';
-import 'package:openstrap_edge/ui2/screens/day_timeline.dart';
-import 'package:openstrap_edge/ui2/screens/ecg.dart';
-import 'package:openstrap_edge/ui2/screens/home_screen.dart';
-import 'package:openstrap_edge/ui2/screens/metric_detail.dart';
-import 'package:openstrap_edge/ui2/screens/workout_screen.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/ble/adapters/_registry.dart';
+import 'package:harding_band/data/journal_fields.dart';
+import 'package:harding_band/ecg/ecg_models.dart';
+import 'package:harding_band/l10n/app_localizations.dart';
+import 'package:harding_band/l10n/app_localizations_en.dart';
+import 'package:harding_band/l10n/app_localizations_ru.dart';
+import 'package:harding_band/l10n/date_text.dart';
+import 'package:harding_band/l10n/display_text.dart';
+import 'package:harding_band/l10n/presentation_text.dart';
+import 'package:harding_band/ui2/activity/catalogue.dart';
+import 'package:harding_band/ui2/pairing/device_picker.dart';
+import 'package:harding_band/ui2/screens/day_timeline.dart';
+import 'package:harding_band/ui2/screens/ecg.dart';
+import 'package:harding_band/ui2/screens/home_screen.dart';
+import 'package:harding_band/ui2/screens/metric_detail.dart';
+import 'package:harding_band/ui2/screens/workout_screen.dart';
+import 'package:harding_band/ui2/ui2.dart';
 
 Widget harness(Widget child, {double scale = 1, String locale = 'ru'}) =>
     MaterialApp(

@@ -5,18 +5,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:openstrap_edge/l10n/app_localizations.dart';
-import 'package:openstrap_edge/l10n/app_localizations_ru.dart';
-import 'package:openstrap_edge/l10n/presentation_text.dart';
-import 'package:openstrap_edge/l10n/decimal_text.dart';
-import 'package:openstrap_edge/l10n/display_text.dart';
-import 'package:openstrap_edge/l10n/sweep_text.dart';
-import 'package:openstrap_edge/compute/findings.dart';
-import 'package:openstrap_edge/ui2/screens/findings_log.dart';
-import 'package:openstrap_edge/state/locale_controller.dart';
-import 'package:openstrap_edge/ui2/activity/catalogue.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
-import 'package:openstrap_edge/ui2/screens/home_screen.dart'
+import 'package:harding_band/l10n/app_localizations.dart';
+import 'package:harding_band/l10n/app_localizations_ru.dart';
+import 'package:harding_band/l10n/presentation_text.dart';
+import 'package:harding_band/l10n/decimal_text.dart';
+import 'package:harding_band/l10n/display_text.dart';
+import 'package:harding_band/l10n/sweep_text.dart';
+import 'package:harding_band/compute/findings.dart';
+import 'package:harding_band/ui2/screens/findings_log.dart';
+import 'package:harding_band/state/locale_controller.dart';
+import 'package:harding_band/ui2/activity/catalogue.dart';
+import 'package:harding_band/ui2/ui2.dart';
+import 'package:harding_band/ui2/screens/home_screen.dart'
     show hm, thousands, unitBeside;
 
 // Read message arguments, treating the braces around ICU options as syntax.

@@ -2,10 +2,10 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/coach/coach_config.dart';
-import 'package:openstrap_edge/coach/coach_engine.dart';
-import 'package:openstrap_edge/data/local_repository.dart';
-import 'package:openstrap_edge/sync/reset_gate.dart';
+import 'package:harding_band/coach/coach_config.dart';
+import 'package:harding_band/coach/coach_engine.dart';
+import 'package:harding_band/data/local_repository.dart';
+import 'package:harding_band/sync/reset_gate.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:path_provider_platform_interface/path_provider_platform_interface.dart';
 

@@ -1,3 +1,18 @@
+# HARDING Band
+
+HARDING Band is a modified fork of [OpenStrap Edge](https://github.com/OpenStrap/edge)
+by Duarte Raposo, released under the AGPL-3.0 (see [LICENSE](LICENSE) and
+[NOTICE.md](NOTICE.md)). It is **not** the official OpenStrap app and is not
+affiliated with, endorsed by or supported by OpenStrap or WHOOP.
+
+Based on OpenStrap Edge (AGPL-3.0) — https://github.com/OpenStrap/edge
+
+The text below is the upstream OpenStrap Edge README, kept for credit and
+technical reference. Download links, badges and community links in it belong
+to the upstream project, not to this fork.
+
+---
+
 > [!WARNING]
 > **WHOOP users: do not reconnect to the official WHOOP app.**
 >
@@ -12,16 +27,7 @@
 > affected band. See [firmware compatibility](#whoop-firmware-compatibility)
 > for the evidence and its limits.
 
-<img width="1774" height="887" alt="OpenStrap Edge" src="https://github.com/user-attachments/assets/66653a25-ac97-4f8c-8be1-6c9fceeaf08b" />
-
 A health app for your wearables. No subscription, no fees, private by default.
-
-<a href="https://trendshift.io/repositories/51733?utm_source=repository-badge&amp;utm_medium=badge&amp;utm_campaign=badge-repository-51733" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/repositories/51733" alt="OpenStrap%2Fedge | Trendshift" width="250" height="55"/></a>
-
-[![Download for Android](https://img.shields.io/badge/Android-Download%20APK-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/OpenStrap/edge/releases/latest)
-[![Download on TestFlight](https://img.shields.io/badge/iOS-TestFlight-0D96F6?style=for-the-badge&logo=apple&logoColor=white)](https://testflight.apple.com/join/2BVSwq65)
-
-As featured in [Hackaday](https://hackaday.com/2026/07/15/making-a-locked-down-wearable-work-without-a-subscription/) and [Adafruit](https://blog.adafruit.com/2026/07/15/openstrap-edge-makes-a-whoop-4-0-band-useful-without-a-subscription/).
 
 | <img src="screenshots/today.png" width="160" alt="Today"> | <img src="screenshots/health.png" width="160" alt="Health"> | <img src="screenshots/sleep.png" width="160" alt="Sleep"> | <img src="screenshots/heart-rate.png" width="160" alt="Resting heart rate"> | <img src="screenshots/workout.png" width="160" alt="Workout"> |
 |:--:|:--:|:--:|:--:|:--:|

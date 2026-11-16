@@ -10,12 +10,12 @@ import 'package:sqflite_common/sqflite_logger.dart';
 // ignore: implementation_imports
 import 'package:sqflite_common/src/factory.dart' show SqfliteDatabaseFactory;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
-import 'package:openstrap_edge/ble/ble_engine.dart' show DrainController;
-import 'package:openstrap_edge/compute/derivation_engine.dart' show DerivationEngine, kAlgoVersion;
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/day_label.dart';
-import 'package:openstrap_edge/data/local_repository_impl.dart';
-import 'package:openstrap_edge/data/models.dart';
+import 'package:harding_band/ble/ble_engine.dart' show DrainController;
+import 'package:harding_band/compute/derivation_engine.dart' show DerivationEngine, kAlgoVersion;
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/day_label.dart';
+import 'package:harding_band/data/local_repository_impl.dart';
+import 'package:harding_band/data/models.dart';
 
 const _wait = Duration(seconds: 2);
 const _day = '2026-01-10';

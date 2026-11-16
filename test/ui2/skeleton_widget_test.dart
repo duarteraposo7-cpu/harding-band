@@ -6,8 +6,8 @@
 // no skeleton colour is hard-coded (that is a design token, not a claim).
 import 'dart:ui' as ui;
 import 'package:flutter/material.dart'; import 'package:flutter/rendering.dart'; import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ui2/guides/guide_target.dart'; import 'package:openstrap_edge/ui2/skeleton/skeleton.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/ui2/guides/guide_target.dart'; import 'package:harding_band/ui2/skeleton/skeleton.dart';
+import 'package:harding_band/ui2/ui2.dart';
 import '../support/skeleton_fixture.dart'; import '../support/guide_text.dart';
 // Ahem by name: the theme's own family would fall back to a system font, and the
 // pixel and size oracles below need glyphs that are exact font-size squares.

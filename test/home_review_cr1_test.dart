@@ -1,6 +1,6 @@
 // Review regressions for the Home sleep ring.
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ui2/sleep_ring_model.dart';
+import 'package:harding_band/ui2/sleep_ring_model.dart';
 
 void main() {
   test('4510399136: a need that rounds to zero uses the labelled default', () {

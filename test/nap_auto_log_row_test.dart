@@ -3,8 +3,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/state/prefs.dart';
-import 'package:openstrap_edge/ui2/screens/detected_activities.dart';
+import 'package:harding_band/state/prefs.dart';
+import 'package:harding_band/ui2/screens/detected_activities.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {

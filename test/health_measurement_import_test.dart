@@ -1,7 +1,7 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:health/health.dart';
-import 'package:openstrap_edge/health/health_measurement_import.dart';
+import 'package:harding_band/health/health_measurement_import.dart';
 
 HealthDataPoint _p(
   HealthDataType type,

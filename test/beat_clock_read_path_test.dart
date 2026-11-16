@@ -20,7 +20,7 @@
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:openstrap_analytics/onehz.dart';
-import 'package:openstrap_edge/compute/derive_prepare.dart';
+import 'package:harding_band/compute/derive_prepare.dart';
 
 const _t0 = 1780000000;
 

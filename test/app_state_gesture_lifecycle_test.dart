@@ -5,9 +5,9 @@
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/ble_engine.dart';
-import 'package:openstrap_edge/gestures/device_action.dart';
-import 'package:openstrap_edge/gestures/gesture_settings.dart';
+import 'package:harding_band/ble/ble_engine.dart';
+import 'package:harding_band/gestures/device_action.dart';
+import 'package:harding_band/gestures/gesture_settings.dart';
 
 import 'support/app_state_gesture_harness.dart';
 

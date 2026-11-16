@@ -4,16 +4,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:provider/provider.dart';
-import 'package:openstrap_edge/app.dart';
-import 'package:openstrap_edge/coach/coach_config.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/state/app_state.dart';
-import 'package:openstrap_edge/state/clock_format.dart';
-import 'package:openstrap_edge/state/locale_controller.dart';
-import 'package:openstrap_edge/state/units_controller.dart';
-import 'package:openstrap_edge/theme/theme_controller.dart';
-import 'package:openstrap_edge/theme/theme_switcher.dart';
-import 'package:openstrap_edge/ui2/onboarding/welcome.dart';
+import 'package:harding_band/app.dart';
+import 'package:harding_band/coach/coach_config.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/state/app_state.dart';
+import 'package:harding_band/state/clock_format.dart';
+import 'package:harding_band/state/locale_controller.dart';
+import 'package:harding_band/state/units_controller.dart';
+import 'package:harding_band/theme/theme_controller.dart';
+import 'package:harding_band/theme/theme_switcher.dart';
+import 'package:harding_band/ui2/onboarding/welcome.dart';
 
 import 'backup_support.dart';
 

@@ -7,11 +7,11 @@ import 'dart:isolate';
 import 'dart:typed_data';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/compute/derivation_engine.dart' show kAlgoVersion;
-import 'package:openstrap_edge/compute/derive_prepare.dart';
-import 'package:openstrap_edge/compute/onehz_pipeline.dart';
-import 'package:openstrap_edge/compute/profile.dart';
-import 'package:openstrap_edge/compute/substrate.dart';
+import 'package:harding_band/compute/derivation_engine.dart' show kAlgoVersion;
+import 'package:harding_band/compute/derive_prepare.dart';
+import 'package:harding_band/compute/onehz_pipeline.dart';
+import 'package:harding_band/compute/profile.dart';
+import 'package:harding_band/compute/substrate.dart';
 
 import 'support/dart_source.dart';
 

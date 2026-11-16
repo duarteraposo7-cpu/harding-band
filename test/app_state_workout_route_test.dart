@@ -8,9 +8,9 @@ import 'dart:async';
 
 import 'package:flutter_test/flutter_test.dart' hide test;
 import 'package:flutter_test/flutter_test.dart' as ft show test;
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/gps/gps_source.dart';
-import 'package:openstrap_edge/state/app_state.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/gps/gps_source.dart';
+import 'package:harding_band/state/app_state.dart';
 
 import 'support/app_state_workout_harness.dart';
 

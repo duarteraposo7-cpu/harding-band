@@ -17,12 +17,12 @@ import 'dart:io';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
-import 'package:openstrap_edge/cloud/cloud_import.dart';
-import 'package:openstrap_edge/compute/derivation_engine.dart' show kAlgoVersion;
-import 'package:openstrap_edge/compute/substrate.dart' show localDateLabel;
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/import/noop_import.dart';
-import 'package:openstrap_edge/import/whoop_import.dart';
+import 'package:harding_band/cloud/cloud_import.dart';
+import 'package:harding_band/compute/derivation_engine.dart' show kAlgoVersion;
+import 'package:harding_band/compute/substrate.dart' show localDateLabel;
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/import/noop_import.dart';
+import 'package:harding_band/import/whoop_import.dart';
 
 /// Local-time wall clock → the day label the importer will file it under.
 const _wake = '2026-03-05 08:30:00';

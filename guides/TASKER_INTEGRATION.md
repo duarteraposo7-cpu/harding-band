@@ -12,7 +12,7 @@ delivered once it reconnects).
 
 Open **Settings → Automation** in OpenStrap Edge. You'll find:
 
-- The broadcast action: `wtf.openstrap.openstrap_edge.BUZZ_STRAP`
+- The broadcast action: `pt.harding.band.BUZZ_STRAP`
   (long-press the row to copy it)
 - Your **automation token** — a per-install secret (long-press to copy).
   Broadcasts without a matching token are silently ignored, so nothing else
@@ -25,8 +25,8 @@ this:
 
 | Field | Value |
 |---|---|
-| Action | `wtf.openstrap.openstrap_edge.BUZZ_STRAP` |
-| Package | `wtf.openstrap.openstrap_edge` |
+| Action | `pt.harding.band.BUZZ_STRAP` |
+| Package | `pt.harding.band` |
 | Extra | `token:YOUR_AUTOMATION_TOKEN` |
 | Target | **Broadcast Receiver** |
 
@@ -34,7 +34,7 @@ Common mistakes, since Tasker's form makes them easy:
 
 1. **Action goes in the Action field** at the top — not in Package, and not
    in an Extra.
-2. **Package is just the app package** (`wtf.openstrap.openstrap_edge`), not
+2. **Package is just the app package** (`pt.harding.band`), not
    the full action string. It must be set: the app rejects broadcasts that
    aren't explicitly targeted at it.
 3. **Extras use `key:value` format.** The token extra must literally read
@@ -73,7 +73,7 @@ a broadcast:
 
 | Field | Value |
 |---|---|
-| Action | `wtf.openstrap.openstrap_edge.SYNC_COMPLETE` |
+| Action | `pt.harding.band.SYNC_COMPLETE` |
 | Extra `records` | int — how many records that sync stored |
 | Extra `at` | int — unix seconds when it finished |
 

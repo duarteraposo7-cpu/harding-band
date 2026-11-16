@@ -18,3 +18,12 @@ CC BY-SA 3.0, CC BY-SA 4.0 or CC0, and each row keeps its source UUID and the
 author/license credits of its base data and translations. This data stays under
 those licenses, separate from the AGPL-licensed code. Refresh with
 `dart run tool/update_wger_exercises.dart`.
+
+## HARDING Band
+
+HARDING Band is a modified fork of OpenStrap Edge (https://github.com/OpenStrap/edge)
+by Duarte Raposo, distributed under the AGPL-3.0. It is not affiliated with
+OpenStrap or WHOOP. The name, app icon and branding were replaced in line with
+TRADEMARKS.md; the licence and the notices above are unchanged.
+
+Date: 2026-11-16

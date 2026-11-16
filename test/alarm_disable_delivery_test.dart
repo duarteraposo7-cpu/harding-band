@@ -7,8 +7,8 @@ import 'dart:typed_data';
 
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:openstrap_edge/ble/ble_engine.dart';
-import 'package:openstrap_edge/state/alarm_schedule.dart';
+import 'package:harding_band/ble/ble_engine.dart';
+import 'package:harding_band/state/alarm_schedule.dart';
 
 BleEngine _engine(bool delivered, List<Uint8List> writes) {
   final engine = BleEngine(onRecord: (_, _) async {}, onState: (_) {});

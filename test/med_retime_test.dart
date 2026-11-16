@@ -4,8 +4,8 @@
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
-import 'package:openstrap_edge/data/day_label.dart';
-import 'package:openstrap_edge/data/med_store.dart';
+import 'package:harding_band/data/day_label.dart';
+import 'package:harding_band/data/med_store.dart';
 
 void main() {
   setUpAll(sqfliteFfiInit);

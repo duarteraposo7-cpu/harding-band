@@ -6,8 +6,8 @@ import 'dart:async';
 
 import 'package:fake_async/fake_async.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/gps/route_models.dart';
-import 'package:openstrap_edge/gps/route_tracker.dart';
+import 'package:harding_band/gps/route_models.dart';
+import 'package:harding_band/gps/route_tracker.dart';
 
 const double _mPerDegLngAtEq = 111319.49;
 

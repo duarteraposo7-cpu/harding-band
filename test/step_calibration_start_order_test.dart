@@ -5,8 +5,8 @@ import 'dart:async';
 
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:openstrap_edge/compute/step_calibration_fit.dart';
-import 'package:openstrap_edge/ui2/profile/step_calibration.dart';
+import 'package:harding_band/compute/step_calibration_fit.dart';
+import 'package:harding_band/ui2/profile/step_calibration.dart';
 
 void main() {
   test('the band baseline is taken only after the phone total resolves',

@@ -5,9 +5,9 @@
 
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:openstrap_edge/ai/briefing_engine.dart';
-import 'package:openstrap_edge/ai/nightly_sweep.dart';
-import 'package:openstrap_edge/data/local_repository.dart';
+import 'package:harding_band/ai/briefing_engine.dart';
+import 'package:harding_band/ai/nightly_sweep.dart';
+import 'package:harding_band/data/local_repository.dart';
 
 int _t(DateTime d) => DateTime(d.year, d.month, d.day, 12).millisecondsSinceEpoch ~/ 1000;
 

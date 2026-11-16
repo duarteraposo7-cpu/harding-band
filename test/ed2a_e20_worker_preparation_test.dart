@@ -5,10 +5,10 @@ import 'dart:convert';
 import 'dart:isolate';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/compute/derive_prepare.dart';
-import 'package:openstrap_edge/compute/inputs/canonical.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/local_repository_impl.dart';
+import 'package:harding_band/compute/derive_prepare.dart';
+import 'package:harding_band/compute/inputs/canonical.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/local_repository_impl.dart';
 import 'package:sqflite_common/sqflite_logger.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 

@@ -4,9 +4,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/coach/coach_engine.dart';
-import 'package:openstrap_edge/ui2/screens/coach.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/coach/coach_engine.dart';
+import 'package:harding_band/ui2/screens/coach.dart';
+import 'package:harding_band/ui2/ui2.dart';
 
 Future<(List<String>, List<String>)> _pump(WidgetTester t,
     {required bool locked}) async {

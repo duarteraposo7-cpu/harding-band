@@ -18,9 +18,9 @@ import 'dart:io';
 import 'package:archive/archive.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
-import 'package:openstrap_edge/import/import_container.dart';
-import 'package:openstrap_edge/state/app_state.dart';
-import 'package:openstrap_edge/ui2/onboarding/welcome.dart';
+import 'package:harding_band/import/import_container.dart';
+import 'package:harding_band/state/app_state.dart';
+import 'package:harding_band/ui2/onboarding/welcome.dart';
 
 /// Records where `runImport` sent each path instead of importing it. Every
 /// override replaces work that needs a database and a derivation engine; the
@@ -184,7 +184,7 @@ void main() {
 
       expect(app.backup, [path]);
       expect(app.noop, isEmpty, reason: 'this is the #606 refusal');
-      expect(out.source, contains('OpenStrap backup'));
+      expect(out.source, contains('HARDING Band backup'));
     });
 
     test('a renamed gzipped auto-backup goes to the backup importer',

@@ -20,9 +20,9 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:openstrap_protocol/openstrap_protocol.dart' as proto;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
-import 'package:openstrap_edge/compute/substrate.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/models.dart';
+import 'package:harding_band/compute/substrate.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/models.dart';
 
 // Two consecutive v25 seconds, 76-byte inner each.
 const _v25a =

@@ -16,10 +16,10 @@
 // pins real arithmetic rather than whatever the implementation happens to emit.
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/compute/derivation_engine.dart';
-import 'package:openstrap_edge/compute/onehz_pipeline.dart';
-import 'package:openstrap_edge/compute/profile.dart';
-import 'package:openstrap_edge/compute/substrate.dart';
+import 'package:harding_band/compute/derivation_engine.dart';
+import 'package:harding_band/compute/onehz_pipeline.dart';
+import 'package:harding_band/compute/profile.dart';
+import 'package:harding_band/compute/substrate.dart';
 
 // age 34 -> Tanaka HRmax = 208 - 0.7*34 = 184.2, HR-flex point = 0.50 * = 92.1
 const _profile = Profile(

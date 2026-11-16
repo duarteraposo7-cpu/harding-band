@@ -5,12 +5,12 @@
 import 'dart:convert';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/compute/derivation_engine.dart';
-import 'package:openstrap_edge/data/day_label.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/notify/notification_center.dart';
-import 'package:openstrap_edge/notify/notification_event.dart';
-import 'package:openstrap_edge/notify/notification_ids.dart';
+import 'package:harding_band/compute/derivation_engine.dart';
+import 'package:harding_band/data/day_label.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/notify/notification_center.dart';
+import 'package:harding_band/notify/notification_event.dart';
+import 'package:harding_band/notify/notification_ids.dart';
 import 'package:path/path.dart' as p;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';

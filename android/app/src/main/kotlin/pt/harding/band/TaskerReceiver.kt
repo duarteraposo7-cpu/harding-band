@@ -1,4 +1,4 @@
-package wtf.openstrap.openstrap_edge
+package pt.harding.band
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -23,7 +23,7 @@ class TaskerReceiver : BroadcastReceiver() {
         // could then replay the captured token straight at us later. Require
         // the delivered intent to have been explicitly targeted at this app
         // (our Settings → Automation copy already instructs "set Package to
-        // wtf.openstrap.openstrap_edge") BEFORE even looking at the token.
+        // pt.harding.band") BEFORE even looking at the token.
         if (intent.`package` != context.packageName &&
             intent.component?.packageName != context.packageName
         ) {
@@ -91,7 +91,7 @@ class TaskerReceiver : BroadcastReceiver() {
     companion object {
         const val TAG = "TaskerReceiver"
         const val ACTION_BUZZ_STRAP =
-            "wtf.openstrap.openstrap_edge.BUZZ_STRAP"
+            "pt.harding.band.BUZZ_STRAP"
         const val EXTRA_PATTERN = "pattern"
         const val EXTRA_TOKEN = "token"
         const val PENDING_BUZZ_KEY = "pending_tasker_buzz"

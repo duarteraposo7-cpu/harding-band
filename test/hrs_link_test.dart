@@ -14,13 +14,13 @@ import 'package:flutter_blue_plus/flutter_blue_plus.dart' show Guid;
 import 'package:flutter_test/flutter_test.dart';
 import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
-import 'package:openstrap_edge/ble/adapters/_registry.dart';
-import 'package:openstrap_edge/ble/ble_state.dart'
+import 'package:harding_band/ble/adapters/_registry.dart';
+import 'package:harding_band/ble/ble_state.dart'
     show acquireSecondaryLinkSlot, releaseSecondaryLinkSlot;
-import 'package:openstrap_edge/ble/hrs_link.dart';
-import 'package:openstrap_edge/compute/inputs/canonical.dart'
+import 'package:harding_band/ble/hrs_link.dart';
+import 'package:harding_band/compute/inputs/canonical.dart'
     show wearableEnabledCursor;
-import 'package:openstrap_edge/data/db.dart';
+import 'package:harding_band/data/db.dart';
 
 /// Frames as the three common flag shapes put them on the wire.
 ///

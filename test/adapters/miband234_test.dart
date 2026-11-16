@@ -19,10 +19,10 @@
 import 'dart:async';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/adapters/_registry.dart';
-import 'package:openstrap_edge/ble/adapters/adapter.dart';
-import 'package:openstrap_edge/ble/adapters/miband234.dart';
-import 'package:openstrap_edge/ble/adapters/signals.dart';
+import 'package:harding_band/ble/adapters/_registry.dart';
+import 'package:harding_band/ble/adapters/adapter.dart';
+import 'package:harding_band/ble/adapters/miband234.dart';
+import 'package:harding_band/ble/adapters/signals.dart';
 import 'package:openstrap_protocol/openstrap_protocol.dart'
     show
         kHuamiActivityControlChar,

@@ -8,8 +8,8 @@ import 'dart:async';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:openstrap_edge/compute/profile.dart';
-import 'package:openstrap_edge/state/app_state.dart';
+import 'package:harding_band/compute/profile.dart';
+import 'package:harding_band/state/app_state.dart';
 
 import 'support/app_state_derive_harness.dart';
 

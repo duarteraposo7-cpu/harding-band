@@ -11,12 +11,12 @@ import 'package:path/path.dart' as p;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
-import 'package:openstrap_edge/data/day_label.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/local_repository_impl.dart';
-import 'package:openstrap_edge/compute/manual_session.dart';
-import 'package:openstrap_edge/data/models.dart';
-import 'package:openstrap_edge/gps/route_models.dart';
+import 'package:harding_band/data/day_label.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/local_repository_impl.dart';
+import 'package:harding_band/compute/manual_session.dart';
+import 'package:harding_band/data/models.dart';
+import 'package:harding_band/gps/route_models.dart';
 
 /// A profile with every anchor the scored metrics need.
 Map<String, dynamic> _profile() => {

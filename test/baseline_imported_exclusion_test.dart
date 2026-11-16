@@ -15,8 +15,8 @@
 // wrote it, so it is decidable rather than ambiguous.
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/compute/derivation_engine.dart';
-import 'package:openstrap_edge/data/db.dart';
+import 'package:harding_band/compute/derivation_engine.dart';
+import 'package:harding_band/data/db.dart';
 import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 

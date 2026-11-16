@@ -8,7 +8,7 @@
 // issue by impacted users on both platforms.
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/telemetry/jank_policy.dart';
+import 'package:harding_band/telemetry/jank_policy.dart';
 
 void main() {
   const policy = JankPolicy(); // 700 ms of engine work

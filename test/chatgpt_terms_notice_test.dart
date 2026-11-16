@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ui2/screens/coach.dart' show confirmChatGptTerms;
+import 'package:harding_band/ui2/screens/coach.dart' show confirmChatGptTerms;
 
 // ChatGPT sign-in only starts after the user has been pointed at OpenAI's
 // terms and usage policies and chosen to continue.

@@ -13,7 +13,7 @@ import 'dart:io';
 
 import 'package:ffi/ffi.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/notify/fired_keys.dart';
+import 'package:harding_band/notify/fired_keys.dart';
 
 typedef _SetenvNative = Int32 Function(Pointer<Utf8>, Pointer<Utf8>, Int32);
 typedef _SetenvDart = int Function(Pointer<Utf8>, Pointer<Utf8>, int);

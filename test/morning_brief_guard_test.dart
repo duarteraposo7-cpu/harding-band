@@ -4,8 +4,8 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:openstrap_edge/notify/fired_keys.dart';
-import 'package:openstrap_edge/notify/notification_center.dart';
+import 'package:harding_band/notify/fired_keys.dart';
+import 'package:harding_band/notify/notification_center.dart';
 
 MorningBriefAction _act({
   bool planned = true,

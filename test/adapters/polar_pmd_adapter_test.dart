@@ -13,12 +13,12 @@
 import 'dart:async';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/adapters/_registry.dart';
-import 'package:openstrap_edge/ble/adapters/adapter.dart';
-import 'package:openstrap_edge/ble/adapters/gatt_link.dart';
-import 'package:openstrap_edge/ble/adapters/polar_pmd.dart';
-import 'package:openstrap_edge/ble/adapters/signals.dart';
-import 'package:openstrap_edge/ble/polar_pmd_link.dart';
+import 'package:harding_band/ble/adapters/_registry.dart';
+import 'package:harding_band/ble/adapters/adapter.dart';
+import 'package:harding_band/ble/adapters/gatt_link.dart';
+import 'package:harding_band/ble/adapters/polar_pmd.dart';
+import 'package:harding_band/ble/adapters/signals.dart';
+import 'package:harding_band/ble/polar_pmd_link.dart';
 import 'package:openstrap_protocol/openstrap_protocol.dart';
 
 /// The control-point's confirmation that PPI streaming started.

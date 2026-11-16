@@ -11,10 +11,10 @@
 import 'dart:async';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/ble_engine.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/state/app_state.dart';
-import 'package:openstrap_edge/stress/breath_phases.dart';
+import 'package:harding_band/ble/ble_engine.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/state/app_state.dart';
+import 'package:harding_band/stress/breath_phases.dart';
 
 import 'support/app_state_workout_harness.dart';
 

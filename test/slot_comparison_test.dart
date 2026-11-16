@@ -7,9 +7,9 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/adapters/_registry.dart';
-import 'package:openstrap_edge/ble/slot_comparison.dart';
-import 'package:openstrap_edge/compute/inputs/canonical.dart'
+import 'package:harding_band/ble/adapters/_registry.dart';
+import 'package:harding_band/ble/slot_comparison.dart';
+import 'package:harding_band/compute/inputs/canonical.dart'
     show MetricClass, capabilities, columnFor, kWorkoutArmedSensors;
 
 typedef C = DeviceCapability;

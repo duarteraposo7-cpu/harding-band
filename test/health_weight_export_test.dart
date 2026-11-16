@@ -2,9 +2,9 @@ import 'dart:async';
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:health/health.dart';
-import 'package:openstrap_edge/health/health_export.dart'
+import 'package:harding_band/health/health_export.dart'
     show healthDeleteTypes;
-import 'package:openstrap_edge/health/health_weight_export.dart';
+import 'package:harding_band/health/health_weight_export.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class _Fx {

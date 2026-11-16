@@ -5,10 +5,10 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/local_repository.dart';
-import 'package:openstrap_edge/ui2/activity/catalogue.dart';
-import 'package:openstrap_edge/ui2/screens/log_workout.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/local_repository.dart';
+import 'package:harding_band/ui2/activity/catalogue.dart';
+import 'package:harding_band/ui2/screens/log_workout.dart';
 import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 

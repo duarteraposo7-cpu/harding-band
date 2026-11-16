@@ -4,8 +4,8 @@
 // code under test.
 import 'dart:convert' show jsonDecode; import 'dart:io'; import 'dart:isolate'; import 'dart:typed_data';
 import 'package:flutter/material.dart'; import 'package:flutter/services.dart' show FontLoader; import 'package:flutter/rendering.dart';
-import 'package:flutter_test/flutter_test.dart'; import 'package:openstrap_edge/l10n/app_localizations.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:flutter_test/flutter_test.dart'; import 'package:harding_band/l10n/app_localizations.dart';
+import 'package:harding_band/ui2/ui2.dart';
 /// A MaterialApp with the app's localization delegates, one locale, and ui2's
 /// theme, so P.of(context) and AppLocalizations.of(context) both work.
 Widget skHost( Widget home, { Locale locale = const Locale('en'), Brightness brightness = Brightness.light, }) => MaterialApp(

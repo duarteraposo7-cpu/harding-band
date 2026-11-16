@@ -22,11 +22,11 @@ import 'package:flutter/foundation.dart' show debugDefaultTargetPlatformOverride
 import 'package:flutter/material.dart';
 import 'package:flutter_blue_plus/flutter_blue_plus.dart' show BluetoothDevice;
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/adapters/_registry.dart';
-import 'package:openstrap_edge/ble/hrs_link.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/ui2/profile/pair_sensor.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/ble/adapters/_registry.dart';
+import 'package:harding_band/ble/hrs_link.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/ui2/profile/pair_sensor.dart';
+import 'package:harding_band/ui2/ui2.dart';
 import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
@@ -217,7 +217,7 @@ void main() {
         await _pump(t,
             const PairSensorView(entryLabel: 'Bluetooth heart rate sensor'));
         expect(
-          find.textContaining('deleting OpenStrap also unpairs'),
+          find.textContaining('deleting HARDING Band also unpairs'),
           platform == TargetPlatform.iOS ? findsOneWidget : findsNothing,
         );
         debugDefaultTargetPlatformOverride = null;

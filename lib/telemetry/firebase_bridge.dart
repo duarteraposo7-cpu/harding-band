@@ -20,7 +20,13 @@ class FirebaseTraceHandle {
 class FirebaseBridge {
   /// Throws when no real google-services.json / GoogleService-Info.plist is
   /// bundled; main() catches it.
+  /// HARDING Band: off. The bundled options are upstream's Firebase project;
+  /// nothing from this fork may go there. main() already carries on without
+  /// Firebase when this throws. Re-enable only with HARDING's own project.
+  static const bool kFirebaseEnabled = false;
+
   static Future<void> initialize({Duration? timeout}) async {
+    if (!kFirebaseEnabled) throw StateError('Firebase is off in HARDING Band');
     final future = Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
     await (timeout == null ? future : future.timeout(timeout));
   }

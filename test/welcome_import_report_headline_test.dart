@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/l10n/app_localizations.dart';
-import 'package:openstrap_edge/ui2/onboarding/welcome.dart';
+import 'package:harding_band/l10n/app_localizations.dart';
+import 'package:harding_band/ui2/onboarding/welcome.dart';
 
 Future<void> _pump(WidgetTester tester, ImportOutcome o) => tester.pumpWidget(
       MaterialApp(home: Scaffold(body: ImportReport(o))),

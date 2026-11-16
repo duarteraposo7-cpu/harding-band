@@ -3,12 +3,12 @@ import 'dart:io';
 
 import 'package:flutter_blue_plus/flutter_blue_plus.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/adapters/_registry.dart';
-import 'package:openstrap_edge/ble/band_identity.dart';
-import 'package:openstrap_edge/ble/hrs_link.dart';
-import 'package:openstrap_edge/ui2/pairing/pair_outcome_text.dart';
-import 'package:openstrap_edge/sync/paired_device.dart' show kBandSourceTier;
-import 'package:openstrap_edge/ui2/pairing/add_device_flow.dart' show addDeviceScanEntries;
+import 'package:harding_band/ble/adapters/_registry.dart';
+import 'package:harding_band/ble/band_identity.dart';
+import 'package:harding_band/ble/hrs_link.dart';
+import 'package:harding_band/ui2/pairing/pair_outcome_text.dart';
+import 'package:harding_band/sync/paired_device.dart' show kBandSourceTier;
+import 'package:harding_band/ui2/pairing/add_device_flow.dart' show addDeviceScanEntries;
 import 'package:openstrap_protocol/openstrap_protocol.dart';
 
 BandEntry? _id(List<String> svc, [String? name]) =>

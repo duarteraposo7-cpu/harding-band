@@ -24,7 +24,7 @@ class VerifyApkTest(unittest.TestCase):
         self.aapt2.chmod(0o755)
         self.badging()
 
-    def badging(self, code="79", package="wtf.openstrap.openstrap_edge"):
+    def badging(self, code="79", package="pt.harding.band"):
         (self.root / "badging").write_text(
             f"package: name='{package}' versionCode='{code}' versionName='1.2.3'\n")
 

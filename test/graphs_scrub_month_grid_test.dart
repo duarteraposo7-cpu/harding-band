@@ -8,9 +8,9 @@
 // shaded (too little history) has neither a strip to scrub nor a panel.
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ui2/screens/metric_detail.dart' show specOf;
-import 'package:openstrap_edge/ui2/screens/month_grid.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/ui2/screens/metric_detail.dart' show specOf;
+import 'package:harding_band/ui2/screens/month_grid.dart';
+import 'package:harding_band/ui2/ui2.dart';
 
 import 'support/scrub_surface_laws.dart';
 

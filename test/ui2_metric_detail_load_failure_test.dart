@@ -10,10 +10,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/data/local_repository.dart';
-import 'package:openstrap_edge/state/app_state.dart';
-import 'package:openstrap_edge/ui2/screens/metric_detail.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/data/local_repository.dart';
+import 'package:harding_band/state/app_state.dart';
+import 'package:harding_band/ui2/screens/metric_detail.dart';
+import 'package:harding_band/ui2/ui2.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';

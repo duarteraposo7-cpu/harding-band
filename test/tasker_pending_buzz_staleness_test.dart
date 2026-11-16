@@ -1,6 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/platform/tasker_bridge.dart';
+import 'package:harding_band/platform/tasker_bridge.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();

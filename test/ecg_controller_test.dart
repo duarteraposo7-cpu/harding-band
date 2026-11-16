@@ -7,10 +7,10 @@ import 'dart:async';
 import 'dart:typed_data';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ecg/ecg_controller.dart';
-import 'package:openstrap_edge/ecg/ecg_guard_store.dart';
-import 'package:openstrap_edge/ecg/ecg_models.dart';
-import 'package:openstrap_edge/ecg/ecg_transport.dart';
+import 'package:harding_band/ecg/ecg_controller.dart';
+import 'package:harding_band/ecg/ecg_guard_store.dart';
+import 'package:harding_band/ecg/ecg_models.dart';
+import 'package:harding_band/ecg/ecg_transport.dart';
 import 'package:openstrap_protocol/openstrap_protocol.dart';
 
 LabradorR17 frame({

@@ -27,8 +27,8 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:path/path.dart' as p;
 import 'package:path_provider_platform_interface/path_provider_platform_interface.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/models.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/models.dart';
 
 /// path_provider has no plugin in a unit test; exportDaysDb needs a temp dir.
 class _FakePathProvider extends PathProviderPlatform {

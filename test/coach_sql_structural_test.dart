@@ -12,8 +12,8 @@ import 'dart:convert';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
-import 'package:openstrap_edge/coach/coach_db.dart';
-import 'package:openstrap_edge/data/db.dart';
+import 'package:harding_band/coach/coach_db.dart';
+import 'package:harding_band/data/db.dart';
 
 void main() {
   setUpAll(() async {

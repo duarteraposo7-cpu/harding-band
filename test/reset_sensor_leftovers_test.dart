@@ -9,10 +9,10 @@ import 'dart:io';
 
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/miband_link.dart';
-import 'package:openstrap_edge/ble/oura_link.dart';
-import 'package:openstrap_edge/ble/session_link.dart';
-import 'package:openstrap_edge/sync/reset_gate.dart';
+import 'package:harding_band/ble/miband_link.dart';
+import 'package:harding_band/ble/oura_link.dart';
+import 'package:harding_band/ble/session_link.dart';
+import 'package:harding_band/sync/reset_gate.dart';
 
 /// A key store whose deletes throw, like a locked keychain.
 class _UndeletableMap extends MapBase<String, String> {

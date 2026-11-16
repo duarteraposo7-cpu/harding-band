@@ -5,13 +5,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_blue_plus/flutter_blue_plus.dart' show BluetoothDevice;
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/adapters/_registry.dart';
-import 'package:openstrap_edge/ble/ble_state.dart'
+import 'package:harding_band/ble/adapters/_registry.dart';
+import 'package:harding_band/ble/ble_state.dart'
     show kMaxConcurrentSecondaryLinks;
-import 'package:openstrap_edge/data/db.dart' show LocalDb;
-import 'package:openstrap_edge/ui2/profile/devices.dart' show sensorCapReached;
-import 'package:openstrap_edge/ui2/profile/pair_sensor.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/data/db.dart' show LocalDb;
+import 'package:harding_band/ui2/profile/devices.dart' show sensorCapReached;
+import 'package:harding_band/ui2/profile/pair_sensor.dart';
+import 'package:harding_band/ui2/ui2.dart';
 import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 

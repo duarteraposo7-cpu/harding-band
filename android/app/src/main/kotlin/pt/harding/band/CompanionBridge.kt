@@ -1,4 +1,4 @@
-package wtf.openstrap.openstrap_edge
+package pt.harding.band
 
 import android.app.Activity
 import android.bluetooth.le.ScanFilter

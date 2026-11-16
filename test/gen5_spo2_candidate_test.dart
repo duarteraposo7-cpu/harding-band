@@ -7,9 +7,9 @@
 import 'dart:typed_data';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/ble_engine.dart';
-import 'package:openstrap_edge/data/models.dart';
-import 'package:openstrap_edge/models/payloads.dart';
+import 'package:harding_band/ble/ble_engine.dart';
+import 'package:harding_band/data/models.dart';
+import 'package:harding_band/models/payloads.dart';
 import 'package:openstrap_protocol/openstrap_protocol.dart';
 
 /// A minimal decodable v18 inner: length 112, version byte 18 at inner[1].

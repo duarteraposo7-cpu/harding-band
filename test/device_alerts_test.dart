@@ -15,11 +15,11 @@
 
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:openstrap_edge/notify/charge_alert_policy.dart';
-import 'package:openstrap_edge/notify/device_alerts.dart';
-import 'package:openstrap_edge/notify/notification_event.dart';
-import 'package:openstrap_edge/notify/notification_prefs.dart';
-import 'package:openstrap_edge/notify/notification_service.dart';
+import 'package:harding_band/notify/charge_alert_policy.dart';
+import 'package:harding_band/notify/device_alerts.dart';
+import 'package:harding_band/notify/notification_event.dart';
+import 'package:harding_band/notify/notification_prefs.dart';
+import 'package:harding_band/notify/notification_service.dart';
 
 class _Shown {
   final int id;

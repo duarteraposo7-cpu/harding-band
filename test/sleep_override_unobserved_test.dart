@@ -8,7 +8,7 @@
 import 'dart:math' as math;
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/compute/substrate.dart';
+import 'package:harding_band/compute/substrate.dart';
 
 int _sec(DateTime t) => t.millisecondsSinceEpoch ~/ 1000;
 

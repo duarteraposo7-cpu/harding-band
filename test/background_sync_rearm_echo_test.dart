@@ -4,13 +4,13 @@
 // from the engine's reply through armNextScheduledOccurrence to the prefs
 // (the unit test of headlessArmAndConfirm alone passes a hand-made result).
 
-import 'package:openstrap_edge/sync/paired_device.dart';
+import 'package:harding_band/sync/paired_device.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/ble_engine.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/state/alarm_schedule.dart'
+import 'package:harding_band/ble/ble_engine.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/state/alarm_schedule.dart'
     show AlarmScheduleEntry, fillDefaultAlarmSchedule, nextAlarmOccurrence;
-import 'package:openstrap_edge/sync/background_sync.dart';
+import 'package:harding_band/sync/background_sync.dart';
 import 'package:openstrap_protocol/openstrap_protocol.dart' as proto;
 import 'package:path/path.dart' as p;
 import 'package:shared_preferences/shared_preferences.dart';

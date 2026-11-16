@@ -6,10 +6,10 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:openstrap_edge/l10n/app_localizations.dart';
-import 'package:openstrap_edge/state/locale_controller.dart';
-import 'package:openstrap_edge/ui2/profile/profile.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/l10n/app_localizations.dart';
+import 'package:harding_band/state/locale_controller.dart';
+import 'package:harding_band/ui2/profile/profile.dart';
+import 'package:harding_band/ui2/ui2.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();

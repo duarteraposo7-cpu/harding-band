@@ -26,8 +26,8 @@ import 'dart:ui' show Locale;
 
 import 'package:clock/clock.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/l10n/app_localizations.dart';
-import 'package:openstrap_edge/ui2/screens/screens.dart';
+import 'package:harding_band/l10n/app_localizations.dart';
+import 'package:harding_band/ui2/screens/screens.dart';
 
 /// The keys this PR adds (sleep ring wording + why panels).
 const _newKeys = [

@@ -2,12 +2,12 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/ble_engine.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/state/app_state.dart';
-import 'package:openstrap_edge/sync/paired_device.dart';
-import 'package:openstrap_edge/sync/reset_gate.dart';
-import 'package:openstrap_edge/sync/shortcut_sync_task.dart';
+import 'package:harding_band/ble/ble_engine.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/state/app_state.dart';
+import 'package:harding_band/sync/paired_device.dart';
+import 'package:harding_band/sync/reset_gate.dart';
+import 'package:harding_band/sync/shortcut_sync_task.dart';
 import 'package:path/path.dart' as p;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';

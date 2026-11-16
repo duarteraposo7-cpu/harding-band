@@ -1,6 +1,6 @@
 // Device role: which registry entries can be the user's main device.
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/adapters/_registry.dart';
+import 'package:harding_band/ble/adapters/_registry.dart';
 
 void main() {
   test('standard heart-rate service does not imply a chest strap', () {

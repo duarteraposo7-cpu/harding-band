@@ -12,10 +12,10 @@ import 'dart:convert';
 
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:openstrap_edge/compute/derivation_engine.dart';
-import 'package:openstrap_edge/compute/onehz_pipeline.dart';
-import 'package:openstrap_edge/data/day_label.dart';
-import 'package:openstrap_edge/data/series_codec.dart';
+import 'package:harding_band/compute/derivation_engine.dart';
+import 'package:harding_band/compute/onehz_pipeline.dart';
+import 'package:harding_band/data/day_label.dart';
+import 'package:harding_band/data/series_codec.dart';
 
 const int _t0 = 1786699980; // a fixed epoch second on a minute boundary
 

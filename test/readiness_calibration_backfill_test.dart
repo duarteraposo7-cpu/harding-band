@@ -10,9 +10,9 @@ import 'package:openstrap_analytics/onehz.dart' as ana;
 import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
-import 'package:openstrap_edge/compute/derivation_engine.dart' show kAlgoVersion;
-import 'package:openstrap_edge/compute/readiness_calibration_backfill.dart';
-import 'package:openstrap_edge/data/db.dart';
+import 'package:harding_band/compute/derivation_engine.dart' show kAlgoVersion;
+import 'package:harding_band/compute/readiness_calibration_backfill.dart';
+import 'package:harding_band/data/db.dart';
 
 Map<String, dynamic> bundle(double hrv, double rhr, double rr) {
   final z = (0.4 * hrv + 0.3 * rhr + 0.2 * rr) / 0.9;

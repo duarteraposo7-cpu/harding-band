@@ -2,7 +2,7 @@
 //
 // Watch App target only. WatchStore receives the payload over WCSession and
 // caches it here; the glance reads it back. This used to be stored in an App
-// Group ("group.wtf.openstrap.watch") that the watch entitlement never declared
+// Group ("group.pt.harding.band.watch") that the watch entitlement never declared
 // — a suite nobody else could open, kept alive for a complication extension
 // that was never in the Xcode project. One process writes and reads it, so
 // standard defaults are the whole requirement.

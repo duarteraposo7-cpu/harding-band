@@ -18,6 +18,7 @@ import 'sync/ios_shortcut_sync.dart';
 import 'theme/theme_controller.dart';
 import 'widget/widget_service.dart';
 import 'telemetry/firebase_bridge.dart';
+import 'harding/harding_links.dart';
 import 'package:workmanager/workmanager.dart';
 import 'dart:async';
 import 'dart:io';
@@ -194,6 +195,8 @@ Future<void> main() async {
         ),
   );
 
+  // HARDING Band: handles hardingband://link from HARDING (cold start included).
+  unawaited(HardingLinks.start());
   runApp(
     MultiProvider(
       providers: [

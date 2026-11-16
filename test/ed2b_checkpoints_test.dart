@@ -10,14 +10,14 @@ import 'dart:typed_data';
 
 import 'package:crypto/crypto.dart';
 import 'package:path_provider_platform_interface/path_provider_platform_interface.dart';
-import 'package:openstrap_edge/compute/night_checkpoint.dart';
+import 'package:harding_band/compute/night_checkpoint.dart';
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:openstrap_analytics/onehz.dart' as ana;
-import 'package:openstrap_edge/compute/derivation_engine.dart';
-import 'package:openstrap_edge/compute/ed2b_stream_diagnostics.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/recent_slice.dart';
+import 'package:harding_band/compute/derivation_engine.dart';
+import 'package:harding_band/compute/ed2b_stream_diagnostics.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/recent_slice.dart';
 import 'package:path/path.dart' as p;
 import 'package:sqflite_common/sqflite_logger.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';

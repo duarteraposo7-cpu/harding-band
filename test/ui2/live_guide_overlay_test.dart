@@ -4,11 +4,11 @@
 // The overlay is inserted into the ROOT overlay by the test itself, so these tests cover drawing, input and semantics apart from GuideRunner's navigation
 // (live_guide_runner_test.dart) and from the full app (live_guide_integration_test.dart).
 import '../support/live_guide_focus.dart'; import 'package:flutter/material.dart'; import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/l10n/app_localizations.dart'; import 'package:openstrap_edge/ui2/guides/guide.dart';
-import 'package:openstrap_edge/ui2/guides/guide_markers.dart'; import 'package:openstrap_edge/ui2/guides/guide_run.dart';
-import 'package:openstrap_edge/ui2/guides/guide_step_card.dart'; import 'package:openstrap_edge/ui2/guides/guide_target.dart';
-import 'package:openstrap_edge/ui2/guides/live_guide_overlay.dart'; import 'package:openstrap_edge/ui2/skeleton/skeleton.dart';
-import 'package:openstrap_edge/ui2/grammar.dart' show NavBar, Pressable, ScreenTitle, Surface; import 'package:openstrap_edge/ui2/guides/guide_dim.dart' show GuideDimScope;
+import 'package:harding_band/l10n/app_localizations.dart'; import 'package:harding_band/ui2/guides/guide.dart';
+import 'package:harding_band/ui2/guides/guide_markers.dart'; import 'package:harding_band/ui2/guides/guide_run.dart';
+import 'package:harding_band/ui2/guides/guide_step_card.dart'; import 'package:harding_band/ui2/guides/guide_target.dart';
+import 'package:harding_band/ui2/guides/live_guide_overlay.dart'; import 'package:harding_band/ui2/skeleton/skeleton.dart';
+import 'package:harding_band/ui2/grammar.dart' show NavBar, Pressable, ScreenTitle, Surface; import 'package:harding_band/ui2/guides/guide_dim.dart' show GuideDimScope;
 import '../support/live_guide_stage.dart'; import '../support/guide_text.dart'; final _en = lookupAppLocalizations(const Locale('en'));
 LiveGuideOverlayState _overlay(WidgetTester t) => t.state<LiveGuideOverlayState>(find.byType(LiveGuideOverlay));
 /// Frames until the overlay has noticed the page and finished revealing it.

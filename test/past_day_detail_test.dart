@@ -3,9 +3,9 @@
 // detail screens used to read today unconditionally, so a past day's 41
 // opened a screen saying 78.
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/data/local_repository.dart';
-import 'package:openstrap_edge/ui2/activity/day_strain.dart';
-import 'package:openstrap_edge/ui2/screens/readiness_detail.dart';
+import 'package:harding_band/data/local_repository.dart';
+import 'package:harding_band/ui2/activity/day_strain.dart';
+import 'package:harding_band/ui2/screens/readiness_detail.dart';
 
 class _Repo extends LocalRepository {
   final asked = <String>[];

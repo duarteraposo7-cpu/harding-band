@@ -24,12 +24,12 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:path/path.dart' as p;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
-import 'package:openstrap_edge/ble/ble_engine.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/local_repository.dart';
-import 'package:openstrap_edge/gps/route_types.dart';
-import 'package:openstrap_edge/gps/screen_wake.dart';
-import 'package:openstrap_edge/state/app_state.dart';
+import 'package:harding_band/ble/ble_engine.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/local_repository.dart';
+import 'package:harding_band/gps/route_types.dart';
+import 'package:harding_band/gps/screen_wake.dart';
+import 'package:harding_band/state/app_state.dart';
 
 Future<void> settleMs([int ms = 150]) =>
     Future<void>.delayed(Duration(milliseconds: ms));

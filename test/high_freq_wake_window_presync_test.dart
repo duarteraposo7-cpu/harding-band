@@ -16,7 +16,7 @@
 
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:openstrap_edge/sync/high_freq_wake_window.dart';
+import 'package:harding_band/sync/high_freq_wake_window.dart';
 
 /// Build a day_result row with a wake time at [wakeHour]:[wakeMinute].
 Map<String, dynamic> dayRow(int wakeHour, int wakeMinute) {

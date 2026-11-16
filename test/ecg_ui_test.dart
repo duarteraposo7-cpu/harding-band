@@ -8,15 +8,15 @@ import 'dart:ui' show PictureRecorder;
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/coach/coach_config.dart';
-import 'package:openstrap_edge/ecg/ecg_controller.dart';
-import 'package:openstrap_edge/ecg/ecg_guard_store.dart';
-import 'package:openstrap_edge/ecg/ecg_models.dart';
-import 'package:openstrap_edge/ecg/ecg_transport.dart';
-import 'package:openstrap_edge/ecg/ecg_waveform_buffer.dart';
-import 'package:openstrap_edge/l10n/app_localizations.dart';
-import 'package:openstrap_edge/ui2/screens/ecg.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/coach/coach_config.dart';
+import 'package:harding_band/ecg/ecg_controller.dart';
+import 'package:harding_band/ecg/ecg_guard_store.dart';
+import 'package:harding_band/ecg/ecg_models.dart';
+import 'package:harding_band/ecg/ecg_transport.dart';
+import 'package:harding_band/ecg/ecg_waveform_buffer.dart';
+import 'package:harding_band/l10n/app_localizations.dart';
+import 'package:harding_band/ui2/screens/ecg.dart';
+import 'package:harding_band/ui2/ui2.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

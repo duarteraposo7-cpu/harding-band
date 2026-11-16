@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/state/units_controller.dart';
-import 'package:openstrap_edge/ui2/grammar.dart';
+import 'package:harding_band/state/units_controller.dart';
+import 'package:harding_band/ui2/grammar.dart';
 
 void main() {
   group('Typed.of', () {

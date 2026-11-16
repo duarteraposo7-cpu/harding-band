@@ -14,20 +14,20 @@
 import 'dart:convert';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/adapters/garmin.dart' show garminDecodeReadFiles;
-import 'package:openstrap_edge/ble/adapters/miband234.dart' show miBand234AuthResponse;
-import 'package:openstrap_edge/ble/colmi_link.dart';
-import 'package:openstrap_edge/ble/garmin_link.dart';
-import 'package:openstrap_edge/ble/miband_link.dart';
-import 'package:openstrap_edge/ble/ultrahuman_link.dart';
-import 'package:openstrap_edge/compute/derivation_engine.dart';
-import 'package:openstrap_edge/compute/inputs/canonical.dart'
+import 'package:harding_band/ble/adapters/garmin.dart' show garminDecodeReadFiles;
+import 'package:harding_band/ble/adapters/miband234.dart' show miBand234AuthResponse;
+import 'package:harding_band/ble/colmi_link.dart';
+import 'package:harding_band/ble/garmin_link.dart';
+import 'package:harding_band/ble/miband_link.dart';
+import 'package:harding_band/ble/ultrahuman_link.dart';
+import 'package:harding_band/compute/derivation_engine.dart';
+import 'package:harding_band/compute/inputs/canonical.dart'
     show wearableEnabledCursor;
-import 'package:openstrap_edge/compute/profile.dart';
-import 'package:openstrap_edge/ble/adapters/signals.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/local_repository_impl.dart';
-import 'package:openstrap_edge/ble/adapters/_registry.dart';
+import 'package:harding_band/compute/profile.dart';
+import 'package:harding_band/ble/adapters/signals.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/local_repository_impl.dart';
+import 'package:harding_band/ble/adapters/_registry.dart';
 import 'package:openstrap_protocol/openstrap_protocol.dart' show kGarminEventHandshakeComplete;
 import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';

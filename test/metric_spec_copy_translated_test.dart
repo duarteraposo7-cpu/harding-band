@@ -14,9 +14,9 @@ import 'dart:io';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:openstrap_edge/l10n/app_localizations.dart';
-import 'package:openstrap_edge/l10n/display_text.dart';
-import 'package:openstrap_edge/ui2/screens/metric_detail.dart';
+import 'package:harding_band/l10n/app_localizations.dart';
+import 'package:harding_band/l10n/display_text.dart';
+import 'package:harding_band/ui2/screens/metric_detail.dart';
 
 /// The same in every language, so there is nothing to translate.
 const _universal = {'LF / HF'};

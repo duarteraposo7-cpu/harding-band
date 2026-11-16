@@ -22,9 +22,9 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/ui2/screens/health_screen.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/ui2/screens/health_screen.dart';
+import 'package:harding_band/ui2/ui2.dart';
 
 /// Frames until [f] appears, or give up. Real time, because the write behind
 /// it is real: sqflite answers from another isolate and the fake clock never

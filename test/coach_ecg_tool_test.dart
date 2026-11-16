@@ -6,11 +6,11 @@ import 'dart:convert';
 import 'dart:typed_data';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/coach/coach_actions.dart';
-import 'package:openstrap_edge/coach/coach_engine.dart';
-import 'package:openstrap_edge/coach/coach_prompt.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/ecg/ecg_models.dart';
+import 'package:harding_band/coach/coach_actions.dart';
+import 'package:harding_band/coach/coach_engine.dart';
+import 'package:harding_band/coach/coach_prompt.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/ecg/ecg_models.dart';
 import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 

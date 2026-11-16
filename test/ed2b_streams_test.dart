@@ -9,9 +9,9 @@ import 'dart:typed_data';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:openstrap_analytics/aggregate.dart' as agg;
 import 'package:openstrap_analytics/onehz.dart' as ana;
-import 'package:openstrap_edge/compute/ed2b_stream_diagnostics.dart';
-import 'package:openstrap_edge/compute/onehz_pipeline.dart';
-import 'package:openstrap_edge/compute/night_resp_bins.dart';
+import 'package:harding_band/compute/ed2b_stream_diagnostics.dart';
+import 'package:harding_band/compute/onehz_pipeline.dart';
+import 'package:harding_band/compute/night_resp_bins.dart';
 
 // Deliberately no fork DayCalculationState, mode or revision framework. The
 // optional diagnostics observe the real upstream batch calls until GREEN.

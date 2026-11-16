@@ -7,9 +7,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ui2/profile/profile.dart' show SetRow;
-import 'package:openstrap_edge/ui2/profile/settings.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/ui2/profile/profile.dart' show SetRow;
+import 'package:harding_band/ui2/profile/settings.dart';
+import 'package:harding_band/ui2/ui2.dart';
 
 Widget _wrap(Widget child) => MaterialApp(
       theme: buildTheme(Brightness.light),

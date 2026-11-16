@@ -1,5 +1,5 @@
-import 'package:openstrap_edge/data/recent_slice.dart';
-import 'package:openstrap_edge/data/restore_classification.dart';
+import 'package:harding_band/data/recent_slice.dart';
+import 'package:harding_band/data/restore_classification.dart';
 // ED-2a E4 RED contract. Run with flutter test --concurrency=1.
 // Only the input portion of fork 561f2838 and generation portions of
 // 74c0b37b/30cd944e apply. No store_rev, row_rev, scheduler or checkpoints.
@@ -10,9 +10,9 @@ import 'package:path/path.dart' as p;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite_common/sqflite_logger.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/day_label.dart';
-import 'package:openstrap_edge/data/models.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/day_label.dart';
+import 'package:harding_band/data/models.dart';
 
 const _inputs = ['decoded_onehz', 'decoded_rr'];
 final _midnight = DateTime(2026, 10, 20);

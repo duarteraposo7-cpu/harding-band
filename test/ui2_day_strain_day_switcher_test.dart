@@ -10,11 +10,11 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:openstrap_edge/data/local_repository.dart';
-import 'package:openstrap_edge/state/app_state.dart';
-import 'package:openstrap_edge/ui2/activity/day_strain.dart';
-import 'package:openstrap_edge/ui2/screens/metric_detail.dart' show DayNav, dayNavLabel;
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/data/local_repository.dart';
+import 'package:harding_band/state/app_state.dart';
+import 'package:harding_band/ui2/activity/day_strain.dart';
+import 'package:harding_band/ui2/screens/metric_detail.dart' show DayNav, dayNavLabel;
+import 'package:harding_band/ui2/ui2.dart';
 
 const _days = ['2026-11-14', '2026-11-13', '2026-11-12']; // newest first
 

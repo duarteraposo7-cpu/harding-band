@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/health/health_rhr_seed.dart';
+import 'package:harding_band/health/health_rhr_seed.dart';
 
 // The seed's two pure decisions: how a day series is built from raw points,
 // and whether the seeded centre and the band's own agree. Everything else in
@@ -33,7 +33,7 @@ void main() {
   });
 
   test('isOwnHealthSample drops what this app wrote, on both platforms', () {
-    const own = 'wtf.openstrap.edge';
+    const own = 'pt.harding.band';
     expect(isOwnHealthSample(own, 'OpenStrap', own), isTrue); // iOS
     expect(isOwnHealthSample('', own, own), isTrue); // Health Connect
     expect(isOwnHealthSample('com.apple.health.abc', 'Watch', own), isFalse);

@@ -22,7 +22,7 @@
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:openstrap_analytics/onehz.dart';
-import 'package:openstrap_edge/compute/onehz_pipeline.dart';
+import 'package:harding_band/compute/onehz_pipeline.dart';
 
 Map<String, dynamic> _diag({
   int hrv = readinessCompositeMinBaseline,

@@ -1,12 +1,12 @@
 import 'dart:math' as math;
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/adapters/oura.dart' show ouraStage4;
-import 'package:openstrap_edge/compute/derivation_engine.dart';
-import 'package:openstrap_edge/compute/derive_prepare.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/compute/substrate.dart';
-import 'package:openstrap_edge/compute/vendor_sleep.dart';
+import 'package:harding_band/ble/adapters/oura.dart' show ouraStage4;
+import 'package:harding_band/compute/derivation_engine.dart';
+import 'package:harding_band/compute/derive_prepare.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/compute/substrate.dart';
+import 'package:harding_band/compute/vendor_sleep.dart';
 
 int _at(int d, int h, [int m = 0]) =>
     DateTime(2026, 6, d, h, m).millisecondsSinceEpoch ~/ 1000;

@@ -12,14 +12,14 @@ import 'dart:async';
 import 'package:flutter_blue_plus_platform_interface/flutter_blue_plus_platform_interface.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_blue_plus/flutter_blue_plus.dart' show BluetoothDevice;
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/models.dart';
-import 'package:openstrap_edge/state/app_state.dart';
-import 'package:openstrap_edge/sync/ios_bg_task.dart';
-import 'package:openstrap_edge/sync/ios_shortcut_sync.dart';
-import 'package:openstrap_edge/sync/paired_device.dart';
-import 'package:openstrap_edge/sync/reset_gate.dart';
-import 'package:openstrap_edge/sync/shortcut_sync_task.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/models.dart';
+import 'package:harding_band/state/app_state.dart';
+import 'package:harding_band/sync/ios_bg_task.dart';
+import 'package:harding_band/sync/ios_shortcut_sync.dart';
+import 'package:harding_band/sync/paired_device.dart';
+import 'package:harding_band/sync/reset_gate.dart';
+import 'package:harding_band/sync/shortcut_sync_task.dart';
 
 import 'support/app_state_sync_harness.dart';
 

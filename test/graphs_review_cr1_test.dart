@@ -10,14 +10,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/semantics.dart' show SemanticsNode;
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/compute/vendor_sleep.dart';
-import 'package:openstrap_edge/data/day_label.dart';
-import 'package:openstrap_edge/l10n/app_localizations.dart';
-import 'package:openstrap_edge/models/metric.dart';
-import 'package:openstrap_edge/state/clock_format.dart';
-import 'package:openstrap_edge/ui2/screens/screens.dart';
-import 'package:openstrap_edge/ui2/screens/slot_scrub.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/compute/vendor_sleep.dart';
+import 'package:harding_band/data/day_label.dart';
+import 'package:harding_band/l10n/app_localizations.dart';
+import 'package:harding_band/models/metric.dart';
+import 'package:harding_band/state/clock_format.dart';
+import 'package:harding_band/ui2/screens/screens.dart';
+import 'package:harding_band/ui2/screens/slot_scrub.dart';
+import 'package:harding_band/ui2/ui2.dart';
 
 Widget _app(Widget home, {double scale = 1}) => MaterialApp(
       locale: const Locale('en'),

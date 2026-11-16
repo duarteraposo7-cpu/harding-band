@@ -2,7 +2,7 @@
 //
 // Writes to the app's external files dir on Android so it can be pulled with a
 // plain `adb pull` (no run-as needed):
-//   /storage/emulated/0/Android/data/wtf.openstrap.openstrap_edge/files/openstrap_sync.log
+//   /storage/emulated/0/Android/data/pt.harding.band/files/openstrap_sync.log
 //
 // Bounded: rotates to a single .1 sibling at [_maxBytes] so a 24/7 headless
 // process can't grow it without limit, and appends WITHOUT a per-line fsync —

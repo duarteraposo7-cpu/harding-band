@@ -7,7 +7,7 @@
 import 'package:fake_async/fake_async.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:openstrap_edge/state/alarm_schedule.dart';
+import 'package:harding_band/state/alarm_schedule.dart';
 
 void main() {
   group('fillDefaultAlarmSchedule', () {

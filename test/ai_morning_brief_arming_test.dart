@@ -4,11 +4,11 @@
 
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:openstrap_edge/ai/ai_prefs.dart';
-import 'package:openstrap_edge/ai/reminder_plan.dart';
-import 'package:openstrap_edge/notify/notification_center.dart';
-import 'package:openstrap_edge/notify/notification_prefs.dart';
-import 'package:openstrap_edge/notify/notification_service.dart';
+import 'package:harding_band/ai/ai_prefs.dart';
+import 'package:harding_band/ai/reminder_plan.dart';
+import 'package:harding_band/notify/notification_center.dart';
+import 'package:harding_band/notify/notification_prefs.dart';
+import 'package:harding_band/notify/notification_service.dart';
 
 void main() {
   List<int> armedAt(int nowMin) {

@@ -4,10 +4,10 @@ library;
 import 'dart:convert';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/compute/derivation_engine.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/recent_slice.dart';
-import 'package:openstrap_edge/data/restore_classification.dart';
+import 'package:harding_band/compute/derivation_engine.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/recent_slice.dart';
+import 'package:harding_band/data/restore_classification.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
 import 'support/ed2a_recalc_fixture.dart';

@@ -14,9 +14,9 @@
 import 'dart:convert';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/coach/coach_config.dart';
-import 'package:openstrap_edge/coach/coach_engine.dart';
-import 'package:openstrap_edge/data/local_repository.dart';
+import 'package:harding_band/coach/coach_config.dart';
+import 'package:harding_band/coach/coach_engine.dart';
+import 'package:harding_band/data/local_repository.dart';
 
 class _FakeRepo extends LocalRepository {}
 

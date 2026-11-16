@@ -3,8 +3,8 @@
 // pure (no DB, no BLE), because every rule under test is.
 
 import 'package:openstrap_analytics/onehz.dart' as ana;
-import 'package:openstrap_edge/compute/substrate.dart';
-import 'package:openstrap_edge/data/live_coverage_policy.dart';
+import 'package:harding_band/compute/substrate.dart';
+import 'package:harding_band/data/live_coverage_policy.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 Substrate _sub({

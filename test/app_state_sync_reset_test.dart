@@ -15,11 +15,11 @@
 import 'dart:async';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/data/models.dart';
-import 'package:openstrap_edge/state/app_state.dart';
-import 'package:openstrap_edge/sync/band_ownership.dart';
-import 'package:openstrap_edge/sync/headless_gate.dart';
-import 'package:openstrap_edge/sync/reset_gate.dart';
+import 'package:harding_band/data/models.dart';
+import 'package:harding_band/state/app_state.dart';
+import 'package:harding_band/sync/band_ownership.dart';
+import 'package:harding_band/sync/headless_gate.dart';
+import 'package:harding_band/sync/reset_gate.dart';
 
 import 'support/app_state_sync_harness.dart';
 

@@ -16,9 +16,9 @@ import 'package:path/path.dart' as p;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/health/auto_workout_import.dart';
-import 'package:openstrap_edge/health/health_workout_import.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/health/auto_workout_import.dart';
+import 'package:harding_band/health/health_workout_import.dart';
 
 HealthDataPoint _w(
   String uuid, {
@@ -173,7 +173,7 @@ void main() {
   });
 
   test('our own exported workouts are not imported back', () async {
-    const app = 'wtf.openstrap.openstrap_edge';
+    const app = 'pt.harding.band';
     PackageInfo.setMockInitialValues(
       appName: 'OpenStrap',
       packageName: app,

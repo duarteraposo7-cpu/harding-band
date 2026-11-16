@@ -25,11 +25,11 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:openstrap_edge/data/day_label.dart';
-import 'package:openstrap_edge/notify/notification_center.dart';
-import 'package:openstrap_edge/notify/notification_event.dart';
-import 'package:openstrap_edge/notify/notification_ids.dart';
-import 'package:openstrap_edge/notify/notification_service.dart';
+import 'package:harding_band/data/day_label.dart';
+import 'package:harding_band/notify/notification_center.dart';
+import 'package:harding_band/notify/notification_event.dart';
+import 'package:harding_band/notify/notification_ids.dart';
+import 'package:harding_band/notify/notification_service.dart';
 
 const String kGuardKey = 'last_recovery_notif_day';
 final String kDay = todayLabel();

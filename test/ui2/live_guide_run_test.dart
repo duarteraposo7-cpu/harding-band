@@ -5,8 +5,8 @@
 // anchors are resolved by the production GuideTarget code against laid-out
 // widgets, never faked.
 import 'package:flutter/material.dart'; import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/l10n/app_localizations.dart'; import 'package:openstrap_edge/ui2/guides/guide.dart';
-import 'package:openstrap_edge/ui2/guides/guide_run.dart'; import 'package:openstrap_edge/ui2/guides/guide_target.dart';
+import 'package:harding_band/l10n/app_localizations.dart'; import 'package:harding_band/ui2/guides/guide.dart';
+import 'package:harding_band/ui2/guides/guide_run.dart'; import 'package:harding_band/ui2/guides/guide_target.dart';
 import '../support/live_guide_stage.dart'; import '../support/guide_text.dart';
 final _en = lookupAppLocalizations(const Locale('en'));
 GuideRun _freshRun([Guide? g]) { final guide = g ?? stageGuide();

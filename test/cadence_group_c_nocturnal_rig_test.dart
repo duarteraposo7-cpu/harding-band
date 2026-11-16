@@ -21,7 +21,7 @@ import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:openstrap_analytics/onehz.dart';
-import 'package:openstrap_edge/compute/substrate.dart' show plausibleHrOrNull;
+import 'package:harding_band/compute/substrate.dart' show plausibleHrOrNull;
 import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 

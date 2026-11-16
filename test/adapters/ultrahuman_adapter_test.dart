@@ -21,11 +21,11 @@ import 'dart:async';
 import 'dart:typed_data';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/adapters/_registry.dart';
-import 'package:openstrap_edge/ble/adapters/adapter.dart';
-import 'package:openstrap_edge/ble/adapters/signals.dart';
-import 'package:openstrap_edge/ble/adapters/ultrahuman.dart';
-import 'package:openstrap_edge/data/observation.dart';
+import 'package:harding_band/ble/adapters/_registry.dart';
+import 'package:harding_band/ble/adapters/adapter.dart';
+import 'package:harding_band/ble/adapters/signals.dart';
+import 'package:harding_band/ble/adapters/ultrahuman.dart';
+import 'package:harding_band/data/observation.dart';
 import 'package:openstrap_protocol/openstrap_protocol.dart';
 
 /// Short enough that a deliberately-unanswered wait does not stall CI. The

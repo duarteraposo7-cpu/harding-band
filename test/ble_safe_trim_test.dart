@@ -10,10 +10,10 @@
 import 'dart:async';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/ble_engine.dart';
-import 'package:openstrap_edge/ble/ble_state.dart';
-import 'package:openstrap_edge/data/models.dart';
-import 'package:openstrap_edge/sync/sync_policy.dart';
+import 'package:harding_band/ble/ble_engine.dart';
+import 'package:harding_band/ble/ble_state.dart';
+import 'package:harding_band/data/models.dart';
+import 'package:harding_band/sync/sync_policy.dart';
 
 /// A well-formed inner-frame hex: [0]=0x2f historical, [1]=0x18 (revision 24),
 /// then the u32 record counter. Nothing re-parses it any more — BurstStats is

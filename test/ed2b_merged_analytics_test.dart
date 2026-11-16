@@ -3,10 +3,10 @@ import 'dart:typed_data';
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:openstrap_analytics/onehz.dart' as ana;
-import 'package:openstrap_edge/compute/ed2b_stream_diagnostics.dart';
-import 'package:openstrap_edge/compute/onehz_pipeline.dart';
-import 'package:openstrap_edge/compute/cardio_rows_cache.dart';
-import 'package:openstrap_edge/compute/night_rr_state.dart';
+import 'package:harding_band/compute/ed2b_stream_diagnostics.dart';
+import 'package:harding_band/compute/onehz_pipeline.dart';
+import 'package:harding_band/compute/cardio_rows_cache.dart';
+import 'package:harding_band/compute/night_rr_state.dart';
 
 void main() {
   // WHY: a capped reset can put corrected NN behind its previous segment even

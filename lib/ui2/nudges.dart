@@ -27,10 +27,15 @@ class _CommunityNudgeState extends State<CommunityNudge> {
   // that was just a slip.
   static const _cooldownMs = 14 * 24 * 60 * 60 * 1000;
 
+  static const bool _upstreamAsksEnabled = false;
+
   static String _dismissedKey(_Ask a) => 'nudge.${a.name}.dismissed';
   static String _lastShownKey(_Ask a) => 'nudge.${a.name}.last_shown_ms';
 
   static bool _eligible(_Ask a) {
+    // HARDING Band fork: the Discord and sponsor asks point at the upstream
+    // OpenStrap community and maintainer, so they are never shown.
+    if (!_upstreamAsksEnabled) return false;
     // Developer mode is someone deliberately testing the app, not a real
     // reader being nagged — silencing or a cooldown here would just make
     // this unreachable on every build after the first tap.
@@ -98,7 +103,7 @@ class _AskCard extends StatelessWidget {
           C.indigo,
           l?.nudgeDiscordTitle ?? 'Come say hi',
           l?.nudgeDiscordBody ??
-              'Other OpenStrap users hang out on Discord — bugs, ideas, and '
+              'Other HARDING Band users hang out on Discord — bugs, ideas, and '
                   'people running the same band as you.',
           l?.nudgeDiscordCta ?? 'Join Discord',
           kDiscordUrl,
@@ -107,7 +112,7 @@ class _AskCard extends StatelessWidget {
           (Color tint) =>
               Icon(LucideIcons.heartHandshake, size: 16, color: tint),
           C.pink,
-          l?.nudgeDonateTitle ?? 'Enjoying OpenStrap?',
+          l?.nudgeDonateTitle ?? 'Enjoying HARDING Band?',
           l?.nudgeDonateBody ??
               'It is a free, open-source project with no subscription. '
                   'Sponsoring keeps it maintained.',

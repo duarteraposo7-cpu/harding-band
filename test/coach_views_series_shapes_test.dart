@@ -19,8 +19,8 @@ import 'dart:convert';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/series_codec.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/series_codec.dart';
 
 /// A day bundle covering every curve the view exposes, in LEGACY shape:
 ///   • a regular grid (hr_curve, strain_curve, skin_temp_day)

@@ -10,7 +10,7 @@
 import 'dart:math' as math;
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/compute/crossday_pipeline.dart';
+import 'package:harding_band/compute/crossday_pipeline.dart';
 
 /// Build a synthetic oldest-first day series anchored on a fixed calendar date
 /// so the free/work weekday split is deterministic.

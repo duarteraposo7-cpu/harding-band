@@ -1,7 +1,7 @@
 // Public defaults. Keep personal Apple signing values in Signing.xcconfig.
-APP_BUNDLE_IDENTIFIER = com.example.openstrapEdge
+APP_BUNDLE_IDENTIFIER = pt.harding.band
 APP_WIDGET_BUNDLE_IDENTIFIER = $(APP_BUNDLE_IDENTIFIER).OpenStrapWidget
-APP_GROUP_IDENTIFIER = group.com.example.openstrap
+APP_GROUP_IDENTIFIER = group.pt.harding.band
 APPLE_DEVELOPMENT_TEAM =
 
 #include? "Signing.xcconfig"

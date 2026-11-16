@@ -7,10 +7,10 @@
 import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/adapters/_registry.dart';
-import 'package:openstrap_edge/ble/hrs_link.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/ui2/profile/devices.dart' show sensorCapReached;
+import 'package:harding_band/ble/adapters/_registry.dart';
+import 'package:harding_band/ble/hrs_link.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/ui2/profile/devices.dart' show sensorCapReached;
 import 'package:path/path.dart' as p;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';

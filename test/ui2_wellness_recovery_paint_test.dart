@@ -37,13 +37,13 @@ import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
-import 'package:openstrap_edge/data/journal_fields.dart';
-import 'package:openstrap_edge/data/local_repository.dart';
-import 'package:openstrap_edge/l10n/app_localizations.dart';
-import 'package:openstrap_edge/state/locale_controller.dart';
-import 'package:openstrap_edge/state/app_state.dart';
-import 'package:openstrap_edge/ui2/screens/screens.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/data/journal_fields.dart';
+import 'package:harding_band/data/local_repository.dart';
+import 'package:harding_band/l10n/app_localizations.dart';
+import 'package:harding_band/state/locale_controller.dart';
+import 'package:harding_band/state/app_state.dart';
+import 'package:harding_band/ui2/screens/screens.dart';
+import 'package:harding_band/ui2/ui2.dart';
 
 const _day = '2026-08-16';
 

@@ -12,9 +12,9 @@ import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:openstrap_analytics/onehz.dart' as ana;
-import 'package:openstrap_edge/compute/onehz_pipeline.dart';
-import 'package:openstrap_edge/compute/substrate.dart';
-import 'package:openstrap_edge/data/db.dart';
+import 'package:harding_band/compute/onehz_pipeline.dart';
+import 'package:harding_band/compute/substrate.dart';
+import 'package:harding_band/data/db.dart';
 
 void main() {
   File? fixtureFile() {

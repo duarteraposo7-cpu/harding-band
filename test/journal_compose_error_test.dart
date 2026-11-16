@@ -7,11 +7,11 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:openstrap_edge/data/journal_fields.dart';
-import 'package:openstrap_edge/data/local_repository.dart';
-import 'package:openstrap_edge/state/app_state.dart';
-import 'package:openstrap_edge/ui2/screens/journal_compose.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/data/journal_fields.dart';
+import 'package:harding_band/data/local_repository.dart';
+import 'package:harding_band/state/app_state.dart';
+import 'package:harding_band/ui2/screens/journal_compose.dart';
+import 'package:harding_band/ui2/ui2.dart';
 
 class _Repo extends LocalRepository {
   bool failLoad = false;

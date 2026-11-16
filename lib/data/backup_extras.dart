@@ -68,6 +68,8 @@ const Map<String, String> kSecretsNotBackedUp = {
       'pair the band again on this phone',
   'lib/ble/oura_link.dart': 'Oura pairing key is a credential; '
       'pair the ring again on this phone',
+  'lib/harding/harding_sync.dart': 'HARDING link key is a credential; '
+      'link the phone again from HARDING → Account → Band',
 };
 
 /// The app root reloads presentation controllers after AppState adopts prefs.

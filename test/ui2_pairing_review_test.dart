@@ -2,15 +2,15 @@
 // table and device details, rather than just their copy helpers.
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/adapters/_registry.dart';
-import 'package:openstrap_edge/ble/slot_comparison.dart';
-import 'package:openstrap_edge/l10n/app_localizations.dart';
-import 'package:openstrap_edge/ui2/onboarding/pairing.dart';
-import 'package:openstrap_edge/ui2/pairing/pair_help.dart';
-import 'package:openstrap_edge/ui2/pairing/pair_sheets.dart';
-import 'package:openstrap_edge/ui2/pairing/pair_text.dart';
-import 'package:openstrap_edge/ui2/pairing/slot_comparison_view.dart';
-import 'package:openstrap_edge/ui2/profile/devices.dart';
+import 'package:harding_band/ble/adapters/_registry.dart';
+import 'package:harding_band/ble/slot_comparison.dart';
+import 'package:harding_band/l10n/app_localizations.dart';
+import 'package:harding_band/ui2/onboarding/pairing.dart';
+import 'package:harding_band/ui2/pairing/pair_help.dart';
+import 'package:harding_band/ui2/pairing/pair_sheets.dart';
+import 'package:harding_band/ui2/pairing/pair_text.dart';
+import 'package:harding_band/ui2/pairing/slot_comparison_view.dart';
+import 'package:harding_band/ui2/profile/devices.dart';
 
 import 'support/pair_ui_support.dart';
 

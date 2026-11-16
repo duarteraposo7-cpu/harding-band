@@ -16,8 +16,8 @@
 
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:openstrap_edge/compute/profile.dart';
-import 'package:openstrap_edge/state/app_state.dart';
+import 'package:harding_band/compute/profile.dart';
+import 'package:harding_band/state/app_state.dart';
 
 /// A full profile — every anchor the Banister score needs.
 const _profile = Profile(

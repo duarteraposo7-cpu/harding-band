@@ -20,8 +20,8 @@ import 'dart:ui' as ui;
 import 'package:flutter/foundation.dart' show listEquals;
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ui2/charts.dart';
-import 'package:openstrap_edge/ui2/spiral_ring.dart';
+import 'package:harding_band/ui2/charts.dart';
+import 'package:harding_band/ui2/spiral_ring.dart';
 
 const _g = SpiralGeometry(10);
 const _w = 10.0;

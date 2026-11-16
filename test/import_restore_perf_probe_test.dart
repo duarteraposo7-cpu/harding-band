@@ -13,7 +13,7 @@ import 'package:path/path.dart' as p;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite_common/sqflite_logger.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
-import 'package:openstrap_edge/data/db.dart';
+import 'package:harding_band/data/db.dart';
 
 Iterable<String> _sqlOf(Object? args) sync* {
   if (args is Map) {

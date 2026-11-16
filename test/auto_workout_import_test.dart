@@ -6,9 +6,9 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:health/health.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:openstrap_edge/health/auto_workout_import.dart';
-import 'package:openstrap_edge/health/health_import_state.dart';
-import 'package:openstrap_edge/health/health_workout_import.dart';
+import 'package:harding_band/health/auto_workout_import.dart';
+import 'package:harding_band/health/health_import_state.dart';
+import 'package:harding_band/health/health_workout_import.dart';
 
 class _FakeImporter implements HealthWorkoutImporter {
   _FakeImporter(this.granted, this.rows);

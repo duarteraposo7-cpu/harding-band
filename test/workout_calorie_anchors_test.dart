@@ -9,10 +9,10 @@
 // one predicate.
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/compute/derivation_engine.dart';
-import 'package:openstrap_edge/compute/manual_session.dart';
-import 'package:openstrap_edge/compute/profile.dart';
-import 'package:openstrap_edge/state/app_state.dart';
+import 'package:harding_band/compute/derivation_engine.dart';
+import 'package:harding_band/compute/manual_session.dart';
+import 'package:harding_band/compute/profile.dart';
+import 'package:harding_band/state/app_state.dart';
 
 const _anchored = Profile(ageYears: 34, weightKg: 72, sex: 'm');
 

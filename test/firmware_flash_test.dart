@@ -2,9 +2,9 @@ import 'dart:async';
 import 'dart:typed_data';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/ble_state.dart';
-import 'package:openstrap_edge/ble/firmware_flash.dart';
-import 'package:openstrap_edge/ui2/profile/devices.dart' show currentBandFamily;
+import 'package:harding_band/ble/ble_state.dart';
+import 'package:harding_band/ble/firmware_flash.dart';
+import 'package:harding_band/ui2/profile/devices.dart' show currentBandFamily;
 import 'package:openstrap_protocol/openstrap_protocol.dart';
 
 class _Link implements FlashLink {

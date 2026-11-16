@@ -6,9 +6,9 @@ import 'dart:convert';
 
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:openstrap_edge/compute/nap_edits.dart'
+import 'package:harding_band/compute/nap_edits.dart'
     show kMaxNapSec, kMinManualNapSec;
-import 'package:openstrap_edge/health/health_nap_export.dart';
+import 'package:harding_band/health/health_nap_export.dart';
 
 class FakeNapWriter implements HealthKitNapWriter {
   final calls = <({String method, DateTime start, DateTime end, List<Map<String, int>> protect})>[];

@@ -13,8 +13,8 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:path/path.dart' as p;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/models.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/models.dart';
 
 const _frameBytes = 2128; // a WHOOP MG v20 frame
 

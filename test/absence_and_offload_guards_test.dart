@@ -15,10 +15,10 @@ import 'dart:convert';
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:openstrap_analytics/onehz.dart' as ana;
-import 'package:openstrap_edge/ble/ble_state.dart';
-import 'package:openstrap_edge/compute/crossday_pipeline.dart';
-import 'package:openstrap_edge/compute/derivation_engine.dart';
-import 'package:openstrap_edge/compute/substrate.dart';
+import 'package:harding_band/ble/ble_state.dart';
+import 'package:harding_band/compute/crossday_pipeline.dart';
+import 'package:harding_band/compute/derivation_engine.dart';
+import 'package:harding_band/compute/substrate.dart';
 
 /// A substrate of [n] seconds where the seconds in [absent] carry no gravity
 /// vector (the positional absent marker, exact `(0,0,0)`).

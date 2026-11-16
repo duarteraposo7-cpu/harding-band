@@ -19,26 +19,26 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:lucide_icons_flutter/lucide_icons.dart';
 import 'package:provider/provider.dart';
 
-import 'package:openstrap_edge/app.dart';
-import 'package:openstrap_edge/ble/ble_state.dart';
-import 'package:openstrap_edge/data/models.dart' show DeviceState;
-import 'package:openstrap_edge/notify/tap_router.dart';
-import 'package:openstrap_edge/state/app_state.dart';
-import 'package:openstrap_edge/sync/paired_device.dart' show PairedDevice;
-import 'package:openstrap_edge/import/backup_crypto.dart';
-import 'package:openstrap_edge/ui2/onboarding/pairing.dart';
-import 'package:openstrap_edge/ui2/onboarding/profile_setup.dart';
-import 'package:openstrap_edge/ui2/onboarding/welcome.dart'
+import 'package:harding_band/app.dart';
+import 'package:harding_band/ble/ble_state.dart';
+import 'package:harding_band/data/models.dart' show DeviceState;
+import 'package:harding_band/notify/tap_router.dart';
+import 'package:harding_band/state/app_state.dart';
+import 'package:harding_band/sync/paired_device.dart' show PairedDevice;
+import 'package:harding_band/import/backup_crypto.dart';
+import 'package:harding_band/ui2/onboarding/pairing.dart';
+import 'package:harding_band/ui2/onboarding/profile_setup.dart';
+import 'package:harding_band/ui2/onboarding/welcome.dart'
     show isEncryptedBackup;
-import 'package:openstrap_edge/ui2/screens/log_workout.dart'
+import 'package:harding_band/ui2/screens/log_workout.dart'
     show WorkoutSuggestionScreen;
-import 'package:openstrap_edge/ui2/screens/detected_activities.dart'
+import 'package:harding_band/ui2/screens/detected_activities.dart'
     show DetectedActivitiesScreen;
-import 'package:openstrap_edge/ui2/profile/devices.dart';
-import 'package:openstrap_edge/ui2/profile/profile.dart';
-import 'package:openstrap_edge/ui2/screens/nutrition_screen.dart'
+import 'package:harding_band/ui2/profile/devices.dart';
+import 'package:harding_band/ui2/profile/profile.dart';
+import 'package:harding_band/ui2/screens/nutrition_screen.dart'
     show NutritionScreen;
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/ui2/ui2.dart';
 
 /// A viewport tall enough that nothing under test is below the fold. The
 /// default 800x600 harness window hides the very buttons these tests are

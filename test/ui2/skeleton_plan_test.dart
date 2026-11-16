@@ -6,7 +6,7 @@
 // its own unit. Geometry oracles are the engine's own line boxes (skLineRects),
 // never the plan.
 import 'package:flutter/material.dart'; import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ui2/skeleton/skeleton.dart'; import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/ui2/skeleton/skeleton.dart'; import 'package:harding_band/ui2/ui2.dart';
 import '../support/skeleton_fixture.dart';
 const _root = ValueKey('root'); const _cardA = ValueKey('cardA'); const _cardB = ValueKey('cardB'); const _title = ValueKey('title');
 const _tabs = ValueKey('tabs');

@@ -7,12 +7,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:openstrap_edge/l10n/app_localizations.dart';
-import 'package:openstrap_edge/l10n/display_text.dart';
-import 'package:openstrap_edge/notify/battery_forecast.dart';
-import 'package:openstrap_edge/notify/notification_center.dart';
-import 'package:openstrap_edge/state/clock_format.dart';
-import 'package:openstrap_edge/state/workout_controller.dart';
+import 'package:harding_band/l10n/app_localizations.dart';
+import 'package:harding_band/l10n/display_text.dart';
+import 'package:harding_band/notify/battery_forecast.dart';
+import 'package:harding_band/notify/notification_center.dart';
+import 'package:harding_band/state/clock_format.dart';
+import 'package:harding_band/state/workout_controller.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();

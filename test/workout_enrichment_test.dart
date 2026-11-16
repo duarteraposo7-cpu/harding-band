@@ -12,11 +12,11 @@ import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 import 'dart:convert';
 
-import 'package:openstrap_edge/data/day_label.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/local_repository_impl.dart';
-import 'package:openstrap_edge/data/models.dart';
-import 'package:openstrap_edge/state/app_state.dart' show LiveWorkoutState;
+import 'package:harding_band/data/day_label.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/local_repository_impl.dart';
+import 'package:harding_band/data/models.dart';
+import 'package:harding_band/state/app_state.dart' show LiveWorkoutState;
 
 RawRecord _raw(int ts, int counter) => RawRecord(
       counter: counter,

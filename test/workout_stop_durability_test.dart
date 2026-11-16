@@ -10,8 +10,8 @@ import 'package:path/path.dart' as p;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/state/app_state.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/state/app_state.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();

@@ -7,13 +7,13 @@ import 'dart:typed_data';
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:openstrap_analytics/onehz.dart' as ana;
-import 'package:openstrap_edge/compute/derivation_engine.dart';
-import 'package:openstrap_edge/compute/derive_prepare.dart';
-import 'package:openstrap_edge/compute/ed2b_stream_diagnostics.dart';
-import 'package:openstrap_edge/compute/onehz_pipeline.dart';
-import 'package:openstrap_edge/compute/substrate.dart';
-import 'package:openstrap_edge/compute/vendor_sleep.dart';
-import 'package:openstrap_edge/data/db.dart';
+import 'package:harding_band/compute/derivation_engine.dart';
+import 'package:harding_band/compute/derive_prepare.dart';
+import 'package:harding_band/compute/ed2b_stream_diagnostics.dart';
+import 'package:harding_band/compute/onehz_pipeline.dart';
+import 'package:harding_band/compute/substrate.dart';
+import 'package:harding_band/compute/vendor_sleep.dart';
+import 'package:harding_band/data/db.dart';
 
 import 'support/ed2a_recalc_fixture.dart';
 

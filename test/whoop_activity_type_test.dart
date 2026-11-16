@@ -4,9 +4,9 @@
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:health/health.dart';
-import 'package:openstrap_edge/health/health_export.dart';
-import 'package:openstrap_edge/import/whoop_import.dart';
-import 'package:openstrap_edge/ui2/activity/catalogue.dart';
+import 'package:harding_band/health/health_export.dart';
+import 'package:harding_band/import/whoop_import.dart';
+import 'package:harding_band/ui2/activity/catalogue.dart';
 
 void main() {
   test('WHOOP names are stored as catalogue keys', () {

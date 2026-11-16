@@ -4,13 +4,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_blue_plus/flutter_blue_plus.dart' show BluetoothDevice;
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/adapters/_registry.dart';
-import 'package:openstrap_edge/ble/hrs_link.dart' show BandCandidate;
-import 'package:openstrap_edge/state/app_state.dart';
-import 'package:openstrap_edge/ui2/pairing/device_picker.dart';
-import 'package:openstrap_edge/ui2/pairing/pair_text.dart' show PairFilter;
-import 'package:openstrap_edge/ui2/profile/devices.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/ble/adapters/_registry.dart';
+import 'package:harding_band/ble/hrs_link.dart' show BandCandidate;
+import 'package:harding_band/state/app_state.dart';
+import 'package:harding_band/ui2/pairing/device_picker.dart';
+import 'package:harding_band/ui2/pairing/pair_text.dart' show PairFilter;
+import 'package:harding_band/ui2/profile/devices.dart';
+import 'package:harding_band/ui2/ui2.dart';
 
 import 'support/pair_ui_support.dart';
 

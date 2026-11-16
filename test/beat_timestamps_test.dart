@@ -10,9 +10,9 @@
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
-import 'package:openstrap_edge/compute/substrate.dart' show beatTimesMs;
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/models.dart';
+import 'package:harding_band/compute/substrate.dart' show beatTimesMs;
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/models.dart';
 
 void main() {
   group('beatTimesMs', () {

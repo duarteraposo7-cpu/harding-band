@@ -1,4 +1,4 @@
-package wtf.openstrap.openstrap_edge
+package pt.harding.band
 
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNull

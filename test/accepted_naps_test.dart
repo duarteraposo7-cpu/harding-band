@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/compute/accepted_naps.dart';
-import 'package:openstrap_edge/compute/nap_edits.dart';
+import 'package:harding_band/compute/accepted_naps.dart';
+import 'package:harding_band/compute/nap_edits.dart';
 
 Map<String, dynamic> bundle({bool mainSleep = true}) => {
   if (mainSleep)

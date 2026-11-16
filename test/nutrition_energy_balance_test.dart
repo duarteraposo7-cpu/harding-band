@@ -3,7 +3,7 @@
 // morning. These pin that both sides now come from the same whole days.
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/data/nutrition_store.dart';
+import 'package:harding_band/data/nutrition_store.dart';
 
 FoodEntry _entry(String date, double? kcal, int hour) {
   final p = date.split('-').map(int.parse).toList();

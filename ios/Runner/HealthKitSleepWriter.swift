@@ -14,7 +14,7 @@ import HealthKit
 enum HealthKitSleepWriter {
   private static let channelName = "openstrap/healthkit_sleep"
   private static let store = HKHealthStore()
-  private static let queue = DispatchQueue(label: "wtf.openstrap.healthkit.sleep")
+  private static let queue = DispatchQueue(label: "pt.harding.band.healthkit.sleep")
   // Nap calls carry a monotonic `seq` from Dart. A native call that outlives
   // its Dart-side timeout can still land later; dropping any nap call whose
   // seq is not newer than the last applied one keeps a late replaceNap from

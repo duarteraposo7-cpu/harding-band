@@ -13,7 +13,7 @@
 //     other missed slots don't then buzz back to back.
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/notify/med_buzzer.dart';
+import 'package:harding_band/notify/med_buzzer.dart';
 
 class _Harness {
   int buzzes = 0;

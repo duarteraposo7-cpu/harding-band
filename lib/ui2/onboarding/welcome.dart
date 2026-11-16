@@ -448,7 +448,7 @@ Future<ImportOutcome> runImport(
         (await isNoopExport(p) ? raw : csv).add(p);
       }
     }
-    if (ownDb.isNotEmpty) sources.add('OpenStrap backup');
+    if (ownDb.isNotEmpty) sources.add('HARDING Band backup');
     db.addAll([...plain.where(ownDb.contains), ...decrypted]);
     for (final p in db) {
       days += await app.importEdgeBackup(p);
@@ -735,7 +735,7 @@ class WelcomeView extends StatelessWidget {
               // the same rolling baselines. What IS true is the half that
               // protects data: no import overwrites a day this band measured.
               l?.welcomeImportFooterNote ??
-                  'A sensor export, an OpenStrap backup or a vendor CSV. Imported days count toward your usual range, and never overwrite a day the band measured.',
+                  'A sensor export, a HARDING Band backup or a vendor CSV. Imported days count toward your usual range, and never overwrite a day the band measured.',
               style: F.cap.copyWith(color: p.ink3),
             ),
             if (busy) ...[

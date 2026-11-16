@@ -4,12 +4,12 @@
 // path, so a tap during a wipe stores nothing and runs nothing.
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/ble_engine.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/gestures/device_action.dart';
-import 'package:openstrap_edge/notify/notification_center.dart';
-import 'package:openstrap_edge/notify/notification_event.dart';
-import 'package:openstrap_edge/sync/reset_gate.dart';
+import 'package:harding_band/ble/ble_engine.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/gestures/device_action.dart';
+import 'package:harding_band/notify/notification_center.dart';
+import 'package:harding_band/notify/notification_event.dart';
+import 'package:harding_band/sync/reset_gate.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'support/app_state_gesture_harness.dart';

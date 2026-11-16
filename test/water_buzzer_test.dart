@@ -4,7 +4,7 @@
 // reminder the notification already delivered is worse than no buzz.
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/notify/water_buzzer.dart';
+import 'package:harding_band/notify/water_buzzer.dart';
 
 class _Harness {
   int buzzes = 0;

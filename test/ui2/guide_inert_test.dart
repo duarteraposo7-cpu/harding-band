@@ -4,9 +4,9 @@ import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ui2/guides/guide_dim.dart';
-import 'package:openstrap_edge/ui2/skeleton/unit_paint.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/ui2/guides/guide_dim.dart';
+import 'package:harding_band/ui2/skeleton/unit_paint.dart';
+import 'package:harding_band/ui2/ui2.dart';
 import '../support/skeleton_fixture.dart';
 
 void main() {

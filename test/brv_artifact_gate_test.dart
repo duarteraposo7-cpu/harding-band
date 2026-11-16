@@ -8,7 +8,7 @@
 import 'dart:math' as math;
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/compute/onehz_pipeline.dart';
+import 'package:harding_band/compute/onehz_pipeline.dart';
 
 void main() {
   // 3 h of beats at ~60 bpm with a clean 15 br/min (0.25 Hz) RSA modulation.

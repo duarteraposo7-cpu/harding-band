@@ -5,8 +5,8 @@
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_blue_plus/flutter_blue_plus.dart' show Guid;
-import 'package:openstrap_edge/ble/adapters/_registry.dart';
-import 'package:openstrap_edge/ble/hrs_link.dart';
+import 'package:harding_band/ble/adapters/_registry.dart';
+import 'package:harding_band/ble/hrs_link.dart';
 import 'package:openstrap_protocol/openstrap_protocol.dart';
 
 void main() {

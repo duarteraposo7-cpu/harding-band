@@ -7,21 +7,21 @@ import 'package:flutter/material.dart';
 import 'package:flutter_blue_plus/flutter_blue_plus.dart' show BluetoothDevice;
 import 'package:flutter_test/flutter_test.dart';
 import 'package:lucide_icons_flutter/lucide_icons.dart';
-import 'package:openstrap_edge/ble/adapters/_registry.dart';
-import 'package:openstrap_edge/ble/band_identity.dart';
-import 'package:openstrap_edge/ble/hrs_link.dart' show BandCandidate;
-import 'package:openstrap_edge/ui2/pairing/add_device_flow.dart';
-import 'package:openstrap_edge/ui2/profile/devices.dart' show kPairableSensors;
-import 'package:openstrap_edge/l10n/app_localizations.dart';
-import 'package:openstrap_edge/ui2/pairing/device_picker.dart' show DevicePickerView;
-import 'package:openstrap_edge/ui2/pairing/pair_text.dart' show PairFilter;
-import 'package:openstrap_edge/ui2/profile/pair_sensor.dart' show afterBandFoundText;
-import 'package:openstrap_edge/ble/slot_comparison.dart';
-import 'package:openstrap_edge/ui2/pairing/pair_choice_sheet.dart';
-import 'package:openstrap_edge/ui2/pairing/pair_sheets.dart';
+import 'package:harding_band/ble/adapters/_registry.dart';
+import 'package:harding_band/ble/band_identity.dart';
+import 'package:harding_band/ble/hrs_link.dart' show BandCandidate;
+import 'package:harding_band/ui2/pairing/add_device_flow.dart';
+import 'package:harding_band/ui2/profile/devices.dart' show kPairableSensors;
+import 'package:harding_band/l10n/app_localizations.dart';
+import 'package:harding_band/ui2/pairing/device_picker.dart' show DevicePickerView;
+import 'package:harding_band/ui2/pairing/pair_text.dart' show PairFilter;
+import 'package:harding_band/ui2/profile/pair_sensor.dart' show afterBandFoundText;
+import 'package:harding_band/ble/slot_comparison.dart';
+import 'package:harding_band/ui2/pairing/pair_choice_sheet.dart';
+import 'package:harding_band/ui2/pairing/pair_sheets.dart';
 
 import 'support/pair_ui_support.dart';
-import 'package:openstrap_edge/ui2/pairing/slot_comparison_view.dart';
+import 'package:harding_band/ui2/pairing/slot_comparison_view.dart';
 
 BandCandidate _cand(String entryId,
         {String id = 'AA:BB:CC:DD:EE:01', String? label, BandEntry? alsoBand}) =>

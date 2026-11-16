@@ -4,12 +4,12 @@ import Flutter
 
 /// BGTaskScheduler bridge for OpenStrap Edge.
 ///
-/// Registers a BGProcessingTask (identifier: "wtf.openstrap.edge.bgsync") that
+/// Registers a BGProcessingTask (identifier: "pt.harding.band.bgsync") that
 /// iOS runs opportunistically when the device is idle. On task launch it calls
 /// the Dart `openstrap/bg_task` channel → `run`, which runs runHeadlessSync() +
 /// a heavy DerivationEngine pass, then signals completion.
 ///
-/// Task identifier scoped to wtf.openstrap.edge.
+/// Task identifier scoped to pt.harding.band.
 ///
 /// Design notes:
 ///   - "location" is NOT added to UIBackgroundModes: OpenStrap has no GPS /
@@ -28,14 +28,14 @@ import Flutter
 ///   4. schedule() called after wireChannel so the first request is queued once
 ///      Dart is ready, and again on every applicationDidEnterBackground.
 enum BackgroundTaskManager {
-    static let taskIdentifier = "wtf.openstrap.edge.bgsync"
+    static let taskIdentifier = "pt.harding.band.bgsync"
     /// LIGHT companion task: a BGAppRefreshTask (short ~30 s budget, separate
     /// app-refresh budget from processing tasks) that runs a SYNC-ONLY pass —
     /// no heavy derivation — so the band's flash backlog gets pulled more often
     /// than the processing task alone allows. Requires the user's Background
     /// App Refresh setting to be on (the "fetch" UIBackgroundMode was already
     /// declared; this finally registers a task for it).
-    static let refreshTaskIdentifier = "wtf.openstrap.edge.refresh"
+    static let refreshTaskIdentifier = "pt.harding.band.refresh"
     private static let channelName = "openstrap/bg_task"
     private static let retryInterval: TimeInterval = 10 * 60   // 10-min earliest
 

@@ -9,9 +9,9 @@ import 'package:fake_async/fake_async.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:openstrap_edge/ble/ble_engine.dart';
-import 'package:openstrap_edge/state/app_state.dart';
-import 'package:openstrap_edge/sync/paired_device.dart';
+import 'package:harding_band/ble/ble_engine.dart';
+import 'package:harding_band/state/app_state.dart';
+import 'package:harding_band/sync/paired_device.dart';
 
 import 'support/app_state_derive_harness.dart';
 

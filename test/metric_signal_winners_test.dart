@@ -16,9 +16,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
-import 'package:openstrap_edge/ble/adapters/signals.dart';
-import 'package:openstrap_edge/data/db.dart' show LocalDb;
-import 'package:openstrap_edge/ui2/profile/devices.dart';
+import 'package:harding_band/ble/adapters/signals.dart';
+import 'package:harding_band/data/db.dart' show LocalDb;
+import 'package:harding_band/ui2/profile/devices.dart';
 
 const _band = HealthSource(
   name: 'WHOOP',

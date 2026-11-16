@@ -3,7 +3,7 @@
 // is not necessarily the chosen night's.
 import 'package:flutter_test/flutter_test.dart';
 import 'package:openstrap_analytics/onehz.dart' as ana;
-import 'package:openstrap_edge/compute/derivation_engine.dart';
+import 'package:harding_band/compute/derivation_engine.dart';
 
 ana.SleepNightObservation _o(int epochs, int? start, int? end) =>
     ana.SleepNightObservation(epochs: epochs, startTsSec: start, endTsSec: end);

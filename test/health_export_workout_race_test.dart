@@ -2,9 +2,9 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/compute/derivation_engine.dart' show kAlgoVersion;
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/health/health_export.dart';
+import 'package:harding_band/compute/derivation_engine.dart' show kAlgoVersion;
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/health/health_export.dart';
 import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 

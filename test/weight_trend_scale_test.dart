@@ -5,12 +5,12 @@
 import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/compute/inputs/canonical.dart';
-import 'package:openstrap_edge/compute/inputs/measurement_inputs.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/data/journal_fields.dart';
-import 'package:openstrap_edge/data/observation.dart';
-import 'package:openstrap_edge/ui2/screens/journal_compose.dart';
+import 'package:harding_band/compute/inputs/canonical.dart';
+import 'package:harding_band/compute/inputs/measurement_inputs.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/data/journal_fields.dart';
+import 'package:harding_band/data/observation.dart';
+import 'package:harding_band/ui2/screens/journal_compose.dart';
 import 'package:path/path.dart' as p;
 import 'package:path_provider_platform_interface/path_provider_platform_interface.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';

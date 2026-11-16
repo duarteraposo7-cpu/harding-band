@@ -3,7 +3,7 @@
 // user-set strap names.
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/sync/paired_device.dart';
+import 'package:harding_band/sync/paired_device.dart';
 
 void main() {
   group('cleanDeviceLabel', () {

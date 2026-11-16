@@ -4,11 +4,11 @@ import 'dart:io';
 
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/data/auto_backup.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/state/app_state.dart';
-import 'package:openstrap_edge/state/prefs.dart';
-import 'package:openstrap_edge/sync/reset_gate.dart';
+import 'package:harding_band/data/auto_backup.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/state/app_state.dart';
+import 'package:harding_band/state/prefs.dart';
+import 'package:harding_band/sync/reset_gate.dart';
 import 'package:path/path.dart' as p;
 import 'package:path_provider_platform_interface/path_provider_platform_interface.dart';
 import 'package:shared_preferences/shared_preferences.dart';

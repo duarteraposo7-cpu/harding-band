@@ -11,7 +11,7 @@
 // default of 8 h (5 cycles + 30 min), flagged `targetIsDefault`.
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ui2/sleep_ring_model.dart';
+import 'package:harding_band/ui2/sleep_ring_model.dart';
 
 SleepRingModel _slept({
   num duration = 442,

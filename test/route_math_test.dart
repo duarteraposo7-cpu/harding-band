@@ -3,8 +3,8 @@
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:openstrap_analytics/onehz.dart' as ana;
-import 'package:openstrap_edge/gps/route_math.dart';
-import 'package:openstrap_edge/gps/route_models.dart';
+import 'package:harding_band/gps/route_math.dart';
+import 'package:harding_band/gps/route_models.dart';
 
 // ~metres per degree of longitude at the equator (haversine, lat 0).
 const double _mPerDegLngAtEq = 111319.49;

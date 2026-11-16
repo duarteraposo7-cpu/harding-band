@@ -6,8 +6,8 @@
 import 'dart:typed_data';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ecg/ecg_models.dart';
-import 'package:openstrap_edge/ecg/ecg_policy.dart';
+import 'package:harding_band/ecg/ecg_models.dart';
+import 'package:harding_band/ecg/ecg_policy.dart';
 import 'package:openstrap_protocol/openstrap_protocol.dart';
 
 LabradorR17 pkt({

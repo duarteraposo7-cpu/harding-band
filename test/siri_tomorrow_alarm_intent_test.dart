@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/state/alarm_schedule.dart';
+import 'package:harding_band/state/alarm_schedule.dart';
 
 // Siri's "Enable tomorrow's alarm" latches the instant it ran and the app
 // resolves the weekday against the schedule. Taking the next calendar date

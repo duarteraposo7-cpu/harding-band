@@ -5,10 +5,10 @@
 // (test/guards) resolves method calls and not calls through function values.
 // Tests build one-off guides and probes from closures, which is fine here: the
 // guard only analyses lib/.
-import 'package:flutter/widgets.dart'; import 'package:openstrap_edge/l10n/app_localizations.dart';
-import 'package:openstrap_edge/ui2/app_shell.dart' show ShellDomain; import 'package:openstrap_edge/ui2/guides/guide_runner.dart';
-import 'package:openstrap_edge/ui2/guides/guide_target.dart' show RevealGate; import 'package:openstrap_edge/ui2/guides/guide_text.dart';
-import 'package:openstrap_edge/ui2/skeleton/skeleton.dart' show SkeletonChrome;
+import 'package:flutter/widgets.dart'; import 'package:harding_band/l10n/app_localizations.dart';
+import 'package:harding_band/ui2/app_shell.dart' show ShellDomain; import 'package:harding_band/ui2/guides/guide_runner.dart';
+import 'package:harding_band/ui2/guides/guide_target.dart' show RevealGate; import 'package:harding_band/ui2/guides/guide_text.dart';
+import 'package:harding_band/ui2/skeleton/skeleton.dart' show SkeletonChrome;
 /// A [GuideText] computed by a closure.
 class FnText implements GuideText { final String Function(AppLocalizations l) _read; const FnText(this._read);
   @override String of(AppLocalizations l) => _read(l); }

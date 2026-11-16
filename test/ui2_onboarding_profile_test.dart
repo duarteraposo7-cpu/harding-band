@@ -9,19 +9,19 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:lucide_icons_flutter/lucide_icons.dart';
 import 'package:provider/provider.dart';
 
-import 'package:openstrap_edge/notify/notification_prefs.dart';
-import 'package:openstrap_edge/platform/app_icon.dart';
-import 'package:openstrap_edge/state/alarm_schedule.dart';
-import 'package:openstrap_edge/state/locale_controller.dart';
-import 'package:openstrap_edge/ui2/onboarding/pairing.dart';
-import 'package:openstrap_edge/ui2/onboarding/profile_setup.dart';
-import 'package:openstrap_edge/ui2/onboarding/splash.dart';
-import 'package:openstrap_edge/ui2/onboarding/welcome.dart';
-import 'package:openstrap_edge/ui2/profile/alarm.dart';
-import 'package:openstrap_edge/ui2/profile/devices.dart';
-import 'package:openstrap_edge/ui2/profile/profile.dart';
-import 'package:openstrap_edge/ui2/profile/settings.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/notify/notification_prefs.dart';
+import 'package:harding_band/platform/app_icon.dart';
+import 'package:harding_band/state/alarm_schedule.dart';
+import 'package:harding_band/state/locale_controller.dart';
+import 'package:harding_band/ui2/onboarding/pairing.dart';
+import 'package:harding_band/ui2/onboarding/profile_setup.dart';
+import 'package:harding_band/ui2/onboarding/splash.dart';
+import 'package:harding_band/ui2/onboarding/welcome.dart';
+import 'package:harding_band/ui2/profile/alarm.dart';
+import 'package:harding_band/ui2/profile/devices.dart';
+import 'package:harding_band/ui2/profile/profile.dart';
+import 'package:harding_band/ui2/profile/settings.dart';
+import 'package:harding_band/ui2/ui2.dart';
 
 /// Fixed, so a test is never a function of the calendar or of a real band.
 final _synced = DateTime(2026, 8, 22, 7, 12);

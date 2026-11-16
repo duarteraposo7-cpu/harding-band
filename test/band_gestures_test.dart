@@ -12,11 +12,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/gestures/device_action.dart';
-import 'package:openstrap_edge/gestures/gesture_dispatcher.dart';
-import 'package:openstrap_edge/gestures/gesture_settings.dart';
-import 'package:openstrap_edge/ui2/profile/gestures.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/gestures/device_action.dart';
+import 'package:harding_band/gestures/gesture_dispatcher.dart';
+import 'package:harding_band/gestures/gesture_settings.dart';
+import 'package:harding_band/ui2/profile/gestures.dart';
+import 'package:harding_band/ui2/ui2.dart';
 
 /// What `GestureSettings.bootstrap` builds on a phone whose native side
 /// answered: `none`, every in-app action, and the reported native ones.

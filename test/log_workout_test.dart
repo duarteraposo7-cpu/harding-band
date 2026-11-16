@@ -14,13 +14,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:openstrap_edge/compute/manual_session.dart';
-import 'package:openstrap_edge/data/local_repository.dart';
-import 'package:openstrap_edge/state/app_state.dart';
-import 'package:openstrap_edge/ui2/activity/catalogue.dart';
-import 'package:openstrap_edge/ui2/screens/log_workout.dart';
-import 'package:openstrap_edge/ui2/screens/detected_activities.dart';
-import 'package:openstrap_edge/ui2/ui2.dart';
+import 'package:harding_band/compute/manual_session.dart';
+import 'package:harding_band/data/local_repository.dart';
+import 'package:harding_band/state/app_state.dart';
+import 'package:harding_band/ui2/activity/catalogue.dart';
+import 'package:harding_band/ui2/screens/log_workout.dart';
+import 'package:harding_band/ui2/screens/detected_activities.dart';
+import 'package:harding_band/ui2/ui2.dart';
 import 'package:provider/provider.dart';
 
 /// A save that the repository refuses: a retime over a pruned substrate, or

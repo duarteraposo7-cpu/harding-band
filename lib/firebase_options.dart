@@ -62,6 +62,6 @@ class DefaultFirebaseOptions {
     messagingSenderId: '500936306874',
     projectId: 'portofliowebsite-387909',
     storageBucket: 'portofliowebsite-387909.firebasestorage.app',
-    iosBundleId: 'wtf.openstrap',
+    iosBundleId: 'pt.harding.band',
   );
 }

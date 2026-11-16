@@ -5,7 +5,7 @@ import 'dart:async';
 
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:openstrap_edge/state/coalescing_runner.dart';
+import 'package:harding_band/state/coalescing_runner.dart';
 
 void main() {
   test('requests while a run is waiting join it instead of queueing more',

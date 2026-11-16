@@ -18,7 +18,7 @@
 import 'dart:math' as math;
 import 'dart:typed_data';
 
-import 'package:openstrap_edge/data/models.dart' show RawRecord, Sample;
+import 'package:harding_band/data/models.dart' show RawRecord, Sample;
 import 'package:openstrap_protocol/openstrap_protocol.dart';
 
 import 'garmin_watch.dart';

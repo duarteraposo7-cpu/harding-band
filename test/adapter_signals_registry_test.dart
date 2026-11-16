@@ -10,20 +10,20 @@
 // membership AND the declared cadence.
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ble/adapters/_registry.dart';
-import 'package:openstrap_edge/ble/adapters/ble_hrs.dart';
-import 'package:openstrap_edge/ble/adapters/colmi.dart';
-import 'package:openstrap_edge/ble/adapters/coros.dart';
-import 'package:openstrap_edge/ble/adapters/garmin.dart';
-import 'package:openstrap_edge/ble/adapters/miband234.dart';
-import 'package:openstrap_edge/ble/adapters/oura.dart';
-import 'package:openstrap_edge/ble/adapters/pebble.dart';
-import 'package:openstrap_edge/ble/adapters/polar_pmd.dart';
-import 'package:openstrap_edge/ble/adapters/signals.dart';
-import 'package:openstrap_edge/ble/adapters/miscale.dart';
-import 'package:openstrap_edge/ble/adapters/thermometer.dart';
-import 'package:openstrap_edge/ble/adapters/ultrahuman.dart';
-import 'package:openstrap_edge/ble/adapters/whoop_gen4.dart';
+import 'package:harding_band/ble/adapters/_registry.dart';
+import 'package:harding_band/ble/adapters/ble_hrs.dart';
+import 'package:harding_band/ble/adapters/colmi.dart';
+import 'package:harding_band/ble/adapters/coros.dart';
+import 'package:harding_band/ble/adapters/garmin.dart';
+import 'package:harding_band/ble/adapters/miband234.dart';
+import 'package:harding_band/ble/adapters/oura.dart';
+import 'package:harding_band/ble/adapters/pebble.dart';
+import 'package:harding_band/ble/adapters/polar_pmd.dart';
+import 'package:harding_band/ble/adapters/signals.dart';
+import 'package:harding_band/ble/adapters/miscale.dart';
+import 'package:harding_band/ble/adapters/thermometer.dart';
+import 'package:harding_band/ble/adapters/ultrahuman.dart';
+import 'package:harding_band/ble/adapters/whoop_gen4.dart';
 
 void main() {
   test('kAdapterSignals matches each adapter own declaration', () {

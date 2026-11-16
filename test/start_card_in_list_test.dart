@@ -2,8 +2,8 @@
 // which a ListView does not give. It asserted in debug and had no size.
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/ui2/screens/start_card.dart';
-import 'package:openstrap_edge/ui2/theme.dart';
+import 'package:harding_band/ui2/screens/start_card.dart';
+import 'package:harding_band/ui2/theme.dart';
 
 void main() {
   for (final scale in [1.0, 1.3]) {

@@ -7,10 +7,10 @@ import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:openstrap_analytics/onehz.dart' as ana;
-import 'package:openstrap_edge/compute/derivation_engine.dart';
-import 'package:openstrap_edge/compute/sleep_profile_policy.dart';
-import 'package:openstrap_edge/data/day_label.dart';
-import 'package:openstrap_edge/data/db.dart';
+import 'package:harding_band/compute/derivation_engine.dart';
+import 'package:harding_band/compute/sleep_profile_policy.dart';
+import 'package:harding_band/data/day_label.dart';
+import 'package:harding_band/data/db.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
 import 'support/ed2a_recalc_fixture.dart';

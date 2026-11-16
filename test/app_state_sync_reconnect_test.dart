@@ -16,7 +16,7 @@
 import 'dart:async';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:openstrap_edge/sync/band_ownership.dart';
+import 'package:harding_band/sync/band_ownership.dart';
 
 import 'support/app_state_sync_harness.dart';
 

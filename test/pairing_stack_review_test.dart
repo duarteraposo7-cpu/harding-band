@@ -6,17 +6,17 @@ import 'package:flutter_blue_plus/flutter_blue_plus.dart' show BluetoothDevice;
 import 'package:flutter_test/flutter_test.dart';
 import 'package:lucide_icons_flutter/lucide_icons.dart';
 import 'package:provider/provider.dart';
-import 'package:openstrap_edge/ble/adapters/_registry.dart';
-import 'package:openstrap_edge/ble/hrs_link.dart';
-import 'package:openstrap_edge/ble/band_identity.dart' show PairOutcome;
-import 'package:openstrap_edge/state/app_state.dart';
-import 'package:openstrap_edge/data/db.dart';
-import 'package:openstrap_edge/sync/paired_device.dart';
-import 'package:openstrap_edge/ui2/onboarding/pairing.dart';
-import 'package:openstrap_edge/ui2/pairing/add_device_flow.dart';
-import 'package:openstrap_edge/ui2/pairing/device_picker.dart';
-import 'package:openstrap_edge/ui2/pairing/pair_text.dart';
-import 'package:openstrap_edge/ui2/profile/pair_sensor.dart';
+import 'package:harding_band/ble/adapters/_registry.dart';
+import 'package:harding_band/ble/hrs_link.dart';
+import 'package:harding_band/ble/band_identity.dart' show PairOutcome;
+import 'package:harding_band/state/app_state.dart';
+import 'package:harding_band/data/db.dart';
+import 'package:harding_band/sync/paired_device.dart';
+import 'package:harding_band/ui2/onboarding/pairing.dart';
+import 'package:harding_band/ui2/pairing/add_device_flow.dart';
+import 'package:harding_band/ui2/pairing/device_picker.dart';
+import 'package:harding_band/ui2/pairing/pair_text.dart';
+import 'package:harding_band/ui2/profile/pair_sensor.dart';
 
 import 'support/app_state_derive_harness.dart'
     show deriveDbSetUp, deriveDbTearDown;

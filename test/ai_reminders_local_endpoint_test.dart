@@ -6,10 +6,10 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:openstrap_edge/ai/ai_prefs.dart';
-import 'package:openstrap_edge/ai/reminder_plan.dart';
-import 'package:openstrap_edge/coach/coach_config.dart';
-import 'package:openstrap_edge/notify/notification_service.dart';
+import 'package:harding_band/ai/ai_prefs.dart';
+import 'package:harding_band/ai/reminder_plan.dart';
+import 'package:harding_band/coach/coach_config.dart';
+import 'package:harding_band/notify/notification_service.dart';
 
 void main() {
   setUp(() => SharedPreferences.setMockInitialValues({}));
