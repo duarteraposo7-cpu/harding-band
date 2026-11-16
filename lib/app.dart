@@ -45,7 +45,6 @@ import 'ui2/screens/workout_screen.dart';
 import 'ui2/ui2.dart';
 import 'ui2/guides/guide_runner.dart';
 import 'ui2/profile/settings.dart' show MoreSettings;
-import 'harding/harding_links.dart';
 import 'ui2/guides/guide_dim.dart';
 import 'ui2/skeleton/unit_paint.dart' show GuideScrollBehavior;
 
@@ -70,8 +69,6 @@ class _OpenStrapAppState extends State<OpenStrapApp> with WidgetsBindingObserver
   @override
   void initState() {
     super.initState();
-    // HARDING Band: the link confirmation dialog needs the root navigator.
-    HardingLinks.navigatorKey = _navigatorKey;
     WidgetsBinding.instance.addObserver(this);
     settingsRestoredSignal.addListener(_onSettingsRestored);
     unawaited(LocalDb.setForeground(

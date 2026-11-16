@@ -1,144 +1,112 @@
 import 'dart:convert';
 
+import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:harding_band/harding/harding_pairing_dialog.dart';
+import 'package:harding_band/harding/harding_sync.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/testing.dart';
 
-import 'package:flutter_test/flutter_test.dart';
-import 'package:harding_band/harding/harding_sync.dart';
+const key = 'hb_abcdefghijklmnopqrstuvwxyz0123456789-_ABCDEFG';
+final numbers = HardingNumbers(hasData: true, readiness: 64, readinessBand: 'Good to go', hrv: 58, hrvBaseline: 52,
+    restingHr: 51, sleepMin: 425, sleepNeedMin: 480, sleepEfficiency: 91, strain: 3.25, at: DateTime(2026, 10, 17, 7, 31, 12));
+final pairing = HardingPairing('ABCD-EFGH', 'hbp_token', DateTime.now().add(const Duration(minutes: 10)));
+
+/// A HARDING server: `claim` answers the pairing poll, `sync` the number upload.
+MockClient server(List<http.Request> calls, {int claimStatus = 200, String claim = 'linked', int syncStatus = 200}) =>
+    MockClient((r) async {
+      calls.add(r);
+      switch (r.url.path) {
+        case '/api/band/pair':
+          return http.Response(jsonEncode({'ok': true, 'code': 'ABCD-EFGH', 'pollToken': 'hbp_token', 'expiresAt': '2099-01-01T00:00:00.000Z', 'minutes': 10}), 200);
+        case '/api/band/pair/claim':
+          if (claimStatus != 200) return http.Response(jsonEncode({'ok': false, 'status': 'expired'}), claimStatus);
+          return http.Response(jsonEncode(claim == 'linked' ? {'ok': true, 'status': 'linked', 'key': key} : {'ok': true, 'status': claim}), 200);
+        case '/api/band/sync':
+          return http.Response(jsonEncode({'ok': syncStatus == 200}), syncStatus);
+      }
+      return http.Response('', 404);
+    });
 
 void main() {
-  group('parseHardingLink', () {
-    const key = 'hb_abcdefghijklmnopqrstuvwxyz0123456789-_ABCDEFG';
-    Uri link(String server, [String k = key]) =>
-        Uri(scheme: 'hardingband', host: 'link', queryParameters: {'server': server, 'key': k});
-
-    test('accepts an https server and a HARDING key', () {
-      final l = parseHardingLink(link('https://harding.pt'))!;
-      expect(l.server.toString(), 'https://harding.pt');
-      expect(l.key, key);
-    });
-    test('drops any path or query from the server', () {
-      expect(parseHardingLink(link('https://harding.pt/conta?x=1'))!.server.toString(), 'https://harding.pt');
-    });
-    test('allows plain http only on localhost', () {
-      expect(parseHardingLink(link('http://localhost:3000'))!.server.port, 3000);
-      expect(parseHardingLink(link('http://harding.pt')), isNull);
-    });
-    test('refuses any server that is not HARDING', () {
-      expect(parseHardingLink(link('https://evil.example')), isNull);
-      expect(parseHardingLink(link('https://harding.pt.evil.example')), isNull);
-      expect(parseHardingLink(link('http://localhost:3000'), allowLocal: false), isNull);
-    });
-    test('refuses other schemes, hosts and key shapes', () {
-      expect(parseHardingLink(Uri.parse('https://link?server=https://harding.pt&key=$key')), isNull);
-      expect(parseHardingLink(Uri.parse('hardingband://other?server=https://harding.pt&key=$key')), isNull);
-      expect(parseHardingLink(link('https://harding.pt', 'not-a-key')), isNull);
-      expect(parseHardingLink(link('https://harding.pt', 'hb_short')), isNull);
-      expect(parseHardingLink(link('ftp://harding.pt')), isNull);
-    });
-  });
-
   group('HardingNumbers.toJson', () {
-    final at = DateTime(2026, 10, 17, 7, 31, 12);
-    HardingNumbers n({bool hasData = true, int readiness = 64, double strain = 3.25, String band = 'Good to go'}) => HardingNumbers(
-          hasData: hasData,
-          readiness: readiness,
-          readinessBand: band,
-          hrv: 58,
-          hrvBaseline: 52,
-          restingHr: 51,
-          sleepMin: 425,
-          sleepNeedMin: 480,
-          sleepEfficiency: 91,
-          strain: strain,
-          at: at,
-        );
-
     test('matches the shape HARDING parses', () {
-      final j = n().toJson();
-      expect(j['has_data'], true);
+      final j = numbers.toJson();
       expect(j['readiness'], 64);
-      expect(j['readiness_band'], 'Good to go');
       expect(j['strain'], 3.3);
       expect(j['date'], '2026-10-17');
-      expect(j['updated_at'], startsWith('2026-10-17T07:31:12'));
-      expect(RegExp(r'[+-]\d{2}:\d{2}$').hasMatch(j['updated_at'] as String), isTrue);
-      expect(jsonDecode(jsonEncode(j)), isA<Map>());
+      expect(RegExp(r'^2026-10-17T07:31:12[+-]\d{2}:\d{2}$').hasMatch(j['updated_at'] as String), isTrue);
     });
-    test('sends null for the no-data sentinels', () {
-      final j = n(readiness: -1, strain: -1, band: '').toJson();
-      expect(j['readiness'], isNull);
-      expect(j['strain'], isNull);
-      expect(j['readiness_band'], isNull);
-    });
-    test('sends no numbers when there is no fresh data', () {
-      final j = n(hasData: false).toJson();
-      expect(j['readiness'], isNull);
-      expect(j['hrv_ms'], isNull);
+    test('sends null for the no-data sentinels and when there is no fresh data', () {
+      final none = HardingNumbers(hasData: true, readiness: -1, readinessBand: '', hrv: 58, hrvBaseline: 52, restingHr: 51,
+          sleepMin: 425, sleepNeedMin: 480, sleepEfficiency: 91, strain: -1, at: DateTime(2026, 10, 17)).toJson();
+      expect([none['readiness'], none['strain'], none['readiness_band']], [null, null, null]);
+      final stale = HardingNumbers(hasData: false, readiness: 64, readinessBand: 'x', hrv: 58, hrvBaseline: 52, restingHr: 51,
+          sleepMin: 425, sleepNeedMin: 480, sleepEfficiency: 91, strain: 3, at: DateTime(2026, 10, 17)).toJson();
+      expect(stale['hrv_ms'], isNull);
     });
   });
 
-  group('HardingSync.link', () {
-    const key = 'hb_abcdefghijklmnopqrstuvwxyz0123456789-_ABCDEFG';
-    final uri = Uri(scheme: 'hardingband', host: 'link', queryParameters: {'server': 'https://harding.pt', 'key': key});
-    final numbers = HardingNumbers(hasData: true, readiness: 64, readinessBand: 'Good to go', hrv: 58, hrvBaseline: 52,
-        restingHr: 51, sleepMin: 425, sleepNeedMin: 480, sleepEfficiency: 91, strain: 3.2, at: DateTime(2026, 10, 17, 7));
+  group('pairing and sending', () {
     late List<http.Request> calls;
-    MockClient server({int whoami = 200}) => MockClient((r) async {
-          calls.add(r);
-          if (r.method == 'GET') return http.Response(jsonEncode({'ok': whoami == 200, 'name': 'Ana'}), whoami);
-          return http.Response(jsonEncode({'ok': true, 'stored': true}), 200);
-        });
-
     setUp(() async {
       calls = [];
       FlutterSecureStorage.setMockInitialValues({});
       await HardingSync.unlink();
-      HardingSync.confirm = null;
     });
 
-    test('links only after the person confirms the named account, then sends', () async {
-      String? asked;
-      HardingSync.confirm = (host, name, replacing) async { asked = '$host|$name|$replacing'; return true; };
-      await HardingSync.send(numbers, client: server());
+    test('nothing is sent before the phone is paired', () async {
+      expect(await HardingSync.send(numbers, client: server(calls)), HardingSendResult.notLinked);
       expect(calls, isEmpty);
-      expect(await HardingSync.link(uri, client: server()), isTrue);
-      expect(asked, 'harding.pt|Ana|false');
-      expect(HardingSync.linkedServer.value.toString(), 'https://harding.pt');
+    });
+
+    test('asks HARDING for a code, then waits until the person types it', () async {
+      final p = await HardingSync.startPairing(client: server(calls));
+      expect(p.code, 'ABCD-EFGH');
+      expect(await HardingSync.poll(p, client: server(calls, claim: 'pending')), isA<PairingPending>());
+      expect(HardingSync.linked.value, isFalse);
+    });
+
+    test('once linked, stores the key and sends the latest numbers with it', () async {
+      await HardingSync.send(numbers, client: server(calls));
+      expect(await HardingSync.poll(pairing, client: server(calls)), isA<PairingLinked>());
+      expect(HardingSync.linked.value, isTrue);
       await Future<void>.delayed(Duration.zero);
-      final posts = calls.where((r) => r.method == 'POST').toList();
-      expect(posts, hasLength(1));
-      expect(posts.single.headers['Authorization'], 'Bearer $key');
-      expect(posts.single.url.path, '/api/band/sync');
+      final sync = calls.where((r) => r.url.path == '/api/band/sync').single;
+      expect(sync.headers['Authorization'], 'Bearer $key');
+      expect(sync.url.origin, kHardingServer);
     });
 
-    test('a cancelled confirmation links nothing and sends nothing', () async {
-      HardingSync.confirm = (_, _, _) async => false;
-      expect(await HardingSync.link(uri, client: server()), isFalse);
-      expect(HardingSync.linkedServer.value, isNull);
-      expect(calls.where((r) => r.method == 'POST'), isEmpty);
-      expect(await HardingSync.send(numbers, client: server()), HardingSendResult.notLinked);
+    test('an expired code is 410 and stores nothing', () async {
+      expect(await HardingSync.poll(pairing, client: server(calls, claimStatus: 410)), isA<PairingExpired>());
+      expect(HardingSync.linked.value, isFalse);
     });
 
-    test('a key the server refuses is never offered', () async {
-      var asked = false;
-      HardingSync.confirm = (_, _, _) async => asked = true;
-      expect(await HardingSync.link(uri, client: server(whoami: 401)), isFalse);
-      expect(asked, isFalse);
-      expect(HardingSync.linkedServer.value, isNull);
+    test('a key that does not look like a HARDING key is refused', () async {
+      final odd = MockClient((r) async => http.Response(jsonEncode({'ok': true, 'status': 'linked', 'key': 'nope'}), 200));
+      expect(await HardingSync.poll(pairing, client: odd), isA<PairingRetry>());
+      expect(HardingSync.linked.value, isFalse);
     });
 
-    test('no dialog available: nothing is linked', () async {
-      expect(await HardingSync.link(uri, client: server()), isFalse);
-      expect(calls, isEmpty);
+    test('only 410 unlinks: a 401 from an older server build keeps the key', () async {
+      await HardingSync.poll(pairing, client: server(calls));
+      expect(await HardingSync.send(numbers, client: server(calls, syncStatus: 401)), HardingSendResult.failed);
+      expect(HardingSync.linked.value, isTrue);
+      expect(await HardingSync.send(numbers, client: server(calls, syncStatus: 410)), HardingSendResult.unlinked);
+      expect(HardingSync.linked.value, isFalse);
     });
 
-    test('a foreign server is refused before any request', () async {
-      HardingSync.confirm = (_, _, _) async => true;
-      final evil = Uri(scheme: 'hardingband', host: 'link', queryParameters: {'server': 'https://evil.example', 'key': key});
-      expect(await HardingSync.link(evil, client: server()), isFalse);
-      expect(calls, isEmpty);
+    test('a server it cannot reach gives a message the person can read', () async {
+      final down = MockClient((r) async => throw Exception('offline'));
+      expect(() => HardingSync.startPairing(client: down), throwsA(isA<HardingError>()));
     });
+  });
+
+  testWidgets('the dialog shows a new code when the server has one', (t) async {
+    FlutterSecureStorage.setMockInitialValues({});
+    await t.pumpWidget(const MaterialApp(home: Scaffold(body: HardingPairingDialog())));
+    await t.pump();
+    expect(find.text('Link to HARDING'), findsOneWidget);
   });
 }

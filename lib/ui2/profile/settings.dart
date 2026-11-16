@@ -44,6 +44,7 @@ import 'band_notifications.dart';
 import 'data.dart';
 import 'gallery.dart';
 import 'gestures.dart';
+import '../../harding/harding_pairing_dialog.dart';
 import '../../harding/harding_sync.dart';
 import 'profile.dart';
 import 'report_issue.dart';
@@ -943,16 +944,15 @@ class MoreSettingsView extends StatelessWidget {
                 if (devMode) wearableSettingsGroup(c),
                 // HARDING Band: where the day's numbers go.
                 settingsGroup(c, 'HARDING', [
-                  ValueListenableBuilder<Uri?>(
-                    valueListenable: HardingSync.linkedServer,
-                    builder: (context, server, _) => server == null
-                        ? SetRow(LucideIcons.link, C.n500, 'Not linked',
-                            sub: 'HARDING → Account → Band',
-                            chevron: false)
-                        : SetRow(LucideIcons.link, C.n500, server.host,
+                  ValueListenableBuilder<bool>(
+                    valueListenable: HardingSync.linked,
+                    builder: (context, linked, _) => linked
+                        ? SetRow(LucideIcons.link, C.n500, 'Linked',
                             value: 'Unlink',
                             chevron: false,
-                            onTap: () => HardingSync.unlink()),
+                            onTap: () => HardingSync.unlink())
+                        : SetRow(LucideIcons.link, C.n500, 'Link to HARDING',
+                            onTap: () => showHardingPairing(context)),
                   ),
                 ]),
                 settingsGroup(c, l?.settingsGroupAbout ?? 'About', [
